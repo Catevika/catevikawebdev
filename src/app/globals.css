@@ -1,11 +1,12 @@
 :root {
   --max-width: 1440px;
-  --min-height: 900px;
+  --min-height: 100vh;
 
   --color-dark: hsl(233, 100%, 9%);
-  --color-white: hsl(0, 0%, 100%);
+  --color-white: hsl(0, 0%, 98%);
 
   --color-purple: hsl(276, 67%, 54%);
+  --color-blue: hsl(233, 62%, 54%);
   --color-turquoise: hsl(178, 98%, 54%);
   --color-gold: hsl(37, 62%, 54%);
 }
@@ -31,11 +32,8 @@ html {
 body {
   color: var(--color-white);
   font-size: 16px;
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  max-width: var(--max-width);
-  min-height: var(--min-height);
-  padding: 0 4rem;
+  padding: 2rem 4rem;
   background-color: var(--color-dark);
 }
 
@@ -53,6 +51,29 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin: 2rem 0 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-gold);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover,
+button:focus-within {
+  color: var(--color-gold);
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-gold);
 }
 
 p,
@@ -75,4 +96,28 @@ h2 {
 
 h3 {
   font-size: 2.7rem;
+}
+
+a {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible,
+a.active {
+  color: var(--color-gold);
+}
+
+p {
+  line-height: 1.5;
+}
+
+.container {
+  width: var(--max-width);
+  min-height: var(--min-height);
+  margin: auto;
+  padding: 0 4rem;
+  background-color: var(--color-dark);
 }
