@@ -47,7 +47,7 @@
 }
 
 .home__content p {
-  align-self: flex-end;
+  align-self: center;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 2px;

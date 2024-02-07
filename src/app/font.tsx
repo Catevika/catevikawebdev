@@ -1,6 +1,6 @@
-import { Barlow_Condensed, Oswald } from 'next/font/google';
+import { Barlow, Oswald } from 'next/font/google';
 
-export const barlowCond = Barlow_Condensed({
+export const barlow = Barlow({
   subsets: [ 'latin' ],
   display: 'swap',
   weight: '300'

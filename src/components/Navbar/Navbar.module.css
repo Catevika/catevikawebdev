@@ -6,7 +6,11 @@
 
 .navbar__logo {
   font-size: 2rem;
-  line-height: 1.7rem;
+  font-weight: 700;
+}
+
+.navbar__logo span {
   padding-left: 1rem;
+  line-height: 1.5rem;
   border-left: 3px solid var(--color-turquoise);
 }

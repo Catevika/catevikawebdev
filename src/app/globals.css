@@ -8,7 +8,16 @@
   --color-purple: hsl(276, 67%, 54%);
   --color-blue: hsl(233, 62%, 54%);
   --color-turquoise: hsl(178, 98%, 54%);
+  --color-light-turquoise: hsl(178, 15%, 65%);
   --color-gold: hsl(37, 62%, 54%);
+
+  /* Hide the scrollbars */
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
+  overflow-y: scroll;
+  overflow-x: none;
 }
 
 *,
@@ -25,7 +34,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
   background-color: pink;
 }
 
@@ -35,6 +43,12 @@ body {
   -webkit-font-smoothing: antialiased;
   padding: 2rem 4rem;
   background-color: var(--color-dark);
+}
+
+::-webkit-scrollbar {
+  /* Hide the scrollbars */
+  display: none;
+  /* for Chrome, Safari, and Opera */
 }
 
 img,
@@ -91,15 +105,16 @@ h1 {
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 
 h3 {
-  font-size: 2.7rem;
+  font-size: 2.5rem;
 }
 
 a {
   font-size: 1.5rem;
+  padding: 0.5rem 1.5rem;
   color: var(--color-white);
   text-decoration: none;
 }
@@ -107,17 +122,26 @@ a {
 a:hover,
 a:focus-visible,
 a.active {
-  color: var(--color-gold);
+  border-radius: 2rem;
+  background-color: var(--color-purple);
 }
 
-p {
-  line-height: 1.5;
+p,
+li {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 .container {
   width: var(--max-width);
   min-height: var(--min-height);
   margin: auto;
-  padding: 0 4rem;
+  padding: 2rem 0;
   background-color: var(--color-dark);
+}
+
+.note {
+  font-size: 1rem;
+  font-style: italic;
+  text-align: end;
 }

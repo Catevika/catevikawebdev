@@ -3,8 +3,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './links.module.css';
 
-
-
 export default function Links() {
   const pathname = usePathname();
 
