@@ -4,11 +4,11 @@
 
   --color-dark: hsl(233, 100%, 9%);
   --color-white: hsl(0, 0%, 98%);
+  --color-white-50: hsla(0, 0%, 98%, 0.5);
 
   --color-purple: hsl(276, 67%, 54%);
   --color-blue: hsl(233, 62%, 54%);
   --color-turquoise: hsl(178, 98%, 54%);
-  --color-light-turquoise: hsl(178, 15%, 65%);
   --color-gold: hsl(37, 62%, 54%);
 
   /* Hide the scrollbars */
@@ -17,7 +17,7 @@
   scrollbar-width: none;
   /* for Firefox */
   overflow-y: scroll;
-  overflow-x: none;
+  overflow-x: hidden;
 }
 
 *,
@@ -31,9 +31,6 @@
 }
 
 html {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: pink;
 }
 
@@ -41,7 +38,9 @@ body {
   color: var(--color-white);
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
-  padding: 2rem 4rem;
+  max-width: var(--max-width);
+  min-height: var(--min-height);
+  margin: 0 auto;
   background-color: var(--color-dark);
 }
 
@@ -128,15 +127,14 @@ a.active {
 
 p,
 li {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 2.5rem;
 }
 
 .container {
-  width: var(--max-width);
-  min-height: var(--min-height);
-  margin: auto;
-  padding: 2rem 0;
+  position: relative;
+  width: 100%;
+  padding: 0 4rem;
   background-color: var(--color-dark);
 }
 

@@ -1,5 +1,4 @@
 .home__background {
-  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -7,25 +6,25 @@
 
 .home__background__image1 {
   opacity: 50%;
-  width: 50%;
-  height: auto;
+  width: auto;
 }
 
 .home__background__image2 {
   width: auto;
-  height: 80%;
+  height: 80vh;
 }
 
 .home__content {
   position: absolute;
+  top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
-  top: 10rem;
 }
 
 .home__content h1 {
+  width: 100%;
+  text-align: center;
   margin: 2rem 0 -1rem 0;
 }
 
