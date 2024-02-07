@@ -8,7 +8,7 @@ export default function Home() {
     <main className='container'>
       <div className={styles.home__background}>
         <Image className={styles.home__background__image1} src={'/icons/bubbles.svg'} alt='' height={656} width={656} priority />
-        <Image className={styles.home__background__image2} src={'/images/Catevika.jpeg'} alt='' height={720} width={720} priority />
+        <Image className={styles.home__background__image2} src={'/images/Catevika.png'} alt='' height={720} width={720} priority />
       </div>
       <div className={styles.home__content}>
         <h2 className={barlowCond.className}>Your tailor-made website in just a few clicks!</h2>
