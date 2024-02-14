@@ -1,0 +1,33 @@
+.services__content {
+  margin: 2rem 0 4rem;
+}
+
+.services__container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.services__top__card {
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-blue);
+  background-color: var(--color-dark);
+}
+
+.services__top__card h4 {
+  padding: 0.5rem 1rem;
+  color: var(--color-dark);
+  background-color: var(--color-blue);
+}
+
+.services__top__card p {
+  height: 190px;
+  padding: 1rem 2rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}

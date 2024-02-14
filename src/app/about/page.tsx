@@ -1,6 +1,6 @@
+import styles from '@/app/about/about.module.css';
 import { lato } from '@/app/font';
 import Image from 'next/image';
-import styles from './about.module.css';
 
 export default function About() {
   return (

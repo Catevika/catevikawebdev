@@ -1,7 +1,7 @@
 import { lato } from '@/app/font';
+import Links from '@/components/Navbar/Links/Links';
+import styles from '@/components/Navbar/Navbar.module.css';
 import Link from 'next/link';
-import Links from './Links/Links';
-import styles from './navbar.module.css';
 
 export default function Navbar() {
   return (
