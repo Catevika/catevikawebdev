@@ -1,8 +1,15 @@
 .navbar__container {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 4rem;
+  max-width: 1440px;
+  width: 100%;
+  padding: 1rem 4rem;
+  background-color: var(--color-dark);
+  border-bottom: 1px solid var(--color-blue-30);
+  z-index: 100;
 }
 
 .navbar__logo {

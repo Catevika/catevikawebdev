@@ -4,53 +4,79 @@
   align-items: center;
 }
 
+.home__background__image1,
+.home__background__image2 {
+  width: auto;
+  height: 76vh;
+}
+
 .home__background__image1 {
   opacity: 50%;
-  width: auto;
 }
 
 .home__background__image2 {
-  width: auto;
-  height: 80vh;
+  margin-top: 1rem;
 }
 
 .home__content {
   position: absolute;
-  top: 4rem;
+  top: 12rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.home__content h1 {
-  width: 100%;
-  text-align: center;
-  margin: 2rem 0 -1rem 0;
-}
-
 .home__content h2 {
-  width: 60%;
+  width: 52%;
   color: var(--color-turquoise);
 }
 
-.home__content h3 {
-  color: var(--color-gold);
-  align-self: flex-end;
+.home__content__link {
+  margin-top: 4rem;
 }
 
-.home__content button {
-  font-size: 3rem;
-  width: 40%;
-  margin-top: 5rem;
-  margin-bottom: 0.5rem;
-}
-
-.home__content p {
-  align-self: center;
+.not__found__link {
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: var(--color-dark);
+  background-color: var(--color-gold);
+  border: 1px solid transparent;
+}
+
+.not__found__link:hover,
+.not__found__link:focus-visible {
   color: var(--color-gold);
+  background-color: transparent;
+  border: 1px solid var(--color-gold);
+}
+
+.home__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 50;
+}
+
+.home__bottom h1 {
+  margin: -16rem 0 -1rem 0;
+}
+
+.home__link {
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-left: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  color: var(--color-gold);
+}
+
+.home__link:hover,
+.home__link:focus-within {
+  border: 1px solid var(--color-gold);
 }
 
 .not__found {
@@ -58,19 +84,4 @@
   flex-direction: column;
   align-items: flex-start;
   margin-left: 2rem;
-}
-
-.notFound__link {
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  color: var(--color-dark);
-  background-color: var(--color-turquoise);
-}
-
-.notFound__link:hover,
-.notFound__link:focus-visible {
-  color: var(--color-turquoise);
-  background-color: var(--color-blue);
 }

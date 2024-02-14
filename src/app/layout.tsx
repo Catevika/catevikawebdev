@@ -1,7 +1,7 @@
+import { lato } from '@/app/font';
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
 import type { Metadata } from "next";
-import { barlow } from './font';
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={barlow.className}>
+      <body className={lato.className}>
         <Navbar />
         {children}
         <Footer />

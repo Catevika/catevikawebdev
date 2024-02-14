@@ -2,14 +2,17 @@
   --max-width: 1440px;
   --min-height: 100vh;
 
-  --color-dark: hsl(233, 100%, 9%);
-  --color-white: hsl(0, 0%, 98%);
-  --color-white-50: hsla(0, 0%, 98%, 0.5);
+  --color-dark: hsl(233, 100%, 8%);
+  --color-medium-dark: hsl(233, 51%, 13%);
 
-  --color-purple: hsl(276, 67%, 54%);
-  --color-blue: hsl(233, 62%, 54%);
-  --color-turquoise: hsl(178, 98%, 54%);
-  --color-gold: hsl(37, 62%, 54%);
+  --color-white: hsl(0, 0%, 100%);
+
+  --color-blue: hsl(217, 43%, 72%);
+  --color-blue-30: hsla(217, 43%, 72%, 0.3);
+
+  --color-turquoise: hsl(178, 84%, 63%);
+
+  --color-gold: hsl(37, 63%, 54%);
 
   /* Hide the scrollbars */
   -ms-overflow-style: none;
@@ -89,57 +92,53 @@ button:focus-within {
   border: 1px solid var(--color-gold);
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-
 h1 {
-  font-size: 11rem;
+  font-size: 9vw;
+  text-align: center;
+  width: 100%;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 3vw;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem 0;
+  color: var(--color-turquoise);
 }
 
-a {
+h4 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+a,
+.navbar__link {
   font-size: 1.5rem;
-  padding: 0.5rem 1.5rem;
   color: var(--color-white);
   text-decoration: none;
 }
 
-a:hover,
-a:focus-visible,
-a.active {
-  border-radius: 2rem;
-  background-color: var(--color-purple);
-}
-
 p,
 li {
-  font-size: 1.25rem;
-  line-height: 2.5rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .container {
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  padding: 0 4rem;
-  background-color: var(--color-dark);
+  padding: 96px 4rem 2rem;
+  background-color: var(--color-medium-dark);
 }
 
 .note {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: italic;
-  text-align: end;
+  color: var(--color-turquoise);
 }

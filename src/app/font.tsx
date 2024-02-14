@@ -1,9 +1,9 @@
-import { Barlow, Oswald } from 'next/font/google';
+import { Lato, Oswald } from 'next/font/google';
 
-export const barlow = Barlow({
+export const lato = Lato({
   subsets: [ 'latin' ],
   display: 'swap',
-  weight: '300'
+  weight: '400'
 });
 
 export const oswald = Oswald({
