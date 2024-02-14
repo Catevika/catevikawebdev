@@ -5,7 +5,7 @@
   --color-dark: hsl(233, 100%, 8%);
   --color-medium-dark: hsl(233, 51%, 13%);
 
-  --color-white: hsl(0, 0%, 100%);
+  --color-white: hsl(0, 0%, 95%);
 
   --color-blue: hsl(217, 43%, 72%);
   --color-blue-30: hsla(217, 43%, 72%, 0.3);
@@ -93,7 +93,7 @@ button:focus-within {
 }
 
 h1 {
-  font-size: 9vw;
+  font-size: 7vw;
   text-align: center;
   width: 100%;
 }
@@ -133,7 +133,7 @@ li {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 96px 4rem 2rem;
+  padding: 96px 4rem 1.5rem;
   background-color: var(--color-medium-dark);
 }
 

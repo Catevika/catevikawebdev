@@ -7,7 +7,7 @@
 .home__background__image1,
 .home__background__image2 {
   width: auto;
-  height: 76vh;
+  height: 78vh;
 }
 
 .home__background__image1 {
@@ -15,7 +15,10 @@
 }
 
 .home__background__image2 {
-  margin-top: 1rem;
+  margin: 1rem 2.5rem 1rem 1rem;
+  border-radius: 1rem;
+  -webkit-filter: brightness(0.8);
+  filter: brightness(0.8)
 }
 
 .home__content {
@@ -60,7 +63,7 @@
 }
 
 .home__bottom h1 {
-  margin: -16rem 0 -1rem 0;
+  margin: -14rem 0 -1rem 0;
 }
 
 .home__link {

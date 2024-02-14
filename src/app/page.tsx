@@ -1,4 +1,4 @@
-import { lato, oswald } from '@/app/font';
+import { lato } from '@/app/font';
 import styles from "@/app/page.module.css";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -17,7 +17,7 @@ export default function Home() {
           <Link className={styles.home__link} href={'./services'}>Learn more</Link> </h2>
       </div>
       <div className={styles.home__bottom}>
-        <h1 className={oswald.className}>Catevika Web Dev</h1>
+        <h1 className={lato.className}>Catevika Web Dev</h1>
         <Link className={styles.home__link} href={'/contact'}>catevikawebdev@outlook.fr</Link>
       </div>
     </main>
