@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1440px;
+  max-width: var(--max-width);
   width: 100%;
   padding: 1rem 4rem;
   background-color: var(--color-dark);
@@ -21,4 +21,17 @@
   padding-left: 1rem;
   line-height: 1.5rem;
   border-left: 3px solid var(--color-turquoise);
+}
+
+@media(max-width: 530px) {
+  .navbar__container {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 135px;
+    padding: 1rem 2rem;
+  }
+
+  .navbar__logo {
+    margin-bottom: 1rem;
+  }
 }
