@@ -1,5 +1,64 @@
-.services__content {
-  margin: 2rem 0 4rem;
+.services__link {
+  color: var(--color-gold);
+  margin-left: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+}
+
+.services__link:hover,
+.services__link:focus-within {
+  border: 1px solid var(--color-gold);
+}
+
+.services__ribbon {
+  height: 156px;
+  border-top: 1px solid var(--color-blue-30);
+}
+
+.services__ribbon p {
+  position: absolute;
+  top: 193px;
+  left: 49%;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-dark);
+  text-shadow: 1px 1px 2px var(--color-white);
+  width: 214px;
+  height: 180px;
+  padding: 1rem;
+  border-top-left-radius: 3px;
+  background-image: linear-gradient(180deg,
+      var(--color-gold) 0%,
+      hsl(37, 59%, 76%) 50%,
+      var(--color-gold) 100%);
+}
+
+.services__ribbon p:before {
+  height: 0;
+  width: 0;
+  right: -5.5px;
+  top: 0.1px;
+  border-bottom: 6px solid var(--color-dark-gold);
+  border-right: 6px solid transparent;
+}
+
+.services__ribbon p:before,
+.services__ribbon p:after {
+  content: "";
+  position: absolute;
+}
+
+.services__ribbon p:after {
+  height: 0;
+  width: 0;
+  bottom: -29.5px;
+  left: 0;
+  border-left: 107px solid var(--color-gold);
+  border-right: 107px solid var(--color-gold);
+  border-bottom: 30px solid transparent;
 }
 
 .services__container {
@@ -10,24 +69,49 @@
   border-radius: 0.5rem;
 }
 
-.services__top__card {
+.services__card {
   font-size: 1rem;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-blue);
-  background-color: var(--color-dark);
+  border: 1px solid var(--color-blue-30);
 }
 
-.services__top__card h4 {
+.services__card h4 {
   padding: 0.5rem 1rem;
-  color: var(--color-dark);
-  background-color: var(--color-blue);
+  color: var(--color-turquoise);
+  border: 1px solid var(--color-blue-30);
 }
 
-.services__top__card p {
-  height: 190px;
+.services__card p {
+  display: flex;
+  height: 155px;
   padding: 1rem 2rem;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+}
+
+.services__icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.services__items {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-blue-30);
+}
+
+.services__item {
+  display: flex;
+  align-items: center;
+}
+
+.services__item p {
+  padding-top: 0.8rem;
+}
+
+.services__item p span {
+  color: var(--color-turquoise);
 }
