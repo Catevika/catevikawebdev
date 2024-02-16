@@ -13,11 +13,11 @@ export default function Home() {
           height={0} sizes="50vw" priority />
       </div>
       <div className={styles.home__content}>
-        <h2 className={lato.className}>Your tailor-made website in just a few clicks!
-          <Link className={styles.home__link} href={'./services'}>Learn more</Link> </h2>
+        <h2 className={lato.className}>Your tailor-made website in&nbsp;just&nbsp;a&nbsp;few&nbsp;clicks!
+          <Link className={styles.home__link} href={'./services'}> Learn&nbsp;more</Link> </h2>
       </div>
       <div className={styles.home__bottom}>
-        <h1 className={lato.className}>Catevika Web Dev</h1>
+        <h1 className={lato.className}>Catevika Web&nbsp;Dev</h1>
         <Link className={styles.home__link} href={'/contact'}>catevikawebdev@outlook.fr</Link>
       </div>
     </main>

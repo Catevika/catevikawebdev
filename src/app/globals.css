@@ -1,4 +1,5 @@
 :root {
+  --min-width: 375px;
   --max-width: 1440px;
   --min-height: 100vh;
 
@@ -10,9 +11,10 @@
   --color-blue: hsl(217, 43%, 72%);
   --color-blue-30: hsla(217, 43%, 72%, 0.3);
 
-  --color-turquoise: hsl(178, 84%, 63%);
+  --color-turquoise: hsl(178, 84%, 53%);
 
   --color-gold: hsl(37, 63%, 54%);
+  --color-dark-gold: hsl(37, 53%, 35%);
 
   /* Hide the scrollbars */
   -ms-overflow-style: none;
@@ -41,6 +43,7 @@ body {
   color: var(--color-white);
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
+  min-width: var(--min-width);
   max-width: var(--max-width);
   min-height: var(--min-height);
   margin: 0 auto;
@@ -93,13 +96,14 @@ button:focus-within {
 }
 
 h1 {
-  font-size: 7vw;
+  font-size: clamp(64px, 8vw, 144px);
   text-align: center;
   width: 100%;
+  max-width: var(--max-width);
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: clamp(32px, 3vw, 45px);
 }
 
 h3 {
@@ -141,4 +145,10 @@ li {
   font-size: 1.2rem;
   font-style: italic;
   color: var(--color-turquoise);
+}
+
+@media(max-width: 530px) {
+  .container {
+    padding: 135px 2rem 1.5rem;
+  }
 }
