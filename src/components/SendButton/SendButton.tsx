@@ -8,7 +8,18 @@ function SendButton() {
   return (
     <>
       <button type="submit" disabled={pending}>{pending ? 'Sending...' : 'Send'}</button>
-      <ToastContainer />
+      <ToastContainer
+        position="bottom-right"
+        autoClose={2000}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     </>
   );
 }

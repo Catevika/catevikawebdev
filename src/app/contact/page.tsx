@@ -1,26 +1,74 @@
 'use client';
-import { sendEmail } from '@/actions/sendEmail';
 import styles from '@/app/contact/contact.module.css';
 import SendButton from '@/components/SendButton/SendButton';
-import type { FormValues } from '@/types/types';
+import { ContactFormSchema, type MailInputs } from '@/utils/schemas';
+import { yupResolver } from '@hookform/resolvers/yup';
 import Image from 'next/image';
 import { useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm, type SubmitHandler } from 'react-hook-form';
+import { Bounce, toast } from 'react-toastify';
+import { sendEmail } from './_actions';
 
 export default function Contact() {
+
   const {
     register,
+    handleSubmit,
+    reset,
     formState: { errors },
-  } = useForm<FormValues>();
+  } = useForm<MailInputs>({
+    resolver: yupResolver(ContactFormSchema),
+    progressive: true
+  });
 
-  const [ honeypot, setHoneypot ] = useState('Hey');
+  const [ honeypot, setHoneypot ] = useState('');
+
+  if (honeypot) {
+    console.log('Bot detected');
+    return;
+  }
+
+  const processForm: SubmitHandler<MailInputs> = async (data) => {
+    const result = await sendEmail(data);
+
+    try {
+      console.log({ data: result.data });
+
+      toast.success('Email sent successfully', {
+        position: "bottom-right",
+        autoClose: 2000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce
+      });
+      reset();
+    } catch (error) {
+      console.log({ error: result.error });
+
+      toast.error('Email not sent. Please retry', {
+        position: "bottom-right",
+        autoClose: 2000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce
+      });
+    }
+  };
 
   return (
     <main className='container'>
       <div className={styles.contact__content}>
         <Image className={styles.contact__image} src={'/images/mail.png'} alt='' width={0}
           height={0} sizes='50vw' priority />
-        <form className={styles.contact__form} action={sendEmail}>
+        <form className={styles.contact__form} onSubmit={handleSubmit(processForm)}>
           <label aria-hidden="true" htmlFor="name__verify" className={styles.contact__form__label__hide}>
             Humans will not fill out this field
             <input type="text" id="name__verify" name='name__verify' aria-hidden="true" autoComplete='off' onChange={(e) => setHoneypot(e.target.value)} value={honeypot} />
@@ -47,4 +95,4 @@ export default function Contact() {
       </div>
     </main>
   );
-}
+};
