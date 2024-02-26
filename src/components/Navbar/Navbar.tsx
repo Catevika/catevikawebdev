@@ -3,7 +3,7 @@ import { lato } from '@/app/font';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Links from './Links/Links';
-import styles from './components/Navbar/Navbar.module.css';
+import styles from './Navbar.module.css';
 
 
 export default function Navbar() {
