@@ -1,8 +1,8 @@
 'use client';
+import styles from "@/components/Navbar/Links/Links.module.css";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import styles from './links.module.css';
 
 export default function Links() {
   const pathname = usePathname();

@@ -1,9 +1,9 @@
 'use client';
 import { lato } from '@/app/font';
+import Links from "@/components/Navbar/Links/Links";
+import styles from "@/components/Navbar/Navbar.module.css";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import Links from './Links/Links';
-import styles from './Navbar.module.css';
 
 
 export default function Navbar() {
