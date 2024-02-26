@@ -1,6 +1,6 @@
 'use client';
 import { lato } from '@/app/font';
-import Links from "@/components/Navbar/Links/Links";
+import Links from "@/components/Links/Links";
 import styles from "@/components/Navbar/Navbar.module.css";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';

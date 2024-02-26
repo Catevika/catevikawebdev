@@ -1,5 +1,5 @@
 'use client';
-import styles from "@/components/Navbar/Links/Links.module.css";
+import styles from "@/components/Links/Links.module.css";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
