@@ -1,7 +1,6 @@
-import type { FormValues } from '@/types/types';
 
-export const EmailTemplate = (data: FormValues) => (
+export const EmailTemplate = (message: FormDataEntryValue) => (
   <div>
-    <p>{data.message}</p>
+    <p>{`Here is the ${message}`}</p>
   </div>
 );

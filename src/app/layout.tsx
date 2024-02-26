@@ -1,8 +1,8 @@
 import { lato } from '@/app/font';
 import "@/app/globals.css";
-import Footer from '@/components/Footer/Footer';
-import Navbar from '@/components/Navbar/Navbar';
 import type { Metadata } from "next";
+import Footer from '../components/Footer/Footer';
+import Navbar from '../components/Navbar/Navbar';
 
 export const metadata: Metadata = {
   title: "Catevika Web Dev",

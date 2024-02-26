@@ -1,5 +1,6 @@
 
 import { Resend } from 'resend';
+import { EmailTemplate } from '../components/EmailTemplate/EmailTemplate';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -17,8 +18,8 @@ export const sendEmail = async (formData: FormData) => {
       await resend.emails.send({
         from: 'Catevika Web Dev <contact@catevikawebdev.com>',
         to: [ 'contact@catevikawebdev.com' ],
-        subject: `New Message from ${name}`,
-        text: `Name: ${name}, Email: ${email}, Message: ${message}`,
+        subject: `New Message from ${name} - ${email}`,
+        react: EmailTemplate(message!),
       });
 
       return new Response(JSON.stringify({ success: true }), {

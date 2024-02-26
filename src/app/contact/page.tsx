@@ -1,11 +1,11 @@
 'use client';
 import { sendEmail } from '@/actions/sendEmail';
 import styles from '@/app/contact/contact.module.css';
-import SendButton from '@/components/SendButton/SendButton';
 import type { FormValues } from '@/types/types';
 import Image from 'next/image';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import SendButton from '../../components/SendButton/SendButton';
 
 export default function Contact() {
   const {
