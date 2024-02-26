@@ -1,6 +1,6 @@
 .footer__container {
   color: var(--color-white);
-  padding: 0.5rem 4rem 2rem 4rem;
+  padding: 0.5rem 4rem 1rem 4rem;
   border-top: 1px solid var(--color-blue-30);
 }
 
@@ -33,5 +33,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media(max-width: 930px) {
+  .footer__container {
+    text-align: center;
+    padding: 0;
   }
 }

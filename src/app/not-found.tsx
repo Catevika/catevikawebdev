@@ -7,10 +7,13 @@ export default function notFound() {
   return (
     <main className='container'>
       <div className={styles.home__background}>
-        <Image src={'/images/404.png'} alt='' height={400} width={400} style={{ borderRadius: '50%' }} priority />
+        <Image src={'/images/404.png'} alt='' height={393} width={393} style={{
+          borderRadius: '1rem', filter: 'brightness(0.7)', mixBlendMode: 'luminosity'
+        }} priority />
         <div className={styles.not__found}>
-          <h3 className={lato.className}>404 - Page not found</h3>
-          <Link className={styles.not__found__link} href="/">Back to Home page</Link>
+          <p>404 - Page not found</p>
+          <h3 className={lato.className}>Tell me about your next project to light my day!</h3>
+          <Link className={styles.not__found__link} href="/contact">Go to Contact</Link>
         </div>
       </div>
     </main>

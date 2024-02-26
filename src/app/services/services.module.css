@@ -1,7 +1,10 @@
+.services__content h3 {
+  margin: 2rem 0 1rem;
+}
+
 .services__link {
   color: var(--color-gold);
-  margin-left: 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem;
   border-radius: 0.5rem;
   border: 1px solid transparent;
 }
@@ -12,14 +15,16 @@
 }
 
 .services__ribbon {
+  position: relative;
   height: 156px;
+  margin: 2rem 0 5rem;
   border-top: 1px solid var(--color-blue-30);
 }
 
 .services__ribbon p {
   position: absolute;
-  top: 193px;
-  left: 49%;
+  top: -6px;
+  left: 25%;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.5;
@@ -65,7 +70,7 @@
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  padding: 2rem;
+  padding: 1rem 2rem;
   border-radius: 0.5rem;
 }
 
@@ -114,4 +119,14 @@
 
 .services__item p span {
   color: var(--color-turquoise);
+}
+
+@media(max-width: 930px) {
+  .services__content h3 {
+    text-align: center;
+  }
+
+  .services__container {
+    padding: 0;
+  }
 }

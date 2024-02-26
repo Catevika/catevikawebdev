@@ -8,18 +8,19 @@ export default function About() {
       <h3 className={lato.className}>Welcome!</h3>
       <section className={styles.about__top__container}>
         <Image className={styles.about__top__image} src={'/images/Profile.png'} alt='Picture of the Web Developer' height={250} width={250} />
-        <p className={styles.about__text}>I&apos;m Dominique Bello, also known as Catevika.<br />Although my roots are in Paris, France, my husband led me to find a second home in Italy.</p>
-        <p className={styles.about__text}>I&apos;m a self-taught Web Developer who is currently retraining after more than fifteen years in marketing.</p>
-        <p className={styles.about__text}>French is my mother tongue, I also speak Italian and I&apos;ve used professional English in my previous experience and almost every day to acquire new web development skills. </p>
-        <p className={styles.about__text}>I&apos;m delighted to help clients from  all over the world achieve their personal or business goals. I create websites that reflect their unique brand personality, down to the pixel.</p>
+        <p className={styles.about__text}>I&apos;m <span>Dominique Bello</span>, also known as <span>Catevika.</span></p>
+        <p className={styles.about__text}>Although my roots are in <span>Paris, France</span>, my husband led me to find a second home in <span>Italy</span>.</p>
+        <p className={styles.about__text}>I&apos;m a self-taught <span>Web Developer</span> who is currently retraining <span>after more than fifteen years in marketing</span>.</p>
+        <p className={styles.about__text}><span>French</span> is my mother tongue, I also speak <span>Italian</span> and I&apos;ve used professional <span>English</span> in my previous experience and almost every day to acquire new web development skills. </p>
+        <p className={styles.about__text}>I&apos;m delighted to help <span>clients</span> from <span>all over the world</span> achieve their <span>personal</span> or <span>business goals</span>. I create <span>websites</span> that reflect their unique <span>brand personality</span>, down to the pixel.</p>
       </section>
       <h3 className={lato.className}>What does the pseudo &quot;Catevika&quot; means?</h3>
       <section className={styles.about__middle__container}>
         <div className={styles.about__paragraph}>
-          <p className={styles.about__text}>Ever heard of &quot;Cattivik&quot;, a mischievous character from an old Italian comic book?</p>
-          <p className={styles.about__text}>Well, thanks to a playful typo, my husband&apos;s pseudonym became &quot;Catevik&quot;.</p>
-          <p className={styles.about__text}>As his wife, I did not looked for mine any futher!</p>
-          <p className={styles.about__text}>This is how &quot;Catevika&quot; is born.</p>
+          <p className={styles.about__text}>Ever heard of <span>&quot;Cattivik&quot;</span>, a mischievous character from an old Italian comic book?</p>
+          <p className={styles.about__text}>Well, thanks to a playful typo, my <span>husband</span>&apos;s pseudonym became <span>&quot;Catevik&quot;</span>.</p>
+          <p className={styles.about__text}>As his <span>wife</span>, I did not looked for mine any futher!</p>
+          <p className={styles.about__text}>This is how <span>&quot;Catevika&quot;</span> is born.</p>
         </div>
         <Image className={styles.about__middle__image} src={'/images/Cattivik.png'} alt='Picture of Cattivik' height={292} width={216} />
       </section>

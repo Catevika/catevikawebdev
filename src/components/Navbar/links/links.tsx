@@ -6,7 +6,6 @@ import styles from './links.module.css';
 
 export default function Links() {
   const pathname = usePathname();
-
   const links = [ {
     title: 'About',
     path: '/about'
@@ -22,10 +21,6 @@ export default function Links() {
   {
     title: 'Blog',
     path: '/blog'
-  },
-  {
-    title: 'Admin',
-    path: '/admin'
   } ];
 
   const [ isOpen, setIsOpen ] = useState(false);

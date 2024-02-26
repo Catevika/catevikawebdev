@@ -7,7 +7,8 @@ export default function services() {
   return (
     <main className='container'>
       <section className={styles.services__content}>
-        <h3 className={lato.className}>Ready to launch your online presence? <Link className={styles.services__link} href={'/contact'}>Request a website quote now!</Link></h3>
+        <h3 className={lato.className}>Ready to launch your online presence?</h3>
+        <Link className={styles.services__link} href={'/contact'}>Request a website quote now!</Link>
         <div className={styles.services__ribbon}><p>Introductory rates for first few clients!</p></div>
         <h3 className={lato.className}>Catevika Web Dev services</h3>
         <div className={styles.services__container}>
