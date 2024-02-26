@@ -1,114 +1,50 @@
-"use client";
+'use client';
+import { sendEmail } from '@/actions/sendEmail';
 import styles from '@/app/contact/contact.module.css';
-import { Button, FieldError, Form, Input, Label, TextArea, TextField } from 'react-aria-components';
-import { Controller, useForm } from 'react-hook-form';
-
-type ContactData = {
-  name: string;
-  email: string;
-  message: string;
-};
+import SendButton from '@/components/SendButton/SendButton';
+import type { FormValues } from '@/types/types';
+import Image from 'next/image';
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
 
 export default function Contact() {
-  const { handleSubmit, control, reset } = useForm({
-    defaultValues: {
-      name: '',
-      email: '',
-      message: ''
-    }
-  });
+  const {
+    register,
+    formState: { errors },
+  } = useForm<FormValues>();
 
-  const onSubmit = (data: ContactData) => {
-    console.log(data);
-    reset();
-  };
+  const [ honeypot, setHoneypot ] = useState('Hey');
 
   return (
     <main className='container'>
-      <Form className={styles.contact__form} onSubmit={handleSubmit(onSubmit)}>
-        <Controller
-          control={control}
-          name="name"
-          rules={{ required: 'Name is required.' }}
-          render={({
-            field: { name, value, onChange, onBlur, ref },
-            fieldState: { invalid, error }
-          }) => (
-            <TextField
-              className={styles.contact__textfield}
-              name={name}
-              type="text"
-              value={value}
-              onChange={onChange}
-              onBlur={onBlur}
-              isRequired
-              validationBehavior="aria"
-              isInvalid={invalid}
-            >
-              <Label className={styles.contact__label}>Name</Label>
-              <Input className={styles.contact__input} placeholder="Jane Smith" ref={ref} autoComplete='name' />
-              <FieldError className={styles.contact__error}>{error?.message}</FieldError>
-            </TextField>
-          )}
-        />
-        <Controller
-          control={control}
-          name="email"
-          rules={{
-            required: 'Email is required.',
-            pattern: {
-              value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-              message: 'Entered value does not match email format'
-            }
-          }}
-          render={({
-            field: { name, value, onChange, onBlur, ref },
-            fieldState: { error }
-          }) => (
-            <TextField
-              className={styles.contact__textfield}
-              name={name}
-              type="email"
-              value={value}
-              onChange={onChange}
-              onBlur={onBlur}
-              isRequired
-              validationBehavior="aria"
-              isInvalid={!!error}
-            >
-              <Label className={styles.contact__label}>Email</Label>
-              <Input className={styles.contact__input} placeholder="jane.smith@example.com" ref={ref} autoComplete='email' />
-              <FieldError className={styles.contact__error}>{error?.message}</FieldError>
-            </TextField>
-          )}
-        />
-        <Controller
-          control={control}
-          name="message"
-          rules={{ required: 'Message is required.' }}
-          render={({
-            field: { name, value, onChange, onBlur, ref },
-            fieldState: { invalid, error }
-          }) => (
-            <TextField
-              className={styles.contact__textfield}
-              name={name}
-              type="textarea"
-              value={value}
-              onChange={onChange}
-              onBlur={onBlur}
-              isRequired
-              validationBehavior="aria"
-              isInvalid={invalid}
-            >
-              <Label className={styles.contact__label}>Message</Label>
-              <TextArea className={styles.contact__textarea} placeholder="Tell me about your project!" ref={ref} rows={5} />
-              <FieldError className={styles.contact__error}>{error?.message}</FieldError>
-            </TextField>
-          )}
-        />
-        <Button type="submit">Submit</Button>
-      </Form>
+      <div className={styles.contact__content}>
+        <Image className={styles.contact__image} src={'/images/mail.png'} alt='' width={0}
+          height={0} sizes='50vw' priority />
+        <form className={styles.contact__form} action={sendEmail}>
+          <label aria-hidden="true" htmlFor="name__verify" className={styles.contact__form__label__hide}>
+            Humans will not fill out this field
+            <input type="text" id="name__verify" name='name__verify' aria-hidden="true" autoComplete='off' onChange={(e) => setHoneypot(e.target.value)} value={honeypot} />
+          </label>
+          <div className={styles.contact__form__visible}>
+            <div className={styles.contact__form__group}>
+              <label className={styles.contact__form__label} htmlFor="name">Name</label>
+              <input aria-invalid={errors.name ? "true" : "false"} className={styles.contact__form__input} type="text" id="name" placeholder="Jane Smith" autoComplete='name' {...register('name', { required: 'Name is required' })} />
+              {errors.name ? <p role="alert">{errors.name.message}</p> : null}
+            </div>
+            <div className={styles.contact__form__group}>
+              <label className={styles.contact__form__label} htmlFor="email">Email</label>
+              <input aria-invalid={errors.email ? "true" : "false"} className={styles.contact__form__input} type="text" id="email" placeholder="jane.smith@example.com" autoComplete='email' {...register('email', { required: 'Email is required', pattern: { value: /^\S+@\S+$/i, message: 'Invalid email address' } })} />
+              {errors.email ? <p role="alert">{errors.email.message}</p> : null}
+            </div>
+            <div className={styles.contact__form__group}>
+              <label className={styles.contact__form__label} htmlFor="message">Message</label>
+              <textarea aria-invalid={errors.message ? "true" : "false"} className={styles.contact__form__textarea} id="message" placeholder="Tell me about your project!" rows={5} {...register('message', { required: 'Message is required' })} />
+              {errors.message ? <p role="alert">{errors.message.message}</p> : null}
+            </div>
+            <SendButton />
+          </div>
+        </form>
+      </div>
     </main>
   );
 }
