@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  gap: 2rem;
 }
 
 .contact__image {
@@ -78,4 +79,32 @@
   font-size: 1.2rem;
   color: var(--color-gold);
   border-radius: 0.5rem;
+}
+
+.contact__form__error {
+  color: var(--color-error);
+  padding-left: 1rem;
+}
+
+@media(max-width: 1070px) {
+  .contact__content {
+    justify-content: space-between;
+  }
+
+  .contact__image {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media(max-width: 930px) {
+  .contact__content {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 530px) {
+  .contact__form {
+    margin-top: -5rem;
+  }
 }

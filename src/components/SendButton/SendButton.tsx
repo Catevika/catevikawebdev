@@ -1,18 +1,14 @@
 "use client";
-import { useFormStatus } from 'react-dom';
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.min.css';
 
-function SendButton() {
-  const { pending } = useFormStatus();
+function SendButton({ isSubmitting }: { isSubmitting: boolean; }) {
   return (
     <>
-      <button type="submit" disabled={pending}>{pending ? 'Sending...' : 'Send'}</button>
+      <button type="submit" disabled={isSubmitting}>{isSubmitting ? 'Sending...' : 'Send'}</button>
       <ToastContainer
-        position="bottom-right"
-        autoClose={2000}
-        hideProgressBar
-        newestOnTop={false}
+        autoClose={2500}
+        newestOnTop={true}
         closeOnClick
         rtl={false}
         pauseOnFocusLoss

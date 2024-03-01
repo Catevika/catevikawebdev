@@ -3,3 +3,8 @@ export type FormValues = {
   email: string;
   message: string;
 };
+
+export type NavbarLink = {
+  title: string;
+  path: string;
+};

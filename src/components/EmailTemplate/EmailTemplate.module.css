@@ -1,0 +1,7 @@
+.email__logo {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-left: 1rem;
+  line-height: 1.5rem;
+  border-left: 3px solid var(--color-turquoise);
+}
