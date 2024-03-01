@@ -7,6 +7,7 @@
   max-width: var(--max-width);
   width: 100%;
   padding: 1rem 4rem;
+  font-weight: 300;
   background-color: var(--color-dark);
   border-bottom: 1px solid var(--color-blue-30);
   z-index: 100;
@@ -23,12 +24,23 @@
   border-left: 3px solid var(--color-turquoise);
 }
 
+@media(max-width: 930px) {
+  .navbar__container {
+    font-weight: 400;
+  }
+
+  .navbar__logo {
+    padding-right: 1rem;
+  }
+
+  .navbar__button {
+    margin-right: 1rem;
+  }
+}
+
 @media(max-width: 530px) {
   .navbar__container {
-    flex-direction: column;
-    align-items: flex-start;
-    height: 135px;
-    padding: 1rem 2rem;
+    justify-content: center;
   }
 
   .navbar__logo {

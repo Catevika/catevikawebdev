@@ -15,7 +15,7 @@ export default function Navbar() {
         <Link className={styles.navbar__logo} href={'/'}><span>Catevika&nbsp;Web&nbsp;Dev</span></Link>
       </div>
       <Links />
-      <Link className={(pathname === '/admin') ? `${styles.navbar__link__active}` : `${styles.navbar__link}`} href={'/admin'}>Admin</Link>
+      {<Link className={(pathname === '/admin') ? `${styles.navbar__link__active}` : `${styles.navbar__link}`} href={'/admin'}>Admin</Link>}
     </header>
   );
 }

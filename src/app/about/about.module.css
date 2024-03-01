@@ -8,13 +8,15 @@
 
 .about__top__image,
 .about__bottom__image {
-  width: 250px;
+  width: 210px;
   height: auto;
-  margin: 2rem 3rem;
+  margin: 0rem 7rem 2rem 2rem;
   border-radius: 80% 5% 80% 5% / 5% 80% 5% 80%;
   float: left;
   shape-outside: circle(50%);
   background-color: var(--color-dark);
+  border-top: 10px solid var(--color-blue-30);
+  border-bottom: 10px solid var(--color-blue-30);
 }
 
 .about__text {
@@ -46,12 +48,14 @@
 
 .about__middle__image {
   align-self: center;
-  width: auto;
-  height: 250px;
+  width: 210px;
+  height: auto;
   padding: 2rem 1rem;
   border-radius: 80% 5% 80% 5% / 5% 80% 5% 80%;
   background: var(--color-dark);
   background: radial-gradient(circle, var(--color-blue-30) 1%, var(--color-dark) 65%);
+  border-top: 10px solid var(--color-blue-30);
+  border-bottom: 10px solid var(--color-blue-30);
 }
 
 .about__bottom__image {
@@ -72,6 +76,12 @@
   font-size: 1.2rem;
   line-height: 1.7;
   padding: 0.5rem;
+}
+
+.about__top__container br,
+.about__bottom__container br {
+  clear: both;
+  margin-top: 2rem;
 }
 
 
