@@ -41,6 +41,7 @@
 @media(max-width: 530px) {
   .navbar__container {
     justify-content: center;
+    line-height: 1.5rem;
   }
 
   .navbar__logo {

@@ -66,8 +66,13 @@ export default function Contact() {
   return (
     <main className='container'>
       <div className={styles.contact__content}>
-        <Image className={styles.contact__image} src={'/images/email.png'} alt='' width={0}
-          height={0} sizes='50vw' priority />
+        <div className={styles.contact__content__left}>
+          <h3>Tell me about your project!</h3>
+          <div className={styles.contact__image__container}>
+            <Image className={styles.contact__image} src={'/images/email.png'} alt='' width={0}
+              height={0} sizes='50vw' priority />
+          </div>
+        </div>
         <form noValidate className={styles.contact__form} onSubmit={handleSubmit(processForm)}>
           <label aria-hidden="true" htmlFor="name__verify" className={styles.contact__form__label__hide}>
             Humans will not fill out this field

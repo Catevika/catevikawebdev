@@ -2,7 +2,6 @@ import { lato } from '@/app/font';
 import "@/app/globals.css";
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar/Navbar';
-import ThemeProvider from '@/theme/ThemeProvider';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,11 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={lato.className}>
-        <ThemeProvider>
-          <Navbar />
-          {children}
-          <Footer />
-        </ThemeProvider>
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );

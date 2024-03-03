@@ -16,7 +16,7 @@ export const EmailTemplate = (data: FormValues) => (
     </Head>
     <Body style={container}>
       <Section style={logocontainer}>
-        <Link style={logo} href='https://catevikawebdev.vercel.app/' >
+        <Link style={logo} href='https://www.catevikawebdev.com/' >
           Catevika&nbsp;Web&nbsp;Dev
         </Link>
       </Section>
