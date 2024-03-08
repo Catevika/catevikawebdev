@@ -1,7 +1,8 @@
-import { Lato } from 'next/font/google';
+import { Oxygen } from 'next/font/google';
 
-export const lato = Lato({
+export const oxygen = Oxygen({
   subsets: [ 'latin' ],
   display: 'swap',
-  weight: [ '100', '300', '400', '700' ],
+  weight: [ '300', '400', '700' ],
+  fallback: [ 'sans-serif' ]
 });

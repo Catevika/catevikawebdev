@@ -68,28 +68,28 @@ export default function Contact() {
       <div className={styles.contact__content}>
         <div className={styles.contact__content__left}>
           <h3>Tell me about your project!</h3>
-          <div className={styles.contact__image__container}>
-            <Image className={styles.contact__image} src={'/images/email.png'} alt='' width={0}
+          <div className='image__container'>
+            <Image className='image' src={'/images/email.png'} alt='' width={0}
               height={0} sizes='50vw' priority />
           </div>
         </div>
-        <form noValidate className={styles.contact__form} onSubmit={handleSubmit(processForm)}>
-          <label aria-hidden="true" htmlFor="name__verify" className={styles.contact__form__label__hide}>
+        <form noValidate className='form' onSubmit={handleSubmit(processForm)}>
+          <label aria-hidden="true" htmlFor="name__verify" className='form__label__hide'>
             Humans will not fill out this field
             <input type="text" id="name__verify" name='name__verify' aria-hidden="true" autoComplete='off' onChange={(e) => setHoneypot(e.target.value)} value={honeypot} />
           </label>
-          <div className={styles.contact__form__visible}>
-            <div className={styles.contact__form__group}>
-              <label className={styles.contact__form__label} htmlFor="name">Name {errors.name ? <span role="alert" className={styles.contact__form__error} >{errors.name.message}</span> : null}</label>
-              <input aria-invalid={errors.name ? "true" : "false"} className={styles.contact__form__input} type="text" id="name" placeholder="Jane Smith" autoComplete='name' {...register('name', { required: 'Enter your name' })} />
+          <div className='form__visible'>
+            <div className='form__group'>
+              <label className='form__label' htmlFor="name">Name {errors.name ? <span role="alert" className={styles.contact__form__error} >{errors.name.message}</span> : null}</label>
+              <input aria-invalid={errors.name ? "true" : "false"} className='form__input' type="text" id="name" placeholder="Jane Smith" autoComplete='name' {...register('name', { required: 'Enter your name' })} />
             </div>
-            <div className={styles.contact__form__group}>
-              <label className={styles.contact__form__label} htmlFor="email">Email {errors.email ? <span role="alert" className={styles.contact__form__error} >{errors.email.message}</span> : null}</label>
-              <input aria-invalid={errors.email ? "true" : "false"} className={styles.contact__form__input} type="text" id="email" placeholder="jane.smith@example.com" autoComplete='email' {...register('email', { required: 'Enter a valid email address', pattern: { value: /^\S+@\S+$/i, message: 'Enter a valid email address' } })} />
+            <div className='form__group'>
+              <label className='form__label' htmlFor="email">Email {errors.email ? <span role="alert" className={styles.contact__form__error} >{errors.email.message}</span> : null}</label>
+              <input aria-invalid={errors.email ? "true" : "false"} className='form__input' type="text" id="email" placeholder="jane.smith@example.com" autoComplete='email' {...register('email', { required: 'Enter a valid email address', pattern: { value: /^\S+@\S+$/i, message: 'Enter a valid email address' } })} />
             </div>
-            <div className={styles.contact__form__group}>
-              <label className={styles.contact__form__label} htmlFor="message">Message {errors.message ? <span role="alert" className={styles.contact__form__error} >{errors.message.message}</span> : null}</label>
-              <textarea aria-invalid={errors.message ? "true" : "false"} className={styles.contact__form__textarea} id="message" placeholder="Tell me about your project!" rows={5} {...register('message', { required: 'Enter a message' })} />
+            <div className='form__group'>
+              <label className='form__label' htmlFor="message">Message {errors.message ? <span role="alert" className={styles.contact__form__error} >{errors.message.message}</span> : null}</label>
+              <textarea aria-invalid={errors.message ? "true" : "false"} className='form__textarea' id="message" placeholder="Tell me about your project!" rows={5} {...register('message', { required: 'Enter a message' })} />
             </div>
             <SendButton isSubmitting={isSubmitting} />
           </div>

@@ -41,34 +41,6 @@
   text-align: center;
 }
 
-@media(prefers-color-scheme: dark) {
-  .footer__icon__email__light {
-    display: none;
-  }
-
-  .footer__icon__facebook__light {
-    display: none;
-  }
-
-  .footer__icon__x__light {
-    display: none;
-  }
-}
-
-@media(prefers-color-scheme: light) {
-  .footer__icon__email__dark {
-    display: none;
-  }
-
-  .footer__icon__facebook__dark {
-    display: none;
-  }
-
-  .footer__icon__x__dark {
-    display: none;
-  }
-}
-
 @media(max-width: 950px) {
   .footer__container {
     margin-bottom: 65px;

@@ -24,6 +24,22 @@
   border-left: 3px solid var(--color-turquoise);
 }
 
+.navbar__toggles {
+  display: flex;
+}
+
+.navbar__language {
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-turquoise);
+}
+
+.navbar__link__admin {
+  display: none;
+}
+
 @media(max-width: 930px) {
   .navbar__container {
     font-weight: 400;
@@ -42,9 +58,17 @@
   .navbar__container {
     justify-content: center;
     line-height: 1.5rem;
+    padding: 0.4rem 0;
   }
 
   .navbar__logo {
     margin-bottom: 1rem;
+    padding-right: 0.4rem;
+  }
+
+  .navbar__logo span {
+    font-size: 1.7rem;
+    padding: 0.4rem;
+    border: none;
   }
 }

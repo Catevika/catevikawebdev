@@ -36,7 +36,7 @@ export const EmailTemplate = (data: FormValues) => (
 );
 
 const main = {
-  fontFamily: "lato, sans-serif",
+  fontFamily: "oxygen, sans-serif",
   fontSize: "14px",
   fontWeight: "400",
 };
@@ -50,7 +50,7 @@ const logocontainer = {
 const logo = {
   color: "#f2f2f2",
   fontSize: '2rem',
-  fontWeight: '600',
+  fontWeight: '700',
   marginLeft: '2rem',
   paddingLeft: '1rem',
   lineHeight: '1.5rem',
@@ -69,7 +69,7 @@ const textwhite = {
 
 const bold = {
   fontSize: "14px",
-  fontWeight: "600",
+  fontWeight: "700",
   color: "#000529",
 };
 

@@ -1,9 +1,14 @@
+.navbar__links__container {
+  display: flex;
+  justify-content: center;
+}
+
 .navbar__links {
-  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  padding-left: 0;
 }
 
 .navbar__link:hover,
@@ -11,61 +16,6 @@
 .navbar__link__active {
   color: var(--color-turquoise);
 }
-
-/* .navbar__button {
-  display: none;
-} */
-
-/* .navbar__links__mobile {
-  display: none;
-} */
-
-/* @media(max-width: 950px) {
-  .navbar__links {
-    display: none;
-  }
-
-  .navbar__button {
-    display: block;
-    margin: 1rem;
-  }
-
-  .navbar__icon {
-    width: 32px;
-    height: 32px;
-  }
-
-  .navbar__icon svg {
-    fill: var(--color-dark);
-  }
-
-  .navbar__icon svg:hover,
-  .navbar__icon svg:focus-within {
-    fill: var(--color-gold);
-  }
-
-  .navbar__links__mobile {
-    position: absolute;
-    top: 92.6px;
-    right: 0;
-    width: 50%;
-    height: calc(100vh - 92.6px);
-    background-color: var(--color-dark);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2rem;
-    padding: 4rem 2rem;
-  }
-} */
-
-/* @media(max-width: 530px) {
-  .navbar__links__mobile {
-    top: 104px;
-    height: calc(100vh - 104px);
-  }
-} */
 
 @media(max-width: 950px) {
   .navbar__links {

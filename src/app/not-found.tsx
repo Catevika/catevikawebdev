@@ -1,4 +1,4 @@
-import { lato } from '@/app/font';
+import { oxygen } from '@/app/font';
 import styles from "@/app/page.module.css";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -12,7 +12,7 @@ export default function notFound() {
         }} priority />
         <div className={styles.not__found}>
           <p>404 - Page not found</p>
-          <h3 className={lato.className}>Tell me about your next project to light my day!</h3>
+          <h3 className={oxygen.className}>Tell me about your next project to light my day!</h3>
           <Link className={styles.not__found__link} href="/contact">Go to Contact</Link>
         </div>
       </div>
