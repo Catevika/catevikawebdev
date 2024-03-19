@@ -1,5 +1,4 @@
 import styles from '@/app/[locale]/about/about.module.css';
-// import { seahorseDetailList } from '@/data/seahorse';
 import { useTranslations } from 'next-intl';
 
 export default function SeahorseDetailList() {
