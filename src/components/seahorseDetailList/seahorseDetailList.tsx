@@ -1,14 +1,16 @@
-import styles from '@/app/about/about.module.css';
-import { seahorseDetailList } from '@/data/seahorse';
+import styles from '@/app/[locale]/about/about.module.css';
+// import { seahorseDetailList } from '@/data/seahorse';
+import { useTranslations } from 'next-intl';
 
-function SeahorseDetailList() {
+export default function SeahorseDetailList() {
+  const t = useTranslations('SeahorseDetailList');
+  const keys = [ 'id-1', 'id-2', 'id-3', 'id-4', 'id-5' ] as const;
+
   return (
     <>
-      {seahorseDetailList ? seahorseDetailList.map((seahorseDetail) => (
-        <details className={styles.about__details} key={seahorseDetail.summary}><summary>{seahorseDetail.summary} <span className='note'>learn more</span></summary><p className='note'>{seahorseDetail.text}</p></details>
+      {keys ? keys.map((key) => (
+        <details className={styles.about__details} key={key}><summary>{t(`${key}.summary`)}<span className='note'>{t('LearnMore')}</span></summary><p className='note'>{t(`${key}.text`)}</p></details>
       )) : null}
     </>
   );
 }
-
-export default SeahorseDetailList;

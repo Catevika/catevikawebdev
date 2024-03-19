@@ -1,8 +1,11 @@
 import styles from '@/components/Footer/footer.module.css';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
+  const t = useTranslations('FooterTexts');
+
   return (
     <div className={styles.footer__container}>
       <div className={styles.footer__content__top}>
@@ -26,9 +29,11 @@ export default function Footer() {
       </div>
       <div className={styles.footer__content__bottom}>
         <q>
-          <span>You can&apos;t wait until life isn&apos;t hard anymore before you&nbsp;decide&nbsp;to&nbsp;be&nbsp;happy.</span>
+          <span>{t.rich('quote', {
+            span: (chuncks) => <span>{chuncks}</span>
+          })}</span>
         </q>
-        <p>Jane Marczewski alias &lsquo;Nightbirde&lsquo;</p>
+        <p>{t('text1')}</p>
         <p>© Catevika Web Dev 2024</p>
       </div>
     </div>

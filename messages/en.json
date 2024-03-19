@@ -1,0 +1,188 @@
+{
+  "title": "Catevika Web Dev",
+  "description": "Your custom website quote in just a few clicks! Catevika, a web developer based in Paris, France, takes care of everything, from design to launch. Everything's under control, and the world is yours, with no limits!",
+  "NotFoundPage": {
+    "text": "Ooops! It seems that you've stumbled upon a page that doesn't exist.",
+    "link": "Go back to Home page"
+  },
+  "NavItems": {
+    "id-1": {
+      "title": "Services",
+      "path": "/services"
+    },
+    "id-2": {
+      "title": "Contact",
+      "path": "/contact"
+    },
+    "id-3": {
+      "title": "About",
+      "path": "/about"
+    },
+    "id-4": {
+      "title": "Blog",
+      "path": "/blog"
+    }
+  },
+  "FooterTexts": {
+    "quote": "<span>You can't wait until life isn't hard anymore before you decide to be happy.</span>",
+    "text1": "Jane Marczewski aka 'Nightbirde'"
+  },
+  "HomePage": {
+    "title": "Your tailor-made website in just a few clicks!",
+    "link": "Learn more"
+  },
+  "AboutPage": {
+    "alt1": "Profile image",
+    "welcome": "Welcome!",
+    "aboutMe": "My name is <span>Dominique Bello</span> and I'm <span>French</span>. I live and work in <span>Paris</span>. Since I got married <span>Italy</span> has been my adopted country.",
+    "aboutMe2": "I've been a dedicated <span>frontend web developer</span> for <span>4 years</span>. I make <span>websites</span> to reflect the <span>unique personality</span> of my <span>customers' brands</span>.",
+    "aboutMe3": "As a <span>project manager</span> in <span>FMCG marketing</span>, I've always enjoyed <span>continuous learning</span> and <span>problem-solving</span>. For over 15 years, I worked with <span>international teams of developers</span> to launch <span>online surveys</span>, whether <span>B&B</span> or <span>BtoC</span>. About 4 years ago, I decided to broaden my horizons and <span>trained as a self-taught web developer</span>.",
+    "aboutMe4": "<span>Today, I can finally reconcile my passion for web development with my professional goals</span>.",
+    "languages": "In addition to <span>French, my mother tongue</span>, I also speak <span>English</span> and <span>Italian</span>. I particularly used English in my previous experiences, and almost every day since to acquire new skills in web development.",
+    "name": "Where does the pseudonym 'Catevika' come from?",
+    "cattivik": "Ever heard of <span>Cattivik</span>, a mischievous character from an old <span>Italian comic strip</span>?",
+    "catevik": "Well, thanks to a facetious typo, my husband's pseudonym became <span>Catevik</span>.",
+    "catevika": "As his wife, I did'nt looked any further for mine!",
+    "catevika2": "And so <span>Catevika</span> was born.",
+    "alt2": "Character called Cattivik",
+    "seahorseSymbol": "What about the steampunk* seahorse symbol?",
+    "alt3": "Drawing of a colorful seahorse",
+    "seahorse": "The seahorse is often associated with:",
+    "hippocampus": "The hippocampus is also a brain structure that plays a central role in cognition, memory, learning and spatial orientation. Its characteristic curved shape has been associated with the seahorse-monster of Greek mythology.",
+    "note": "* A design style that combines historical elements with anachronistic technological features inspired by science fiction. I'm a die-hard fan of this explosive style!"
+  },
+  "SeahorseDetailList": {
+    "LearnMore": "Learn more",
+    "id-1": {
+      "summary": "Loyalty",
+      "text": "Seahorses are known for their monogamous mating habits and span pair bonds, which has made them a symbol of loyalty and commitment."
+    },
+    "id-2": {
+      "summary": "Patience",
+      "text": "Seahorses are slow-moving creatures and take their time to get where they are going. This has made them a symbol of patience and perseverance."
+    },
+    "id-3": {
+      "summary": "Strength",
+      "text": "Seahorses have an amazing ability to navigate through the ocean current and survive in harsh conditions. This has made them a symbol of strength and resilience."
+    },
+    "id-4": {
+      "summary": "Creativity",
+      "text": "Seahorses have a unique shape that makes them very recognizable. This has made them a symbol of creativity and uniqueness."
+    },
+    "id-5": {
+      "summary": "Balance",
+      "text": "Seahorses have a long snout and a curved body that gives them an unusual balance. This has made them a symbol of balance and harmony."
+    }
+  },
+  "ServiceBanner": {
+    "text1": "Introductory Rates",
+    "text2": "for First",
+    "text3": "New Clients"
+  },
+  "Services": {
+    "title1": "Ready to launch your online presence?",
+    "link": "Request a website quote now!",
+    "alt": "Website Landing page example",
+    "title2": "Why choose Catevika Web Dev?"
+  },
+  "ServiceList": {
+    "id-1": {
+      "alt1": "Star icon",
+      "alt2": "Rocket launch icon",
+      "title": "I create your showcase site",
+      "text1": "Let me design a stunning website that perfectly reflects your brands identity and story",
+      "text2": "Attract your ideal audience and stand out in the online world"
+    },
+    "id-2": {
+      "alt1": "Star icon",
+      "alt2": "Rocket launch icon",
+      "title": "I create your service site",
+      "text1": "Let me simplify your business with a dedicated site for your services",
+      "text2": "Streamline customer contacts, showcase your expertise and increase conversions"
+    },
+    "id-3": {
+      "alt1": "Star icon",
+      "alt2": "Rocket launch icon",
+      "title": "I take care of your sites makeover",
+      "text1": "Let me ensure your existing sites are compatible with the latest technologies for optimal performance and user experience",
+      "text2": "Breathe new life into your outdated website"
+    },
+    "id-4": {
+      "alt1": "Star icon",
+      "alt2": "Rocket launch icon",
+      "title": "I offer scalable Solutions",
+      "text1": "Let me optimize your React front-end to ensure your websites perform flawlessly, even under heavy load",
+      "text2": "Handle high-volume traffic with confidence"
+    },
+    "id-5": {
+      "alt1": "Star icon",
+      "alt2": "Rocket launch icon",
+      "title": "I boost your efficiency",
+      "text1": "Let me free up your time by outsourcing some of your React tasks to me",
+      "text2": "Focus on your core strengths while I ensure a robust and efficient front-end"
+    },
+    "id-6": {
+      "alt1": "Star icon",
+      "alt2": "Rocket launch icon",
+      "title": "Long-Term Support",
+      "text1": "Let me keep your React front-end websites secure and up to date, so they're always up and running",
+      "text2": "Choose the maintenance and support package tailored to your needs"
+    }
+  },
+  "ServiceReasonList": {
+    "id-1": {
+      "alt": "Star icon",
+      "title": "Genuine commitment",
+      "text": "As a self-taught developer, I approach each project from a unique point of view that adapts in every way to your requirements"
+    },
+    "id-2": {
+      "alt": "Star icon",
+      "title": "React Expertise",
+      "text": "I leverage the power of React to create stunning and user-friendly websites that engage and convert"
+    },
+    "id-3": {
+      "alt": "Star icon",
+      "title": "Customer focus",
+      "text": "I partner with you to understand your vision and translate it into a website that exceeds expectations"
+    },
+    "id-4": {
+      "alt": "Star icon",
+      "title": "Pixel-Perfect Craftsmanship",
+      "text": "every element, from design to code, is carefully crafted with meticulous attention to detail"
+    },
+    "id-5": {
+      "alt": "Star icon",
+      "title": "Full cooperation",
+      "text": "open communication and collaboration are at the heart of every project"
+    },
+    "id-6": {
+      "alt": "Star icon",
+      "title": "Multilingual Magic",
+      "text": "speak French or Italian? No problem! I can also communicate and collaborate seamlessly in both languages"
+    },
+    "id-7": {
+      "alt": "Star icon",
+      "title": "Continuous Learning",
+      "text": "the digital world is ever-evolving, and I stay ahead of the curve to offer the best solutions"
+    }
+  },
+  "Contact": {
+    "title": "Tell me about your project!",
+    "label1": "Name",
+    "error1": "Enter your name",
+    "label2": "Email",
+    "error2": "Enter a valid email address",
+    "label3": "Message",
+    "placeholder": "Tell me about your project!",
+    "error3": "Enter a message",
+    "toastSuccess": "Email sent successfully",
+    "toastError": "Email not sent. Please retry"
+  },
+  "SendButton": {
+    "Sending": "Sending...",
+    "Send": "Send"
+  },
+  "Error": {
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
+  }
+}

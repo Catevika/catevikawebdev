@@ -1,3 +1,19 @@
+export const locales = [ 'en', 'fr' ] as const;
+export type Locale = typeof locales[ number ];
+
+export type Props = {
+  params: {
+    locale: 'en' | 'fr';
+  };
+};
+
+export type LayoutProps = {
+  children: React.ReactNode;
+  params: {
+    locale: 'en' | 'fr';
+  };
+};
+
 export type FormValues = {
   name: string;
   email: string;

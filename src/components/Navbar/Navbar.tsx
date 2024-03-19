@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <header className={styles.navbar__container}>
       <div className={oxygen.className}>
-        <Link className={styles.navbar__logo} href={'/'}><span>Catevika&nbsp;Web&nbsp;Dev</span></Link>
+        <span><Link className={styles.navbar__logo} href={'/'}>Catevika&nbsp;Web&nbsp;Dev</Link></span>
       </div>
       <Links />
       <div className={styles.navbar__toggles}>

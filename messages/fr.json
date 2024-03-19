@@ -1,0 +1,188 @@
+{
+  "title": "Catevika Web Dev",
+  "description": "Votre devis de site web personnalisé en quelques clics ! Catevika, développeur web basé à Paris, France, s'occupe de tout, de la conception au lancement. Tout est sous contrôle, et le monde est à vous, sans limite !",
+  "NotFoundPage": {
+    "text": "Oups ! Il semble que vous soyez tombé sur une page qui n'existe pas.",
+    "link": "Retour à la page d'accueil"
+  },
+  "NavItems": {
+    "id-1": {
+      "title": "Services",
+      "path": "/services"
+    },
+    "id-2": {
+      "title": "Contact",
+      "path": "/contact"
+    },
+    "id-3": {
+      "title": "A propos",
+      "path": "/apropos"
+    },
+    "id-4": {
+      "title": "Blog",
+      "path": "/blog"
+    }
+  },
+  "FooterTexts": {
+    "quote": "<span>Il ne faut pas attendre que la vie ne soit plus éprouvante pour décider d'être heureux.</span>",
+    "text1": "Jane Marczewski alias 'Nightbirde'"
+  },
+  "HomePage": {
+    "title": "Votre site Web sur mesure en quelques clicks!",
+    "link": "Plus d'informations"
+  },
+  "AboutPage": {
+    "alt1": "Image de profil",
+    "welcome": "Bienvenue!",
+    "aboutMe": "Je m'appelle <span>Dominique Bello</span> et je suis <span>française</span>. Je vis et travaille à <span>Paris</span>. Depuis mon mariage, l' <span>Italie</span> est mon pays d'adoption.",
+    "aboutMe2": "Je suis <span>développeuse web frontend</span> depuis <span>4 ans</span>. Je crée des <span>sites web</span> qui reflètent la <span>personnalité unique des marques</span> de <span>mes clients</span>.",
+    "aboutMe3": "En tant que <span>chef de projet</span> dans le domaine du <span>marketing des produits de grande consommation</span>, j'ai toujours aimé <span>apprendre en continu</span> et <span>résoudre des problèmes</span>. Pendant plus de 15 ans, j'ai travaillé avec des <span>équipes internationales de développeurs</span> pour lancer des <span>enquêtes en ligne</span>, qu'elles soient de type <span>B&B</span> ou <span>BtoC</span>. Il y a environ 4 ans, j'ai décidé d'élargir mon horizon et je me suis <span>formée en autodidacte au développement web</span>.",
+    "aboutMe4": "<span>Aujourd'hui, je peux enfin concilier ma passion pour le développement Web et mes objectifs professionnels.</span>",
+    "languages": "En plus du <span>français, ma langue maternelle</span>, je parle également <span>anglais</span> et <span>italien</span>. J'ai particulièrement utilisé l'anglais dans mes expériences précédentes, ainsi que presque tous les jours depuis pour acquérir de nouvelles compétences en matière de développement web.",
+    "name": "D'où provient le pseudonyme 'Catevika'?",
+    "cattivik": "Avez-vous déjà entendu parler de <span>Cattivik</span>, personnage espiègle d'une <span>vieille bande dessinée italienne</span> ?",
+    "catevik": "Eh bien, grâce à une coquille facétieuse, le pseudonyme de mon mari est devenu <span>Catevik</span>.",
+    "catevika": "En tant qu'épouse, je n'ai pas cherché le mien plus loin !",
+    "catevika2": "C'est ainsi que <span>Catevika</span> est née.",
+    "alt2": "Personnage appelé Cattivik",
+    "seahorseSymbol": "Qu'en est-il du symbole de l'hippocampe steampunk* ?",
+    "alt3": "Dessin d'un hippocampe coloré",
+    "seahorse": "L'hippocampe est souvent associé à:",
+    "hippocampus": "L'hippocampe est également une structure cérébrale qui joue un rôle central dans la cognition, la mémoire, l'apprentissage et l'orientation spatiale. Sa forme courbe caractéristique a été associée à celle de l'hippocampe-monstre de la mythologie grecque.",
+    "note": "* Un style de design qui combine des éléments historiques avec des caractéristiques technologiques anachroniques inspirées de la science-fiction. Je suis une fan invétérée de ce style détonnant !"
+  },
+  "SeahorseDetailList": {
+    "LearnMore": "Plus d'informations",
+    "id-1": {
+      "summary": "Loyauté",
+      "text": "Les hippocampes sont connus pour leurs habitudes d'accouplement monogame et les liens qui les unissent, ce qui en a fait un symbole de loyauté et d'engagement."
+    },
+    "id-2": {
+      "summary": "Patience",
+      "text": "Les hippocampes sont des créatures qui se déplacent lentement et qui prennent leur temps pour arriver à destination. Cela en a fait un symbole de patience et de persévérance."
+    },
+    "id-3": {
+      "summary": "Force",
+      "text": "Les hippocampes ont une capacité étonnante à naviguer dans les courants marins et à survivre dans des conditions difficiles. Ils sont ainsi devenus un symbole de force et de résilience."
+    },
+    "id-4": {
+      "summary": "Créativité",
+      "text": "Les hippocampes ont une forme unique qui les rend très reconnaissables. Cela en a fait un symbole de créativité et d'unicité."
+    },
+    "id-5": {
+      "summary": "Equilibre",
+      "text": "Les hippocampes ont un long museau et un corps courbé qui leur confère un équilibre inhabituel. Cela en fait un symbole d'équilibre et d'harmonie."
+    }
+  },
+  "ServiceBanner": {
+    "text1": "Tarifs de lancement",
+    "text2": "pour les premiers",
+    "text3": "nouveaux clients"
+  },
+  "Services": {
+    "title1": "Prêt à lancer votre présence en ligne ?",
+    "link": "Demandez un devis pour votre site web maintenant !",
+    "alt": "Example de page d'accueil d'un site web",
+    "title2": "Pourquoi choisir Catevika Web Dev ?"
+  },
+  "ServiceList": {
+    "id-1": {
+      "alt1": "Icone étoile",
+      "alt2": "Icone lancement de fuseée",
+      "title": "Je crée votre site vitrine",
+      "text1": "Laissez-moi concevoir un site web époustouflant qui reflète parfaitement l'identité et l'histoire de vos marques",
+      "text2": "Attirez votre public idéal et différenciez-vous sur Internet"
+    },
+    "id-2": {
+      "alt1": "Icone étoile",
+      "alt2": "Icone lancement de fuseée",
+      "title": "Je crée votre site de services",
+      "text1": "Laissez-moi simplifier votre activité avec un site dédié à vos services",
+      "text2": "Rationalisez les contacts avec vos clients, mettez en avant votre expertise et augmentez les conversions"
+    },
+    "id-3": {
+      "alt1": "Icone étoile",
+      "alt2": "Icone lancement de fuseée",
+      "title": "Je m'occupe de la refonte de vos sites",
+      "text1": "Je m'assure que vos sites existants soient compatibles avec les dernières technologies pour une performance et une expérience utilisateur optimales",
+      "text2": "Redonnez vie à vos sites web obsolètes"
+    },
+    "id-4": {
+      "alt1": "Icone étoile",
+      "alt2": "Icone lancement de fuseée",
+      "title": "Je propose des solutions évolutives",
+      "text1": "Laissez-moi optimiser votre front-end React pour que vos sites web fonctionnent parfaitement, même en cas de forte affluence",
+      "text2": "Gérez un trafic important en toute confiance"
+    },
+    "id-5": {
+      "alt1": "Icone étoile",
+      "alt2": "Icone lancement de fuseée",
+      "title": "J'augmente votre efficacité",
+      "text1": "Laissez-moi vous libérer du temps en me confiant certaines de vos tâches React",
+      "text2": "Concentrez-vous sur vos points forts pendant que je veille à ce que votre front-end soit robuste et efficace"
+    },
+    "id-6": {
+      "alt1": "Icone étoile",
+      "alt2": "Icone lancement de fuseée",
+      "title": "Je procure une assistance à long terme",
+      "text1": "Laissez-moi garder vos sites web front-end React sécurisés et à jour pour qu'ils soient toujours opérationnels et performants",
+      "text2": "Choisissez la formule de maintenance et d'assistance adaptée à vos besoins"
+    }
+  },
+  "ServiceReasonList": {
+    "id-1": {
+      "alt": "Icone étoile",
+      "title": "Réelle implication",
+      "text": "En tant que développeur autodidacte, j'aborde chaque projet d'un point de vue unique qui s'adapte en tous points à vos exigences"
+    },
+    "id-2": {
+      "alt": "Icone étoile",
+      "title": "Expertise React",
+      "text": "Je m'appuie sur la puissance de React pour créer des sites web impressionnants et conviviaux, qui engagent et convertissent"
+    },
+    "id-3": {
+      "alt": "Icone étoile",
+      "title": "Prise en compte du client",
+      "text": "Je m'associe à vous pour comprendre votre vision et la traduire en un site web qui dépasse vos attentes"
+    },
+    "id-4": {
+      "alt": "Icone étoile",
+      "title": "Conception parfaite au pixel près",
+      "text": "Chaque élément, du design au codage, est soigneusement conçu avec un sens méticuleux du détail"
+    },
+    "id-5": {
+      "alt": "Icone étoile",
+      "title": "Collaboration pleine et entière",
+      "text": "La communication ouverte et la collaboration sont au cœur de chaque projet"
+    },
+    "id-6": {
+      "alt": "Icone étoile",
+      "title": "Magie du multilinguisme",
+      "text": "Vous parlez anglais ou italien ? Pas de problème ! Je peux également communiquer et collaborer sans problème dans les deux langues"
+    },
+    "id-7": {
+      "alt": "Icone étoile",
+      "title": "Formation continue",
+      "text": "Le monde numérique est en constante évolution, et je reste à l'avant-garde pour offrir les meilleures solutions"
+    }
+  },
+  "Contact": {
+    "title": "Parlez-moi de votre projet!",
+    "label1": "Nom",
+    "error1": "Saisissez votre nom",
+    "label2": "Email",
+    "error2": "Saisissez un email valide",
+    "label3": "Message",
+    "placeholder": "Parlez-moi de votre projet!",
+    "error3": "Saisissez votre message",
+    "toastSuccess": "Email envoyé avec succès",
+    "toastError": "Email non envoyé. Veuillez réessayer"
+  },
+  "SendButton": {
+    "Sending": "Envoi...",
+    "Send": "Envoyer"
+  },
+  "Error": {
+    "description": "<p>Nous avons malheureusement rencontré une erreur.</p><p>Vous pouvez essayer de <retry>recharger la page</retry> que vous visitiez.</p>"
+  }
+}

@@ -1,6 +1,6 @@
 'use client';
 
-import "@/app/globals.css";
+import "@/app/[locale]/globals.css";
 import { ThemeProvider } from 'next-themes';
 
 export function Providers({
