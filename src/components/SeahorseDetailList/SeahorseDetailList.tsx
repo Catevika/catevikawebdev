@@ -8,7 +8,17 @@ export default function SeahorseDetailList() {
   return (
     <>
       {keys ? keys.map((key) => (
-        <details className={styles.about__details} key={key}><summary>{t(`${key}.summary`)}<span className='note'>{t('LearnMore')}</span></summary><p className='note'>{t(`${key}.text`)}</p></details>
+        <details className={styles.about__details} key={key}>
+          <summary>
+            {t(`${key}.summary`)}
+            <span className='note'>
+              {t(`${'LearnMore'}`)}
+            </span>
+          </summary>
+          <p className='note'>
+            {t(`${key}.text`)}
+          </p>
+        </details>
       )) : null}
     </>
   );

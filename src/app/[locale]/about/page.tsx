@@ -12,7 +12,6 @@ export default function About({ params: { locale } }: Props) {
 
   return (
     <>
-      <h3></h3>
       <section className={styles.about__top__container}>
         <Image className={styles.about__top__image} src={'/images/Profile.png'} alt={t('alt1')} height={250} width={250} priority />
 

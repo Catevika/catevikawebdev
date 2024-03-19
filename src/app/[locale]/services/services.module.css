@@ -130,14 +130,11 @@
   cursor: pointer;
 }
 
-.services__card summary:hover {
+.services__card summary:hover,
+.services__card summary:focus-within {
   color: var(--color-turquoise);
   background: var(--color-dark);
   border: 1px solid var(--color-turquoise);
-}
-
-.services__card summary:focus {
-  outline: var(--color-turquoise);
 }
 
 .services__card p {

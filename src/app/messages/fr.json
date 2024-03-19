@@ -23,12 +23,22 @@
       "path": "/blog"
     }
   },
+  "Theme": {
+    "setLight": "Sélectionner le thème clair",
+    "setDark": "Sélectionner le thème sombre",
+    "alt1": "Icône Soleil",
+    "alt2": "Icône Lune"
+  },
+  "Language": {
+    "label": "Alterner entre le français et l'anglais",
+    "alt": "Icône Langues"
+  },
   "FooterTexts": {
     "quote": "<span>Il ne faut pas attendre que la vie ne soit plus éprouvante pour décider d'être heureux.</span>",
     "text1": "Jane Marczewski alias 'Nightbirde'"
   },
   "HomePage": {
-    "title": "Votre site Web sur mesure en quelques clicks!",
+    "title": "Votre site web sur mesure en quelques clicks!",
     "link": "Plus d'informations"
   },
   "AboutPage": {
@@ -37,7 +47,7 @@
     "aboutMe": "Je m'appelle <span>Dominique Bello</span> et je suis <span>française</span>. Je vis et travaille à <span>Paris</span>. Depuis mon mariage, l' <span>Italie</span> est mon pays d'adoption.",
     "aboutMe2": "Je suis <span>développeuse web frontend</span> depuis <span>4 ans</span>. Je crée des <span>sites web</span> qui reflètent la <span>personnalité unique des marques</span> de <span>mes clients</span>.",
     "aboutMe3": "En tant que <span>chef de projet</span> dans le domaine du <span>marketing des produits de grande consommation</span>, j'ai toujours aimé <span>apprendre en continu</span> et <span>résoudre des problèmes</span>. Pendant plus de 15 ans, j'ai travaillé avec des <span>équipes internationales de développeurs</span> pour lancer des <span>enquêtes en ligne</span>, qu'elles soient de type <span>B&B</span> ou <span>BtoC</span>. Il y a environ 4 ans, j'ai décidé d'élargir mon horizon et je me suis <span>formée en autodidacte au développement web</span>.",
-    "aboutMe4": "<span>Aujourd'hui, je peux enfin concilier ma passion pour le développement Web et mes objectifs professionnels.</span>",
+    "aboutMe4": "<span>Aujourd'hui, je peux enfin concilier ma passion pour le développement web et mes objectifs professionnels.</span>",
     "languages": "En plus du <span>français, ma langue maternelle</span>, je parle également <span>anglais</span> et <span>italien</span>. J'ai particulièrement utilisé l'anglais dans mes expériences précédentes, ainsi que presque tous les jours depuis pour acquérir de nouvelles compétences en matière de développement web.",
     "name": "D'où provient le pseudonyme 'Catevika'?",
     "cattivik": "Avez-vous déjà entendu parler de <span>Cattivik</span>, personnage espiègle d'une <span>vieille bande dessinée italienne</span> ?",
@@ -87,43 +97,43 @@
   },
   "ServiceList": {
     "id-1": {
-      "alt1": "Icone étoile",
-      "alt2": "Icone lancement de fuseée",
+      "alt1": "Icône étoile",
+      "alt2": "Icône lancement de fuseée",
       "title": "Je crée votre site vitrine",
       "text1": "Laissez-moi concevoir un site web époustouflant qui reflète parfaitement l'identité et l'histoire de vos marques",
       "text2": "Attirez votre public idéal et différenciez-vous sur Internet"
     },
     "id-2": {
-      "alt1": "Icone étoile",
-      "alt2": "Icone lancement de fuseée",
+      "alt1": "Icône étoile",
+      "alt2": "Icône lancement de fuseée",
       "title": "Je crée votre site de services",
       "text1": "Laissez-moi simplifier votre activité avec un site dédié à vos services",
       "text2": "Rationalisez les contacts avec vos clients, mettez en avant votre expertise et augmentez les conversions"
     },
     "id-3": {
-      "alt1": "Icone étoile",
-      "alt2": "Icone lancement de fuseée",
+      "alt1": "Icône étoile",
+      "alt2": "Icône lancement de fuseée",
       "title": "Je m'occupe de la refonte de vos sites",
       "text1": "Je m'assure que vos sites existants soient compatibles avec les dernières technologies pour une performance et une expérience utilisateur optimales",
       "text2": "Redonnez vie à vos sites web obsolètes"
     },
     "id-4": {
-      "alt1": "Icone étoile",
-      "alt2": "Icone lancement de fuseée",
+      "alt1": "Icône étoile",
+      "alt2": "Icône lancement de fuseée",
       "title": "Je propose des solutions évolutives",
       "text1": "Laissez-moi optimiser votre front-end React pour que vos sites web fonctionnent parfaitement, même en cas de forte affluence",
       "text2": "Gérez un trafic important en toute confiance"
     },
     "id-5": {
-      "alt1": "Icone étoile",
-      "alt2": "Icone lancement de fuseée",
+      "alt1": "Icône étoile",
+      "alt2": "Icône lancement de fuseée",
       "title": "J'augmente votre efficacité",
       "text1": "Laissez-moi vous libérer du temps en me confiant certaines de vos tâches React",
       "text2": "Concentrez-vous sur vos points forts pendant que je veille à ce que votre front-end soit robuste et efficace"
     },
     "id-6": {
-      "alt1": "Icone étoile",
-      "alt2": "Icone lancement de fuseée",
+      "alt1": "Icône étoile",
+      "alt2": "Icône lancement de fuseée",
       "title": "Je procure une assistance à long terme",
       "text1": "Laissez-moi garder vos sites web front-end React sécurisés et à jour pour qu'ils soient toujours opérationnels et performants",
       "text2": "Choisissez la formule de maintenance et d'assistance adaptée à vos besoins"
@@ -131,37 +141,37 @@
   },
   "ServiceReasonList": {
     "id-1": {
-      "alt": "Icone étoile",
+      "alt": "Icône étoile",
       "title": "Réelle implication",
       "text": "En tant que développeur autodidacte, j'aborde chaque projet d'un point de vue unique qui s'adapte en tous points à vos exigences"
     },
     "id-2": {
-      "alt": "Icone étoile",
+      "alt": "Icône étoile",
       "title": "Expertise React",
       "text": "Je m'appuie sur la puissance de React pour créer des sites web impressionnants et conviviaux, qui engagent et convertissent"
     },
     "id-3": {
-      "alt": "Icone étoile",
+      "alt": "Icône étoile",
       "title": "Prise en compte du client",
       "text": "Je m'associe à vous pour comprendre votre vision et la traduire en un site web qui dépasse vos attentes"
     },
     "id-4": {
-      "alt": "Icone étoile",
+      "alt": "Icône étoile",
       "title": "Conception parfaite au pixel près",
       "text": "Chaque élément, du design au codage, est soigneusement conçu avec un sens méticuleux du détail"
     },
     "id-5": {
-      "alt": "Icone étoile",
+      "alt": "Icône étoile",
       "title": "Collaboration pleine et entière",
       "text": "La communication ouverte et la collaboration sont au cœur de chaque projet"
     },
     "id-6": {
-      "alt": "Icone étoile",
+      "alt": "Icône étoile",
       "title": "Magie du multilinguisme",
       "text": "Vous parlez anglais ou italien ? Pas de problème ! Je peux également communiquer et collaborer sans problème dans les deux langues"
     },
     "id-7": {
-      "alt": "Icone étoile",
+      "alt": "Icône étoile",
       "title": "Formation continue",
       "text": "Le monde numérique est en constante évolution, et je reste à l'avant-garde pour offrir les meilleures solutions"
     }

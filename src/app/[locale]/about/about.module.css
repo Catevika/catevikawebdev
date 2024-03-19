@@ -11,7 +11,7 @@
 .about__bottom__image__light {
   width: 210px;
   height: auto;
-  margin: 0 2rem 1rem 0;
+  margin: 0 3rem 1rem 0;
   border-radius: 80% 5% 80% 5% / 5% 80% 5% 80%;
   float: left;
   background-color: var(--color-dark);
@@ -68,7 +68,7 @@
 
 .about__details {
   font-size: 1.2rem;
-  margin: 0 0 1.5rem 4rem;
+  margin: 0 0 1rem 14rem;
   cursor: pointer
 }
 
@@ -86,6 +86,11 @@
 .about__bottom__container br {
   clear: both;
   margin-top: 2rem;
+}
+
+.about__bottom__container .about__text {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
 }
 
 @media(max-width: 995px) {
@@ -114,6 +119,10 @@
     margin: 0 0 1rem 0;
     float: none;
     shape-outside: unset;
+  }
+
+  .about__bottom__container .about__text {
+    margin-top: 0;
   }
 
   .about__middle__image {

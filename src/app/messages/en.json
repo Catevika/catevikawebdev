@@ -23,6 +23,16 @@
       "path": "/blog"
     }
   },
+  "Theme": {
+    "setLight": "Set Theme to Light mode",
+    "setDark": "Set Theme to Dark mode",
+    "alt1": "Sun icon",
+    "alt2": "Moon icon"
+  },
+  "Language": {
+    "label": "Toggle English/French languages",
+    "alt": "Language Icon"
+  },
   "FooterTexts": {
     "quote": "<span>You can't wait until life isn't hard anymore before you decide to be happy.</span>",
     "text1": "Jane Marczewski aka 'Nightbirde'"
