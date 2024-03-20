@@ -11,8 +11,8 @@ export async function sendEmail(formData: FormValues) {
     const { name, email } = formData;
 
     const data = await resend.emails.send({
-      from: 'Catevika Web Dev <contact@catevikawebdev.com>',
-      to: [ 'dominique.bello@outlook.fr' ],
+      from: 'catevikawebdev.com <contact@catevikawebdev.com>',
+      to: [ 'contact@catevikawebdev.com' ],
       subject: `New Message from ${name} - ${email}`,
       react: EmailTemplate(formData),
     });

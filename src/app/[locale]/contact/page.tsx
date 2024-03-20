@@ -31,9 +31,13 @@ export default function Contact() {
 
   const processForm: SubmitHandler<FormValues> = async (data) => {
 
-    const result = await sendEmail(data);
+    try {
+      const result = await sendEmail(data);
 
-    console.log(result);
+      console.log(result);
+    } catch (error) {
+      console.log(error);
+    }
 
 
     //   if (error) {
