@@ -4,7 +4,7 @@ import { EmailTemplate } from '@/components/EmailTemplate/EmailTemplate';
 import type { FormValues } from '@/types/types';
 import { Resend } from 'resend';
 
-const resend = new Resend(`${process.env.RESEND_API_KEY}`);
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendEmail(formData: FormValues) {
   try {
@@ -12,13 +12,13 @@ export async function sendEmail(formData: FormValues) {
 
     const data = await resend.emails.send({
       from: 'Catevika Web Dev <contact@catevikawebdev.com>',
-      to: [ 'catevikawebdev@outlook.fr' ],
+      to: [ 'dominique.bello@outlook.fr' ],
       subject: `New Message from ${name} - ${email}`,
       react: EmailTemplate(formData),
     });
 
-    return { success: true, data };
+    return data;
   } catch (error) {
-    return { success: false, error };
+    return { error };
   }
 }

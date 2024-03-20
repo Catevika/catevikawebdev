@@ -1,13 +1,13 @@
 import createMiddleware from 'next-intl/middleware';
 import type { NextRequest, NextResponse } from 'next/server';
-import { localePrefix, locales, pathnames } from './config';
+import { locales, pathnames } from './config';
 import type { Locale } from './types/types';
 
 const nexIntlMiddleware = createMiddleware({
   defaultLocale: 'en' satisfies Locale,
   locales,
   pathnames,
-  localePrefix
+  localePrefix: 'never'
 });
 
 export default function extractReq(req: NextRequest): NextResponse {
