@@ -1,4 +1,4 @@
-import type { FormValues } from '@/types/types';
+import type { ContactFormValues } from '@/types/types';
 import {
   Body,
   Head,
@@ -9,7 +9,7 @@ import {
   Text
 } from "@react-email/components";
 
-export const EmailTemplate = (data: FormValues) => (
+export const EmailTemplate = (data: ContactFormValues) => (
   <Html style={main}>
     <Head>
       <title style={text}>CLIENT MAIL!</title>
