@@ -36,8 +36,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# custom todo file
+# custom files
 TODO.md
+INFOS.txt
 
 # vscode
 .vscode/*
