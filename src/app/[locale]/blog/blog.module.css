@@ -1,0 +1,13 @@
+.blog__posts__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media(max-width: 950px) {
+  .blog__posts__container {
+    justify-content: center;
+  }
+}

@@ -3,7 +3,7 @@
   "description": "Votre devis de site web personnalisé en quelques clics ! Catevika, développeur web basé à Paris, France, s'occupe de tout, de la conception au lancement. Tout est sous contrôle, et le monde est à vous, sans limite !",
   "NotFoundPage": {
     "text": "Oups ! Il semble que vous soyez tombé sur une page qui n'existe pas.",
-    "link": "Retour à la page d'accueil"
+    "link": "Retour à la page précédente"
   },
   "NavItems": {
     "id-1": {
@@ -29,9 +29,53 @@
     "alt1": "Icône Soleil",
     "alt2": "Icône Lune"
   },
+  "RegisterPage": {
+    "title": "Inscrivez-vous !",
+    "label1": "Nom",
+    "placeholder1": "Marie Durand",
+    "error1": "Saisissez votre nom",
+    "infotool1": "Votre nom ne peut pas commencer par un $ ou avoir plus de 50 caractères",
+    "label2": "Email",
+    "placeholder2": "marie.durand@gmail.com",
+    "error2": "Saisissez un email valide, ex.: marie.durand@gmail.com",
+    "label3": "Mot de passe",
+    "infotool3": "Votre mot de passe doit contenir 6 caractères minimum",
+    "placeholder3": "...",
+    "error3": "Votre mot de passe doit contenir 6 caractères minimum",
+    "toastExists": "Nom déjà utilisé. Saisissez un nom plus personnalisé ou connectez-vous",
+    "toastError": "Une erreur s'est produite. Réessayez",
+    "toastSuccess": "Inscription réussie",
+    "redirect": "/tableaudebord",
+    "text": "Déjà inscrit ?",
+    "link": "Connexion"
+  },
+  "LoginPage": {
+    "title": "Connexion",
+    "label1": "Nom",
+    "placeholder1": "Marie Durand",
+    "error1": "Saisissez votre nom",
+    "infotool1": "Votre nom ne peut pas commencer par un $ ou avoir plus de 50 caractères",
+    "label3": "Mot de passe",
+    "placeholder3": "...",
+    "error3": "Votre mot de passe doit contenir 6 caractères minimum",
+    "infotool3": "Votre mot de passe doit contenir 6 caractères minimum",
+    "toastUsernameError": "Nom invalide. Réessayez",
+    "toastPasswordError": "Mot de passe invalide. Réessayez",
+    "toastError": "Vérifiez votre nom et votre mot de passe ou inscrivez-vous.",
+    "toastSuccess": "Connexion réussie",
+    "redirect": "/tableaudebord",
+    "text": "Pas encore inscrit ?",
+    "link": "Inscription"
+  },
   "Language": {
     "label": "Alterner entre le français et l'anglais",
     "alt": "Icône Langues"
+  },
+  "Log": {
+    "LoginButton": "Connexion-Github",
+    "LogoutButton": "Déconnexion",
+    "link": "/tableaudebord",
+    "text": "Désolé, seule Catevika peut accéder à cette page!"
   },
   "FooterTexts": {
     "quote": "<span>Il ne faut pas attendre que la vie ne soit plus éprouvante pour décider d'être heureux.</span>",
@@ -179,11 +223,13 @@
   "Contact": {
     "title": "Parlez-moi de votre projet!",
     "label1": "Nom",
+    "placeholder1": "Marie Durand",
     "error1": "Saisissez votre nom",
     "label2": "Email",
+    "placeholder2": "marie.durand@gmail.com",
     "error2": "Saisissez un email valide",
     "label3": "Message",
-    "placeholder": "Parlez-moi de votre projet!",
+    "placeholder3": "Bonjour, voici mon projet en quelques mots:...",
     "error3": "Saisissez votre message",
     "toastSuccess": "Email envoyé avec succès",
     "toastError": "Email non envoyé. Veuillez réessayer"

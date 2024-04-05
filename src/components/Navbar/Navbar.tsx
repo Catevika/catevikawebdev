@@ -1,15 +1,17 @@
-'use client';
 import { oxygen } from '@/app/font';
+import { auth } from '@/app/utils/auth';
+import DashboardLink from '@/components/DashboardLink/DashboardLink';
+import LanguageToogle from '@/components/LanguageToggle/LanguageToogle';
 import Links from "@/components/Links/Links";
 import styles from "@/components/Navbar/Navbar.module.css";
 import ToggleTheme from "@/components/ThemeToggle/ThemeToggle";
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import LanguageToogle from '../LanguageToggle/LanguageToogle';
 
 
-export default function Navbar() {
-  const pathname = usePathname();
+export default async function Navbar() {
+  const session = await auth();
+
+  console.log(session);
 
   return (
     <header className={styles.navbar__container}>
@@ -21,7 +23,7 @@ export default function Navbar() {
         <ToggleTheme />
         <LanguageToogle />
       </div>
-      {<Link className={(pathname === '/admin') ? `${styles.navbar__link__active}` : `${styles.navbar__link__admin}`} href={'/admin'}>Admin</Link>}
+      <DashboardLink session={session} />
     </header>
   );
 }

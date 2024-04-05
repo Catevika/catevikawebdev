@@ -5,8 +5,11 @@ import Navbar from '@/components/Navbar/Navbar';
 import { locales } from '@/config';
 import { Providers } from '@/theme/ThemeProvider';
 import type { LayoutProps, Props } from '@/types/types';
+import { SessionProvider } from 'next-auth/react';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -21,7 +24,6 @@ export async function generateMetadata({ params: { locale } }: Props) {
   };
 }
 
-
 export default function LocaleLayout({
   children, params: { locale }
 }: Readonly<LayoutProps>) {
@@ -35,10 +37,23 @@ export default function LocaleLayout({
       <body className={oxygen.className}>
         <NextIntlClientProvider locale={locale} messages={messages} >
           <Providers>
-            <Navbar />
-            <main className={`${oxygen.className} container`}>
-              {children}
-            </main>
+            <SessionProvider>
+              <Navbar />
+              <main className={`${oxygen.className} container`}>
+                {children}
+                <ToastContainer
+                  autoClose={5000}
+                  newestOnTop={true}
+                  closeButton={false}
+                  closeOnClick
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+                  theme="colored"
+                />
+              </main>
+            </SessionProvider>
             <Footer />
           </Providers>
         </NextIntlClientProvider>

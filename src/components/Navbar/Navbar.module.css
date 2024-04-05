@@ -37,7 +37,7 @@
 
 .navbar__language__container {
   position: relative;
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .navbar__languages p {
@@ -87,6 +87,10 @@
 
 .navbar__link__admin {
   display: none;
+}
+
+.navbar__logout__button {
+  margin-top: 0;
 }
 
 @media(max-width: 930px) {

@@ -1,0 +1,41 @@
+.post__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.post__top {
+  display: flex;
+}
+
+.post__image__container {
+  position: relative;
+  width: 250px;
+  height: 400px;
+}
+
+.post__image__container img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
+}
+
+.post__date {
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 60px;
+  margin: auto;
+  transform: rotate(90deg);
+}
+
+.post__bottom h3,
+.post__bottom p,
+.post__bottom a {
+  width: 250px;
+}
+
+.post__bottom a {
+  color: var(--color-gold);
+}

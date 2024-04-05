@@ -35,20 +35,34 @@ export default function ContactForm() {
 
     if (result.error) {
       toast.error(t('toastError'), {
-        className: 'error-toast',
         position: "top-center",
         transition: Bounce,
+        style: {
+          fontSize: '32px',
+          width: 'max-content',
+          height: 'max-content',
+          color: 'hsl(337, 63%, 54%)',
+          borderRadius: '1rem',
+          backgroundColor: 'hsl(233, 100%, 8%)'
+        },
         progressStyle: {
           background: 'hsl(337, 63%, 54%)'
         }
       });
     } else {
       toast.success(t('toastSuccess'), {
-        className: 'success-toast',
         position: "top-center",
         transition: Bounce,
+        style: {
+          fontSize: '32px',
+          width: 'max-content',
+          height: 'max-content',
+          color: 'hsl(80, 63%, 54%)',
+          borderRadius: '1rem',
+          backgroundColor: 'hsl(233, 100%, 8%)'
+        },
         progressStyle: {
-          background: 'hsl(80, 63%, 54%)',
+          background: 'hsl(80, 63%, 54%)'
         }
       });
       reset();

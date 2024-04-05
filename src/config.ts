@@ -1,6 +1,6 @@
 import { Pathnames } from 'next-intl/navigation';
 
-export const locales = [ 'en', 'fr' ] as const;
+export const locales = ['en', 'fr'] as const;
 
 export const pathnames = {
   '/': '/',
@@ -16,21 +16,25 @@ export const pathnames = {
     en: '/blog',
     fr: '/blog'
   },
-  '/blog/[category]': {
-    en: '/blog/[category]',
-    fr: '/blog/[catégorie]'
-  },
-  '/blog/[category]/[slug]': {
-    en: '/blog/[category]/[slug]',
-    fr: '/blog/[catégorie]/[slug]'
+  '/blog/[slug]': {
+    en: '/blog/[slug]',
+    fr: '/blog/[slug]'
   },
   '/about': {
     en: '/about',
     fr: '/apropos'
   },
-  '/admin': {
-    en: '/admin',
-    fr: '/admin'
+  '/login': {
+    en: '/login',
+    fr: '/connexion'
+  },
+  '/register': {
+    en: '/register',
+    fr: '/inscription'
+  },
+  '/dashboard': {
+    en: '/dashboard',
+    fr: '/tableaudebord'
   }
 } satisfies Pathnames<typeof locales>;
 

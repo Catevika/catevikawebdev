@@ -1,3 +1,5 @@
+"use client";
+
 import styles from '@/components/Navbar/Navbar.module.css';
 import type { Locale } from '@/types/types';
 import { useTranslations } from 'next-intl';
@@ -11,7 +13,7 @@ function LanguageToogle() {
   const currentPathname = usePathname();
 
   function handleClick(newLocale: Locale): void {
-    document.cookie = `NEXT_LOCALE=${newLocale.toLowerCase()}; path=/; max-age=31536000; samesite=Lax;`;
+    document.cookie = `NEXT_LOCALE=${newLocale.toLowerCase()}; path=/; max-age=31536000; samesite=Lax; secure`;
     // Remove current locale from pathname
 
     if (currentPathname === '/fr' || currentPathname === '/en') {
@@ -33,10 +35,10 @@ function LanguageToogle() {
           data-hide-on-theme='light'
           className={styles.language__icon__dark}
           tabIndex={0}
-          aria-label={t(`${'label'}`)}
+          aria-label={t('label')}
           role="button"
           src={'/icons/language.svg'}
-          alt={t(`${'alt'}`)}
+          alt={t('alt')}
           sizes='32x32'
           width={32}
           height={32}
@@ -45,10 +47,10 @@ function LanguageToogle() {
           data-hide-on-theme='dark'
           className={styles.language__icon__light}
           tabIndex={0}
-          aria-label={t(`${'label'}`)}
+          aria-label={t('label')}
           role="button"
           src={'/icons/language-light.svg'}
-          alt={t(`${'alt'}`)}
+          alt={t('alt')}
           sizes='32x32'
           width={32}
           height={32}

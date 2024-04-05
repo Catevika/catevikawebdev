@@ -3,7 +3,7 @@
   "description": "Your custom website quote in just a few clicks! Catevika, a web developer based in Paris, France, takes care of everything, from design to launch. Everything's under control, and the world is yours, with no limits!",
   "NotFoundPage": {
     "text": "Ooops! It seems that you've stumbled upon a page that doesn't exist.",
-    "link": "Go back to Home page"
+    "link": "Go back to previous page"
   },
   "NavItems": {
     "id-1": {
@@ -32,6 +32,50 @@
   "Language": {
     "label": "Toggle English/French languages",
     "alt": "Language Icon"
+  },
+  "RegisterPage": {
+    "title": "Register now!",
+    "label1": "Name",
+    "placeholder1": "Jane Smith",
+    "error1": "Enter your name",
+    "infotool1": "Your username cannot start with a $ or have more than 50 characters",
+    "label2": "Email",
+    "placeholder2": "jane.smith@gmail.com",
+    "error2": "Enter a valid email, e.g.: jane.smith@gmail.com",
+    "label3": "Password",
+    "placeholder3": "Password",
+    "error3": "Password must contain at least 6 characters",
+    "infotool3": "Your password must contain at least 6 characters",
+    "toastExists": "Username already in use. Enter a customized username or login",
+    "toastError": "An error occured. Retry",
+    "toastSuccess": "User successfully registered",
+    "redirect": "/dashboard",
+    "text": "Already registered?",
+    "link": "Login"
+  },
+  "LoginPage": {
+    "title": "Login",
+    "label1": "Name",
+    "placeholder1": "Jane Smith",
+    "error1": "Enter your name",
+    "infotool1": "Your username cannot start with a $ or have more than 50 characters",
+    "label3": "Password",
+    "placeholder3": "Password",
+    "error3": "Password must contain at least 6 characters",
+    "infotool3": "Your password must contain at least 6 characters",
+    "toastUsernameError": "Invalid username. Retry",
+    "toastPasswordError": "Invalid password. Retry",
+    "toastError": "Check your username and password or register",
+    "toastSuccess": "User successfully logged in",
+    "redirect": "/dashboard",
+    "text": "Not registered yet?",
+    "link": "Register"
+  },
+  "Log": {
+    "LoginButton": "Github Login",
+    "LogoutButton": "Logout",
+    "link": "/dashboard",
+    "text": "Sorry, only Catevika can access this page!"
   },
   "FooterTexts": {
     "quote": "<span>You can't wait until life isn't hard anymore before you decide to be happy.</span>",
@@ -179,11 +223,13 @@
   "Contact": {
     "title": "Tell me about your project!",
     "label1": "Name",
+    "placeholder1": "Jane Smith",
     "error1": "Enter your name",
     "label2": "Email",
+    "placeholder2": "jane.smith@gmail.com",
     "error2": "Enter a valid email address",
     "label3": "Message",
-    "placeholder": "Tell me about your project!",
+    "placeholder3": "Hello, here is my project:...",
     "error3": "Enter a message",
     "toastSuccess": "Email sent successfully",
     "toastError": "Email not sent. Please retry"

@@ -1,6 +1,6 @@
 .footer__container {
   color: var(--color-white);
-  padding: 1rem 4rem;
+  padding: 1rem 3rem;
   border-top: 1px solid var(--color-blue-30);
   background-color: var(--color-dark);
 }
@@ -43,15 +43,11 @@
 
 @media(max-width: 950px) {
   .footer__container {
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 }
 
 @media(max-width: 935px) {
-  .footer__container {
-    margin-bottom: 72px;
-  }
-
   .footer__content__top {
     display: block;
     text-align: center;

@@ -1,0 +1,72 @@
+.register__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  gap: 2rem;
+}
+
+.register__left {
+  display: flex;
+  flex: 1;
+}
+
+.register__left img {
+  width: auto;
+  max-height: 60vh;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.register__right {
+  flex: 2;
+}
+
+.register__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 1rem;
+  flex: 2;
+}
+
+.register__title a {
+  color: var(--color-gold);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+}
+
+.register__title a:hover,
+.register__title a:focus-within {
+  border: 1px solid var(--color-gold);
+}
+
+.register__form__container {
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 90%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-blue-30);
+}
+
+[data-theme='light'] .register__form__container,
+[data-theme='light'] .github__form__container {
+  background-color: var(--color-blue-30);
+}
+
+@media(max-width: 930px) {
+  .register__container {
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .register__form__container {
+    width: 100%;
+  }
+}

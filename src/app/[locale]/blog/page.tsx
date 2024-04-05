@@ -1,16 +1,27 @@
+import styles from '@/app/[locale]/blog/blog.module.css';
+import PostCard from '@/components/PostCard/PostCard';
 import type { Props } from '@/types/types';
 import { unstable_setRequestLocale } from 'next-intl/server';
-import Image from 'next/image';
+import { cookies } from 'next/headers';
+import { redirect } from 'next/navigation';
+
 
 export default function Blog({ params: { locale } }: Props) {
   unstable_setRequestLocale(locale);
 
+  const isLoggedIn = cookies().get('IS_LOGGED_IN')?.value;
+
   return (
-    <main className='container'>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-        <Image src={'/images/Site_under_construction.png'} alt='' height={504} width={896} priority />
-      </div>
-      <h3>Blog</h3>
-    </main>
+    <section className={styles.blog__posts__container}>
+      {isLoggedIn === 'true' ?
+        <>
+          <PostCard />
+          <PostCard />
+          <PostCard />
+          <PostCard />
+        </>
+        : redirect('/login')
+      }
+    </section>
   );
 }
