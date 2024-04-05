@@ -6,7 +6,7 @@
   color-scheme: dark;
 
   --color-dark: hsl(233, 100%, 8%);
-  --color-medium-dark: hsl(233, 51%, 13%);
+  --color-medium-dark: hsl(233, 52%, 13%);
 
   --color-white: hsl(0, 0%, 95%);
   --color-white-7: hsla(0, 0%, 95%, 0.07);
@@ -21,7 +21,7 @@
   --color-dark-gold-80: hsla(37, 53%, 53%, 0.8);
   --color-gold-90: hsla(37, 63%, 63%, 0.9);
 
-  --color-error: hsl(88, 50%, 53%);
+  --color-error: hsl(337, 63%, 54%);
 
   /* Hide the scrollbars */
   -ms-overflow-style: none;
@@ -217,6 +217,7 @@ q {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 }
 
 .form__label {
@@ -229,7 +230,35 @@ q {
   visibility: hidden;
 }
 
-label span {
+.form__input__show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form__input__show img {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.form__input__show input {
+  margin-bottom: 0;
+}
+
+
+.form__text {
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-gold);
+  width: 80%;
+  margin-top: 0.5rem;
+}
+
+label span,
+.error {
   font-weight: 700;
   color: var(--color-error);
   padding-left: 1rem;
@@ -282,7 +311,7 @@ label span {
   --color-blue-30: hsla(195, 84%, 32%, 0.1);
 
   --color-dark-turquoise: hsl(310, 65%, 25%);
-  --color-turquoise: hsl(310, 65%, 33%);
+  --color-turquoise: rgb(139, 29, 121);
   --color-turquoise-30: hsla(195, 84%, 32%, 0.3);
   --color-turquoise-80: hsla(310, 65%, 33%, 0.8);
   --color-turquoise-90: hsla(310, 65%, 33%, 0.9);
