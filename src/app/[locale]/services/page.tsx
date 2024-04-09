@@ -2,14 +2,11 @@ import styles from '@/app/[locale]/services/services.module.css';
 import ServiceBanner from '@/components/ServiceBanner/ServiceBanner';
 import ServiceList from '@/components/ServiceList/ServiceList';
 import ServiceReasonList from '@/components/ServiceReasonList/ServiceReasonList';
-import type { Props } from '@/types/types';
 import { useTranslations } from 'next-intl';
-import { unstable_setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Services({ params: { locale } }: Props) {
-  unstable_setRequestLocale(locale);
+export default function Services() {
 
   const t = useTranslations('Services');
 

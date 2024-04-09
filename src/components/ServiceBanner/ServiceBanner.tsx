@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 
 function ServiceBanner() {
   const t = useTranslations('ServiceBanner');
+
   return (
     <div className={styles.banner}>
       <div className={styles.line}>
