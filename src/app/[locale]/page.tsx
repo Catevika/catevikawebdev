@@ -1,13 +1,9 @@
 import styles from "@/app/[locale]/page.module.css";
-import type { Props } from '@/types/types';
 import { useTranslations } from 'next-intl';
-import { unstable_setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Home({ params: { locale } }: Props) {
-  unstable_setRequestLocale(locale);
-
+export default function Home() {
   const t = useTranslations('HomePage');
 
   return (

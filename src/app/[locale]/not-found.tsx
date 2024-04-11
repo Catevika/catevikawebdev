@@ -1,17 +1,10 @@
-"use client";
-import styles from "@/app/[locale]/page.module.css";
+import styles from "@/app/[locale]/not-found.module.css";
+import BackButton from '@/components/Buttons/BackButton';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
 
 export default function NotFoundPage() {
   const t = useTranslations('NotFoundPage');
-
-  const router = useRouter();
-
-  const handleClick = () => {
-    return router.back();
-  };
 
   return (
     <>
@@ -22,7 +15,7 @@ export default function NotFoundPage() {
           </div>
           <div className={styles.not__found}>
             <h3>{t('text')}</h3>
-            <button className={styles.not__found__link} onClick={handleClick}>{t('link')}</button>
+            <BackButton />
           </div>
         </div>
       </div>
