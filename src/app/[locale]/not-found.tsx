@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "@/app/[locale]/not-found.module.css";
 import BackButton from '@/components/Buttons/BackButton';
 import { useTranslations } from 'next-intl';

@@ -1,4 +1,5 @@
 'use client';
+
 import { sendEmail } from '@/app/[locale]/contact/_actions';
 import styles from '@/app/[locale]/contact/contact.module.css';
 import SendButton from '@/components/Buttons/SendButton';

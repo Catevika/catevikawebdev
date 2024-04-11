@@ -1,4 +1,5 @@
 "use client";
+
 import styles from '@/app/[locale]/blog/blog.module.css';
 import PostCard from '@/components/PostCard/PostCard';
 import { useSession } from 'next-auth/react';

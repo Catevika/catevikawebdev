@@ -1,10 +1,12 @@
+"use client";
+
 import styles from '@/app/[locale]/services/services.module.css';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 function ServiceReasonList() {
   const t = useTranslations('ServiceReasonList');
-  const keys = [ 'id-1', 'id-2', 'id-3', 'id-4', 'id-5', 'id-6', 'id-7' ] as const;
+  const keys = ['id-1', 'id-2', 'id-3', 'id-4', 'id-5', 'id-6', 'id-7'] as const;
   return (
     <>
       {keys ? keys.map((key) => (

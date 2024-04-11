@@ -1,4 +1,5 @@
 'use client';
+
 import styles from "@/components/Navbar/Links/Links.module.css";
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';

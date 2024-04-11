@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "@/app/[locale]/page.module.css";
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';

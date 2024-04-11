@@ -1,3 +1,5 @@
+"use client";
+
 import styles from '@/components/Footer/footer.module.css';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';

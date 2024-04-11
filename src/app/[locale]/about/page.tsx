@@ -1,3 +1,5 @@
+"use client";
+
 import styles from '@/app/[locale]/about/about.module.css';
 import SeahorseDetailList from '@/components/SeahorseDetailList/SeahorseDetailList';
 import { useTranslations } from 'next-intl';

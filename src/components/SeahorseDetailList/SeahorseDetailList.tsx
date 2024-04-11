@@ -1,9 +1,11 @@
+"use client";
+
 import styles from '@/app/[locale]/about/about.module.css';
 import { useTranslations } from 'next-intl';
 
 export default function SeahorseDetailList() {
   const t = useTranslations('SeahorseDetailList');
-  const keys = [ 'id-1', 'id-2', 'id-3', 'id-4', 'id-5' ] as const;
+  const keys = ['id-1', 'id-2', 'id-3', 'id-4', 'id-5'] as const;
 
   return (
     <>

@@ -1,4 +1,5 @@
 "use client";
+
 import styles from '@/app/[locale]/register/register.module.css';
 import { handleCredentialsLogin } from '@/app/lib/actions';
 import SendButton from '@/components/Buttons/SendButton';

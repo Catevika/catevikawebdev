@@ -1,3 +1,5 @@
+"use client";
+
 import styles from '@/app/[locale]/register/register.module.css';
 import LoginForm from '@/components/Forms/LoginForm';
 import { useTranslations } from 'next-intl';
