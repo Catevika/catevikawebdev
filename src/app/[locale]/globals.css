@@ -52,6 +52,7 @@ body {
   min-height: var(--min-height);
   margin: 0 auto;
   background-color: var(--color-dark);
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -392,6 +393,7 @@ label span,
 @media(max-width: 935px) {
   .container {
     min-height: 65vh;
+    padding: 100px 0 2rem;
   }
 }
 
@@ -405,10 +407,10 @@ label span,
 
   .container {
     align-items: center;
+    padding: 100px 1rem 2rem;
   }
 
   .form {
-    margin-top: -5rem;
     width: 100%;
   }
 }

@@ -182,10 +182,6 @@
 }
 
 @media(max-width: 930px) {
-  .services__container {
-    width: 90%;
-  }
-
   .services__content {
     display: flex;
     flex-direction: column;
@@ -215,6 +211,10 @@
   .services__link {
     display: block;
     text-align: center;
+  }
+
+  .services__container {
+    width: 90%;
   }
 
   .services__container h2 {
