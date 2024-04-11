@@ -1,6 +1,8 @@
 import "@/app/[locale]/globals.css";
 import { oxygen } from '@/app/font';
 import Footer from '@/components/Footer/Footer';
+import ErrorIcon from '@/components/Icons/ErrorIcon';
+import SuccessIcon from '@/components/Icons/SuccessIcon';
 import Navbar from '@/components/Navbar/Navbar';
 import { locales } from '@/config';
 import { Providers } from '@/theme/ThemeProvider';
@@ -8,8 +10,7 @@ import type { LayoutProps, Props } from '@/types/types';
 import { SessionProvider } from 'next-auth/react';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.min.css';
+import { Toaster } from 'react-hot-toast';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -41,16 +42,43 @@ export default function LocaleLayout({
               <Navbar />
               <main className={`${oxygen.className} container`}>
                 {children}
-                <ToastContainer
-                  autoClose={5000}
-                  newestOnTop={true}
-                  closeButton={false}
-                  closeOnClick
-                  rtl={false}
-                  pauseOnFocusLoss
-                  draggable
-                  pauseOnHover
-                  theme="colored"
+                <Toaster
+                  position="top-center"
+                  reverseOrder={false}
+                  gutter={8}
+                  toastOptions={{
+                    style: {
+                      fontSize: '24px',
+                      maxWidth: '350px',
+                      textAlign: 'center',
+                      borderRadius: '1rem',
+                      border: '1px solid var(--color-blue-30)',
+                    },
+                    success: {
+                      duration: 3000,
+                      icon: <SuccessIcon />,
+                      style: {
+                        color: 'var(--color-gold)',
+                        background: 'var(--color-dark)'
+                      },
+                      ariaProps: {
+                        role: 'status',
+                        'aria-live': 'polite',
+                      }
+                    },
+                    error: {
+                      duration: 5000,
+                      icon: <ErrorIcon />,
+                      style: {
+                        color: 'var(--color-gold)',
+                        background: 'var(--color-dark)'
+                      },
+                      ariaProps: {
+                        role: 'status',
+                        'aria-live': 'polite',
+                      }
+                    }
+                  }}
                 />
               </main>
             </SessionProvider>

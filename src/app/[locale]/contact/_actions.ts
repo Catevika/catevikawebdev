@@ -12,7 +12,7 @@ export async function sendEmail(formData: ContactFormValues) {
 
     const data = await resend.emails.send({
       from: 'Catevika Web Dev <contact@catevikawebdev.com>',
-      to: [ 'catevikawebdev@outlook.fr' ],
+      to: ['catevikawebdev@outlook.fr'],
       subject: `New Message from ${name} - ${email}`,
       react: EmailTemplate(formData),
     });

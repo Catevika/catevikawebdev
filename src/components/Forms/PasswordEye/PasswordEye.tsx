@@ -1,5 +1,5 @@
 "use client";
-import styles from '@/components/PasswordEye/PasswordEye.module.css';
+import styles from '@/components/Forms/PasswordEye/PasswordEye.module.css';
 import type { PasswordEyeProps } from '@/types/types';
 import Image from 'next/image';
 

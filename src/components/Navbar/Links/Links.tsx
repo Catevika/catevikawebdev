@@ -1,5 +1,5 @@
 'use client';
-import styles from "@/components/Links/Links.module.css";
+import styles from "@/components/Navbar/Links/Links.module.css";
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -8,7 +8,7 @@ export default function Links() {
   const pathname = usePathname();
 
   const t = useTranslations('NavItems');
-  const keys = [ 'id-1', 'id-2', 'id-3', 'id-4' ] as const;
+  const keys = ['id-1', 'id-2', 'id-3', 'id-4'] as const;
 
   return (
     <nav className={styles.navbar__links__container}>

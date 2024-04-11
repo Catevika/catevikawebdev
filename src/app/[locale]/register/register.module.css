@@ -27,7 +27,6 @@
   flex-wrap: wrap;
   align-items: baseline;
   gap: 1rem;
-  flex: 2;
 }
 
 .register__title a {

@@ -2,20 +2,19 @@
 
 import { checkUserExists, registerUser } from '@/app/[locale]/register/_actions';
 import styles from '@/app/[locale]/register/register.module.css';
-import PasswordEye from '@/components/PasswordEye/PasswordEye';
-import SendButton from '@/components/SendButton/SendButton';
+import SendButton from '@/components/Buttons/SendButton';
+import PasswordEye from '@/components/Forms/PasswordEye/PasswordEye';
 import { type RegisterFormValues } from '@/types/types';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Bounce, toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 
-function RegisterForm() {
+export default function RegisterForm() {
   const t = useTranslations('RegisterPage');
 
   const [isVisible, setIsVisible] = useState(false);
-
   const toggleVisiblePass = () => setIsVisible(!isVisible);
 
   const {
@@ -29,7 +28,7 @@ function RegisterForm() {
     defaultValues: {
       image: '',
       imageLight: '',
-      username: '',
+      name: '',
       email: '',
       password: '',
       isAdmin: false
@@ -39,62 +38,20 @@ function RegisterForm() {
   const router = useRouter();
 
   const handleSubmitUser = async (formData: RegisterFormValues) => {
-    const userExists = await checkUserExists(formData.username);
+    const userExists = await checkUserExists(formData.name);
 
     if (JSON.parse(userExists)) {
-      toast.error(t('toastExists'), {
-        position: "top-center",
-        transition: Bounce,
-        style: {
-          fontSize: '32px',
-          width: 'max-content',
-          height: 'max-content',
-          color: 'hsl(337, 63%, 54%)',
-          borderRadius: '1rem',
-          backgroundColor: 'hsl(233, 100%, 8%)'
-        },
-        progressStyle: {
-          background: 'hsl(337, 63%, 54%)'
-        }
-      });
+      toast.error(t('toastExists'));
       reset();
       return null;
     } else {
       const user = await registerUser(formData);
 
       if (user) {
-        toast.success(t('toastSuccess'), {
-          position: "top-center",
-          transition: Bounce,
-          style: {
-            fontSize: '32px',
-            width: 'max-content',
-            height: 'max-content',
-            color: 'hsl(80, 63%, 54%)',
-            borderRadius: '1rem',
-            backgroundColor: 'hsl(233, 100%, 8%)'
-          },
-          progressStyle: {
-            background: 'hsl(80, 63%, 54%)'
-          }
-        });
+        toast.success(t('toastSuccess'));
         router.push('/login');
       } else {
-        toast.error(t('toastError'), {
-          position: "top-center",
-          transition: Bounce,
-          style: {
-            fontSize: '32px',
-            width: 'max-content',
-            height: 'max-content',
-            color: 'hsl(337, 63%, 54%)',
-            borderRadius: '1rem',
-            backgroundColor: 'hsl(233, 100%, 8%)'
-          },
-          progressStyle: {
-            background: 'hsl(337, 63%, 54%)'
-          }
-        });
+        toast.error(t('toastError'));
       }
     }
   };
@@ -103,8 +60,8 @@ function RegisterForm() {
     <>
       <form noValidate className={styles.register__form__container} onSubmit={handleSubmit(handleSubmitUser)}>
         <div className='form__group'>
-          <label className='form__label' htmlFor="username">{t('label1')} {errors.username ? <span role="alert">{t('error1')}</span> : null}</label>
-          <input aria-invalid={errors.username ? "true" : "false"} className='form__input' type="text" id="username" placeholder={t('placeholder1')} autoComplete='username' {...register('username', { required: t('error1'), maxLength: { value: 50, message: t('infotool1') } })} title={t('infotool1')} />
+          <label className='form__label' htmlFor="name">{t('label1')} {errors.name ? <span role="alert">{t('error1')}</span> : null}</label>
+          <input aria-invalid={errors.name ? "true" : "false"} className='form__input' type="text" id="name" placeholder={t('placeholder1')} autoComplete='name' {...register('name', { required: t('error1'), maxLength: { value: 50, message: t('infotool1') } })} title={t('infotool1')} />
         </div>
         <div className='form__group'>
           <label className='form__label' htmlFor="email">{t('label2')} {errors.email ? <span role="alert">{t('error2')}</span> : null}</label>
@@ -123,4 +80,4 @@ function RegisterForm() {
   );
 }
 
-export default RegisterForm;
+// export default RegisterForm;
