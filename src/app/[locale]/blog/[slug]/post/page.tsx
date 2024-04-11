@@ -1,4 +1,4 @@
-import styles from '@/app/[locale]/blog/[slug]/post.module.css';
+import styles from '@/app/[locale]/blog/[slug]/post/post.module.css';
 import PostUser from '@/components/PostUser/PostUser';
 import Image from 'next/image';
 

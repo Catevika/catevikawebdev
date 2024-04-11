@@ -7,10 +7,6 @@ import { useSession } from 'next-auth/react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
-// TODO - Mettre en forme Dashboard et mettre des tableaux de MongoDB pour voir les nouveaux inscrits ?
-// TODO - Retirer les infos non nécessaires pour database et login
-// TODO - Mettre en place les posts pour le blog
-
 export default function Dashboard() {
   const t = useTranslations('DashboardPage');
 

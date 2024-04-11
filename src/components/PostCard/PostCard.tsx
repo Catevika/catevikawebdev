@@ -2,10 +2,8 @@ import styles from '@/components/PostCard/PostCard.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
-// TODO const formattedDate = createdAt.toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: 'numeric' }); Same for 'fr-FR'
-
-
 export default function PostCard() {
+
   return (
     <section className={styles.post__container}>
       <div className={styles.post__top}>

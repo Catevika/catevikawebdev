@@ -1,8 +1,8 @@
 "use client";
 
-import styles from '@/app/[locale]/blog/newPost/newpost.module.css';
 import { checkPostExists, createNewPost } from '@/app/[locale]/blog/newpost/_actions';
 import SendButton from '@/components/Buttons/SendButton';
+import styles from '@/components/Forms/newpostform.module.css';
 import type { PostFormValues } from '@/types/types';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
