@@ -89,10 +89,6 @@
   display: none;
 }
 
-.navbar__logout__button {
-  margin-top: 0;
-}
-
 @media(max-width: 930px) {
   .navbar__container {
     font-weight: 400;

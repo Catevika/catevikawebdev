@@ -33,6 +33,12 @@
     "label": "Toggle English/French languages",
     "alt": "Language Icon"
   },
+  "SuccessIcon": {
+    "alt": "Success icon"
+  },
+  "ErrorIcon": {
+    "alt": "Error icon"
+  },
   "RegisterPage": {
     "title": "Register now!",
     "label1": "Name",
@@ -90,7 +96,7 @@
     "welcome": "Welcome!",
     "aboutMe": "My name is <span>Dominique Bello</span> and I'm <span>French</span>. I live and work in <span>Paris</span>. Since I got married <span>Italy</span> has been my adopted country.",
     "aboutMe2": "I've been a dedicated <span>frontend web developer</span> for <span>4 years</span>. I make <span>websites</span> to reflect the <span>unique personality</span> of my <span>customers' brands</span>.",
-    "aboutMe3": "As a <span>project manager</span> in <span>FMCG marketing</span>, I've always enjoyed <span>continuous learning</span> and <span>problem-solving</span>. For over 15 years, I worked with <span>international teams of developers</span> to launch <span>online surveys</span>, whether <span>B&B</span> or <span>BtoC</span>. About 4 years ago, I decided to broaden my horizons and <span>trained as a self-taught web developer</span>.",
+    "aboutMe3": "As a <span>project manager</span> in <span>FMCG marketing</span>, I've always enjoyed <span>continuous learning</span> and <span>problem-solving</span>. For over 15 years, I worked with <span>international teams of developers</span> to launch <span>online surveys</span>, whether <span>BtoB</span> or <span>BtoC</span>. About 4 years ago, I decided to broaden my horizons and <span>trained as a self-taught web developer</span>.",
     "aboutMe4": "<span>Today, I can finally reconcile my passion for web development with my professional goals</span>.",
     "languages": "In addition to <span>French, my mother tongue</span>, I also speak <span>English</span> and <span>Italian</span>. I particularly used English in my previous experiences, and almost every day since to acquire new skills in web development.",
     "name": "Where does the pseudonym 'Catevika' come from?",
@@ -142,42 +148,42 @@
   "ServiceList": {
     "id-1": {
       "alt1": "Star icon",
-      "alt2": "Rocket launch icon",
+      "alt2": "Rocket icon",
       "title": "I create your showcase site",
       "text1": "Let me design a stunning website that perfectly reflects your brands identity and story",
       "text2": "Attract your ideal audience and stand out in the online world"
     },
     "id-2": {
       "alt1": "Star icon",
-      "alt2": "Rocket launch icon",
+      "alt2": "Rocket icon",
       "title": "I create your service site",
       "text1": "Let me simplify your business with a dedicated site for your services",
       "text2": "Streamline customer contacts, showcase your expertise and increase conversions"
     },
     "id-3": {
       "alt1": "Star icon",
-      "alt2": "Rocket launch icon",
+      "alt2": "Rocket icon",
       "title": "I take care of your sites makeover",
       "text1": "Let me ensure your existing sites are compatible with the latest technologies for optimal performance and user experience",
       "text2": "Breathe new life into your outdated website"
     },
     "id-4": {
       "alt1": "Star icon",
-      "alt2": "Rocket launch icon",
+      "alt2": "Rocket icon",
       "title": "I offer scalable Solutions",
       "text1": "Let me optimize your React front-end to ensure your websites perform flawlessly, even under heavy load",
       "text2": "Handle high-volume traffic with confidence"
     },
     "id-5": {
       "alt1": "Star icon",
-      "alt2": "Rocket launch icon",
+      "alt2": "Rocket icon",
       "title": "I boost your efficiency",
       "text1": "Let me free up your time by outsourcing some of your React tasks to me",
       "text2": "Focus on your core strengths while I ensure a robust and efficient front-end"
     },
     "id-6": {
       "alt1": "Star icon",
-      "alt2": "Rocket launch icon",
+      "alt2": "Rocket icon",
       "title": "Long-Term Support",
       "text1": "Let me keep your React front-end websites secure and up to date, so they're always up and running",
       "text2": "Choose the maintenance and support package tailored to your needs"
@@ -233,6 +239,40 @@
     "error3": "Enter a message",
     "toastSuccess": "Email sent successfully",
     "toastError": "Email not sent. Please retry"
+  },
+  "BlogPage": {
+    "text": "Log in to access the Blog page",
+    "link1": "/blog/newpost",
+    "button": "New Post",
+    "link2": "/login",
+    "button2": "login"
+  },
+  "NewPostPage": {
+    "title": "New Post",
+    "text": "Cancel and go back to blog page",
+    "linkback": "Back to Blog",
+    "backlink": "/blog",
+    "toastExists": "Title already in use. Enter a customized title or modify the existing post",
+    "toastSuccess": "Post sent successfully",
+    "toastError": "Post not sent. Please retry",
+    "label1": "PEXELS Image external url",
+    "placeholder1": "https://...",
+    "infotool1": "With an image free for commercial use it's better, if none let this field empty",
+    "error1": "This url cannot start with a $ or have more than 200 characters",
+    "label2": "Title",
+    "placeholder2": "An amazing new post",
+    "infotool2": "Your title cannot start with a $ or have more than 100 characters",
+    "error2": "Enter a title",
+    "label3": "Content",
+    "placeholder3": "A post you don't want miss",
+    "error3": "Enter a content",
+    "text2": "Log in to access the New Post page",
+    "link": "/login",
+    "button": "Login"
+
+  },
+  "DashboardPage": {
+    "text": "Access Restricted to Catevika:"
   },
   "SendButton": {
     "Sending": "Sending...",

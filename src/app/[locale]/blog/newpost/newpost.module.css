@@ -1,0 +1,37 @@
+.newPost__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.newPost__form form {
+  margin-top: 0;
+}
+
+.newPost__title {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.newPost__form a {
+  display: block;
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  color: var(--color-gold);
+}
+
+.newPost__form a:hover,
+.newPost__form a:focus-within {
+  border: 1px solid var(--color-gold);
+}

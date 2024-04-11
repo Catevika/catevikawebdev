@@ -15,16 +15,16 @@ export const getUsers = async () => {
   }
 };
 
-export const getUser = async (id: string) => {
+export const getUserById = async (_id: string) => {
   try {
     connectDB();
-    const user = await User.findById({ id });
+    const user = await User.findById({ _id });
     if (!user) {
-      throw new Error(`User with id ${id} not found`);
+      throw new Error(`User with id ${_id} not found`);
     }
     return user;
   } catch (error) {
     console.log(error);
-    throw new Error(`Failed to fetch user ${id}`);
+    throw new Error(`Failed to fetch user ${_id}`);
   }
 };

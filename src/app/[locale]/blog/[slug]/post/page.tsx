@@ -1,11 +1,8 @@
 import styles from '@/app/[locale]/blog/[slug]/post.module.css';
 import PostUser from '@/components/PostUser/PostUser';
-import type { Props } from '@/types/types';
-import { unstable_setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 
-export default function Post({ params: { locale } }: Props) {
-  unstable_setRequestLocale(locale);
+export default function Post() {
 
   return (
     <section className={styles.post__container}>

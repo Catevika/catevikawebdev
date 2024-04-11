@@ -71,8 +71,14 @@
     "label": "Alterner entre le français et l'anglais",
     "alt": "Icône Langues"
   },
+  "SuccessIcon": {
+    "alt": "Icone succès"
+  },
+  "ErrorIcon": {
+    "alt": "Error icon"
+  },
   "Log": {
-    "LoginButton": "Connexion-Github",
+    "LoginButton": "Connexion à Github",
     "LogoutButton": "Déconnexion",
     "link": "/tableaudebord",
     "text": "Désolé, seule Catevika peut accéder à cette page!"
@@ -90,7 +96,7 @@
     "welcome": "Bienvenue!",
     "aboutMe": "Je m'appelle <span>Dominique Bello</span> et je suis <span>française</span>. Je vis et travaille à <span>Paris</span>. Depuis mon mariage, l' <span>Italie</span> est mon pays d'adoption.",
     "aboutMe2": "Je suis <span>développeuse web frontend</span> depuis <span>4 ans</span>. Je crée des <span>sites web</span> qui reflètent la <span>personnalité unique des marques</span> de <span>mes clients</span>.",
-    "aboutMe3": "En tant que <span>chef de projet</span> dans le domaine du <span>marketing des produits de grande consommation</span>, j'ai toujours aimé <span>apprendre en continu</span> et <span>résoudre des problèmes</span>. Pendant plus de 15 ans, j'ai travaillé avec des <span>équipes internationales de développeurs</span> pour lancer des <span>enquêtes en ligne</span>, qu'elles soient de type <span>B&B</span> ou <span>BtoC</span>. Il y a environ 4 ans, j'ai décidé d'élargir mon horizon et je me suis <span>formée en autodidacte au développement web</span>.",
+    "aboutMe3": "En tant que <span>chef de projet</span> dans le domaine du <span>marketing des produits de grande consommation</span>, j'ai toujours aimé <span>apprendre en continu</span> et <span>résoudre des problèmes</span>. Pendant plus de 15 ans, j'ai travaillé avec des <span>équipes internationales de développeurs</span> pour lancer des <span>enquêtes en ligne</span>, qu'elles soient de type <span>BtoB</span> ou <span>BtoC</span>. Il y a environ 4 ans, j'ai décidé d'élargir mon horizon et je me suis <span>formée en autodidacte au développement web</span>.",
     "aboutMe4": "<span>Aujourd'hui, je peux enfin concilier ma passion pour le développement web et mes objectifs professionnels.</span>",
     "languages": "En plus du <span>français, ma langue maternelle</span>, je parle également <span>anglais</span> et <span>italien</span>. J'ai particulièrement utilisé l'anglais dans mes expériences précédentes, ainsi que presque tous les jours depuis pour acquérir de nouvelles compétences en matière de développement web.",
     "name": "D'où provient le pseudonyme 'Catevika'?",
@@ -142,42 +148,42 @@
   "ServiceList": {
     "id-1": {
       "alt1": "Icône étoile",
-      "alt2": "Icône lancement de fuseée",
+      "alt2": "Icône fusée",
       "title": "Je crée votre site vitrine",
       "text1": "Laissez-moi concevoir un site web époustouflant qui reflète parfaitement l'identité et l'histoire de vos marques",
       "text2": "Attirez votre public idéal et différenciez-vous sur Internet"
     },
     "id-2": {
       "alt1": "Icône étoile",
-      "alt2": "Icône lancement de fuseée",
+      "alt2": "Icône fusée",
       "title": "Je crée votre site de services",
       "text1": "Laissez-moi simplifier votre activité avec un site dédié à vos services",
       "text2": "Rationalisez les contacts avec vos clients, mettez en avant votre expertise et augmentez les conversions"
     },
     "id-3": {
       "alt1": "Icône étoile",
-      "alt2": "Icône lancement de fuseée",
+      "alt2": "Icône fusée",
       "title": "Je m'occupe de la refonte de vos sites",
       "text1": "Je m'assure que vos sites existants soient compatibles avec les dernières technologies pour une performance et une expérience utilisateur optimales",
       "text2": "Redonnez vie à vos sites web obsolètes"
     },
     "id-4": {
       "alt1": "Icône étoile",
-      "alt2": "Icône lancement de fuseée",
+      "alt2": "Icône fusée",
       "title": "Je propose des solutions évolutives",
       "text1": "Laissez-moi optimiser votre front-end React pour que vos sites web fonctionnent parfaitement, même en cas de forte affluence",
       "text2": "Gérez un trafic important en toute confiance"
     },
     "id-5": {
       "alt1": "Icône étoile",
-      "alt2": "Icône lancement de fuseée",
+      "alt2": "Icône fusée",
       "title": "J'augmente votre efficacité",
       "text1": "Laissez-moi vous libérer du temps en me confiant certaines de vos tâches React",
       "text2": "Concentrez-vous sur vos points forts pendant que je veille à ce que votre front-end soit robuste et efficace"
     },
     "id-6": {
       "alt1": "Icône étoile",
-      "alt2": "Icône lancement de fuseée",
+      "alt2": "Icône fusée",
       "title": "Je procure une assistance à long terme",
       "text1": "Laissez-moi garder vos sites web front-end React sécurisés et à jour pour qu'ils soient toujours opérationnels et performants",
       "text2": "Choisissez la formule de maintenance et d'assistance adaptée à vos besoins"
@@ -212,7 +218,7 @@
     "id-6": {
       "alt": "Icône étoile",
       "title": "Magie du multilinguisme",
-      "text": "Vous parlez anglais ou italien ? Pas de problème ! Je peux également communiquer et collaborer sans problème dans les deux langues"
+      "text": "Vous parlez anglais ou italien ? Pas de problème ! Je peux également communiquer et collaborer dans les deux langues"
     },
     "id-7": {
       "alt": "Icône étoile",
@@ -233,6 +239,39 @@
     "error3": "Saisissez votre message",
     "toastSuccess": "Email envoyé avec succès",
     "toastError": "Email non envoyé. Veuillez réessayer"
+  },
+  "BlogPage": {
+    "text": "Connectez-vous pour accéder à la page Blog",
+    "link1": "/blog/nouveaupost",
+    "button": "Nouveau Post",
+    "link2": "/connexion",
+    "button2": "connexion"
+  },
+  "NewPostPage": {
+    "title": "Nouveau Post",
+    "text": "Annule et retourne à la page Blog",
+    "linkback": "Retour à la page Blog",
+    "backlink": "/blog",
+    "toastExists": "Ce titre est déjà utilisé. Saisissez un autre titre ou modifiez le post existant",
+    "toastSuccess": "Post envoyé avec succès",
+    "toastError": "Post non envoyé. Veuillez réessayer",
+    "label1": "Lien image externe PEXELS",
+    "placeholder1": "https://...",
+    "infotool1": "Avec une image libre de droits pour usage commercial c'est mieux, sinon laisser ce champs vide",
+    "error1": "Ce lien ne peut pas commencer par un $ ou contenir plus de 200 caractères",
+    "label2": "Titre",
+    "placeholder2": "Un nouveau post fantastique",
+    "infotool2": "Votre titre ne peut pas commencer avec un $ ou contenir plus de 100 caractères",
+    "error2": "Saisissez un titre",
+    "label3": "Contenu",
+    "placeholder3": "Un post à ne pas manquer",
+    "error3": "Saisissez un contenu",
+    "text2": "Connectez-vous pour accéder à la page Nouveau Post",
+    "link": "/connexion",
+    "button": "Connexion"
+  },
+  "DashboardPage": {
+    "text": "Accès restreint à Catevika:"
   },
   "SendButton": {
     "Sending": "Envoi...",

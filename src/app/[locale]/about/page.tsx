@@ -1,13 +1,9 @@
 import styles from '@/app/[locale]/about/about.module.css';
 import SeahorseDetailList from '@/components/SeahorseDetailList/SeahorseDetailList';
-import type { Props } from '@/types/types';
 import { useTranslations } from 'next-intl';
-import { unstable_setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 
-export default function About({ params: { locale } }: Props) {
-  unstable_setRequestLocale(locale);
-
+export default function About() {
   const t = useTranslations('AboutPage');
 
   return (

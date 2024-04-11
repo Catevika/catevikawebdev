@@ -1,3 +1,32 @@
+.blog__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+
+.blog__container a:not(.post__image__container a) {
+  display: block;
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  color: var(--color-gold);
+}
+
+.blog__container a:not(.post__image__container a):hover,
+.blog__container a:not(.post__image__container a):focus-within {
+  border: 1px solid var(--color-gold);
+}
+
+
 .blog__posts__container {
   display: flex;
   flex-wrap: wrap;

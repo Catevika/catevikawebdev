@@ -25,23 +25,23 @@ export type PasswordEyeProps = {
 export type RegisterFormValues = {
   image: string;
   imageLight: string;
-  username: string;
+  name: string;
   email: string;
   password: string;
   isAdmin: boolean;
 };
 
-export type User = {
+export type UserType = {
   image: string;
   imageLight: string;
-  username: string;
+  name: string;
   email: string;
   password: string;
   isAdmin: boolean;
 };
 
 export type LoginFormValues = {
-  username: string;
+  name: string;
   password: string;
 };
 
@@ -85,9 +85,9 @@ export type ServiceReason = {
 };
 
 export type PostFormValues = {
-  image: string;
+  imageurl: string;
   title: string;
-  description: string;
+  content: string;
   slug: string;
   userId: string;
 };

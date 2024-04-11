@@ -5,10 +5,10 @@ import User from '@/database/models/userModel';
 import type { RegisterFormValues } from '@/types/types';
 import bcrypt from 'bcryptjs';
 
-export async function checkUserExists(username: string) {
+export async function checkUserExists(name: string) {
   connectDB();
 
-  const exsitingUser = await User.findOne({ username });
+  const exsitingUser = await User.findOne({ name });
 
   return JSON.stringify(exsitingUser);
 }
@@ -16,21 +16,21 @@ export async function checkUserExists(username: string) {
 export async function registerUser(formData: RegisterFormValues) {
   connectDB();
 
-  const { username, email, password } = formData;
+  const { name, email, password } = formData;
 
   const salt = await bcrypt.genSalt(10);
   const hashedPassword = await bcrypt.hash(password, salt);
 
+  const isAdmin = name === 'Catevika' ? true : false;
+
   try {
-    const newUser = await User.create({
+    const newUser = User.create({
       image: '/icons/user_placeholder.svg',
       imageLight: '/icons/user_placeholder-light.svg',
-      username,
+      name,
       email,
       password: hashedPassword,
-      isAdmin: false,
-      createdAt: new Date(),
-      updatedAt: new Date()
+      isAdmin
     });
 
     return JSON.stringify(newUser);

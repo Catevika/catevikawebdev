@@ -1,27 +1,26 @@
+"use client";
 import styles from '@/app/[locale]/blog/blog.module.css';
 import PostCard from '@/components/PostCard/PostCard';
-import type { Props } from '@/types/types';
-import { unstable_setRequestLocale } from 'next-intl/server';
-import { cookies } from 'next/headers';
-import { redirect } from 'next/navigation';
+import { useSession } from 'next-auth/react';
+import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
+// TODO Change the PostCards with a PostList et mettre le status dans le PostList
 
-export default function Blog({ params: { locale } }: Props) {
-  unstable_setRequestLocale(locale);
+export default function Blog() {
+  const t = useTranslations("BlogPage");
 
-  const isLoggedIn = cookies().get('IS_LOGGED_IN')?.value;
+  const { data: session } = useSession();
 
   return (
-    <section className={styles.blog__posts__container}>
-      {isLoggedIn === 'true' ?
-        <>
-          <PostCard />
-          <PostCard />
-          <PostCard />
-          <PostCard />
-        </>
-        : redirect('/login')
-      }
+    <section className={styles.blog__container}>
+      {session?.user?.name === 'Catevika' ? <Link href={t('link1')}>{t('button')}</Link> : null}
+      <div className={styles.blog__posts__container}>
+        <PostCard />
+        <PostCard />
+        <PostCard />
+        <PostCard />
+      </div>
     </section>
   );
-}
+};

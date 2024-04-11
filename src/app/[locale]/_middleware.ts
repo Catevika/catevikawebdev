@@ -1,2 +1,2 @@
-export { auth as middleware } from '@/app/utils/auth';
+export { auth as middleware } from '@/app/lib/auth';
 

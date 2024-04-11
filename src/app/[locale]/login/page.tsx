@@ -1,9 +1,11 @@
 import styles from '@/app/[locale]/register/register.module.css';
 import LoginForm from '@/components/Forms/LoginForm';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 
 export default function Login() {
+  const t = useTranslations('LoginPage');
 
   return (
     <section className={styles.register__container}>
