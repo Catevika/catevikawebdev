@@ -9,6 +9,8 @@ export default function NewPostButton() {
 
   const { data: session } = useSession();
 
+  console.log(session);
+
   return (
     <>
       {session?.user?.name === 'Catevika' ?
