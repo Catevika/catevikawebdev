@@ -1,3 +1,4 @@
+import type { ObjectId } from 'mongoose';
 import type React from 'react';
 import type { MouseEventHandler } from 'react';
 
@@ -32,6 +33,7 @@ export type RegisterFormValues = {
 };
 
 export type UserType = {
+  _id: ObjectId;
   image: string;
   imageLight: string;
   name: string;
@@ -85,9 +87,18 @@ export type ServiceReason = {
 };
 
 export type PostFormValues = {
+  id: string;
   imageurl: string;
   title: string;
   content: string;
-  slug: string;
-  userId: string;
+};
+
+export type PostType = {
+  _id: ObjectId;
+  imageurl: string;
+  title: string;
+  content: string;
+  author: UserType;
+  createdAt: Date;
+  updatedAt: Date;
 };

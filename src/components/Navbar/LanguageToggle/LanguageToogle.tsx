@@ -13,7 +13,7 @@ function LanguageToogle() {
   const currentPathname = usePathname();
 
   function handleClick(newLocale: Locale): void {
-    document.cookie = `NEXT_LOCALE=${newLocale.toLowerCase()}; path=/; max-age=31536000; samesite=Lax; secure`;
+    document.cookie = `NEXT_LOCALE=${newLocale.toString().toLowerCase()}; path=/; max-age=31536000; samesite=Lax; secure`;
     // Remove current locale from pathname
 
     if (currentPathname === '/fr' || currentPathname === '/en') {

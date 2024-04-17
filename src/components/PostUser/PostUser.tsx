@@ -1,18 +1,18 @@
-"use client";
-
 import styles from '@/components/PostUser/PostUser.module.css';
-import { useTranslations } from 'next-intl';
+import type { PostType } from '@/types/types';
 import Image from 'next/image';
 
-export default function PostUser() {
-  const t = useTranslations('AboutPage');
+export default function PostUser({ post }: { post: PostType; }) {
+
+  const { image, imageLight, name } = post.author;
 
   return (
     <div className={styles.user__container}>
-      <Image className={styles.user__image} src={'/images/Profile.png'} alt={t('alt1')} height={250} width={250} priority />
+      <Image data-hide-on-theme="light" className={styles.user__image} src={image} alt='' height={300} width={300} priority />
+      <Image data-hide-on-theme="dark" className={styles.user__image} src={imageLight} alt='' height={300} width={300} priority />
       <p>
         <span className={styles.user__title}>Author</span>
-        <span className={styles.user__username}> Dominique Bello</span>
+        <span className={styles.user__username}>{name}</span>
       </p>
     </div>
   );

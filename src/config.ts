@@ -20,9 +20,9 @@ export const pathnames = {
     en: '/blog/newpost',
     fr: '/blog/nouveaupost'
   },
-  '/blog/post': {
-    en: '/blog/post',
-    fr: '/blog/post'
+  '/blog/post/[postId]': {
+    en: '/blog/post/[postId]',
+    fr: '/blog/post/[postId]'
   },
   '/about': {
     en: '/about',

@@ -35,6 +35,10 @@
   gap: 2rem;
 }
 
+.post__wrapper {
+  width: 380px;
+}
+
 @media(max-width: 950px) {
   .blog__posts__container {
     justify-content: center;

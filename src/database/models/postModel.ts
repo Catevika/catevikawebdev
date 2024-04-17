@@ -1,8 +1,9 @@
 import User from '@/database/models/userModel';
+import type { PostType } from '@/types/types';
 import mongoose from 'mongoose';
 
 const PostSchema = new mongoose.Schema({
-  'image': String,
+  'imageurl': String,
   'title': {
     type: String,
     required: true
@@ -11,7 +12,7 @@ const PostSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  author: {
+  'author': {
     type: mongoose.Schema.Types.ObjectId,
     ref: User,  // Reference to the User model
     required: true
@@ -20,7 +21,7 @@ const PostSchema = new mongoose.Schema({
   timestamps: true
 });
 
-const Post = mongoose.models?.Post || mongoose.model('Post', PostSchema);
+const Post = mongoose.models?.Post || mongoose.model<PostType>('Post', PostSchema);
 
 export default Post;
 

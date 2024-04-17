@@ -270,6 +270,16 @@
     "link": "/connexion",
     "button": "Connexion"
   },
+  "PostList": {
+    "noPost": "Aucun article disponible pour le moment"
+  },
+  "PostCard": {
+    "text": "En savoir plus"
+  },
+  "PostUser": {
+    "image": "Auteur",
+    "text": "Anonyme"
+  },
   "DashboardPage": {
     "text": "Accès restreint à Catevika:"
   },

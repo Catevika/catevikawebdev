@@ -10,7 +10,7 @@ class CustomError extends CredentialsSignin {
 }
 
 export const {
-  handlers: { GET, POST },
+  handlers,
   auth,
   signIn,
   signOut
@@ -54,5 +54,5 @@ export const {
     signIn: '/login',
     error: '/login',
   },
-  session: { strategy: "jwt", maxAge: 6000 }
+  session: { strategy: "jwt", maxAge: 30 * 24 * 60 * 60, updateAge: 24 * 60 * 60 }
 });

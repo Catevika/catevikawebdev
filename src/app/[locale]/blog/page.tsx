@@ -1,25 +1,17 @@
-"use client";
-
 import styles from '@/app/[locale]/blog/blog.module.css';
-import PostCard from '@/components/PostCard/PostCard';
-import { useSession } from 'next-auth/react';
-import { useTranslations } from 'next-intl';
-import Link from 'next/link';
+import NewPostButton from '@/components/Buttons/NewPostButton';
+import PostList from '@/components/PostList/PostList';
 
 export default function Blog() {
-  const t = useTranslations("BlogPage");
-
-  const { data: session } = useSession();
 
   return (
-    <section className={styles.blog__container}>
-      {session?.user?.name === 'Catevika' ? <Link href={t('link1')}>{t('button')}</Link> : null}
-      <div className={styles.blog__posts__container}>
-        <PostCard />
-        <PostCard />
-        <PostCard />
-        <PostCard />
-      </div>
-    </section>
+    <>
+      <section className={styles.blog__container}>
+        <NewPostButton />
+        <div className={styles.blog__posts__container}>
+          <PostList />
+        </div>
+      </section>
+    </>
   );
 };

@@ -7,15 +7,12 @@ import PasswordEye from '@/components/Forms/PasswordEye/PasswordEye';
 import type { LoginFormValues } from '@/types/types';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 
 export default function LoginForm() {
   const t = useTranslations('LoginPage');
-
-  const router = useRouter();
 
   const [isVisible, setIsVisible] = useState(false);
   const toggleVisiblePass = () => setIsVisible(!isVisible);
@@ -33,9 +30,9 @@ export default function LoginForm() {
     }
   });
 
-  const login = async (credentials: LoginFormValues) => {
+  const login = (credentials: LoginFormValues) => {
     try {
-      await handleCredentialsLogin(credentials);
+      handleCredentialsLogin(credentials);
     } catch (error) {
       toast.error(t('toastError'));
     };

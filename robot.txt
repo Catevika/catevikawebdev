@@ -1,0 +1,12 @@
+User-agent: *
+
+Disallow: /login/
+Disallow: /connexion/
+
+Disallow: /register/
+Disallow: /inscription/
+
+Disallow: /dashboard/
+Disallow: /tableaudebord/
+
+Sitemap: https://www.catevikawebdev.com/sitemap.xml

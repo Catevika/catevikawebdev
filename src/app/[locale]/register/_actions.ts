@@ -1,20 +1,21 @@
 "use server";
 
-import connectDB from '@/database/connectDB';
-import User from '@/database/models/userModel';
+import clientPromise from '@/database/db';
 import type { RegisterFormValues } from '@/types/types';
 import bcrypt from 'bcryptjs';
 
 export async function checkUserExists(name: string) {
-  connectDB();
+  const client = await clientPromise;
+  const db = client.db('test');
 
-  const exsitingUser = await User.findOne({ name });
+  const exsitingUser = await db.collection('users').findOne({ name });
 
   return JSON.stringify(exsitingUser);
 }
 
 export async function registerUser(formData: RegisterFormValues) {
-  connectDB();
+  const client = await clientPromise;
+  const db = client.db('test');
 
   const { name, email, password } = formData;
 
@@ -24,7 +25,7 @@ export async function registerUser(formData: RegisterFormValues) {
   const isAdmin = name === 'Catevika' ? true : false;
 
   try {
-    const newUser = User.create({
+    const newUser = db.collection('users').insertOne({
       image: '/icons/user_placeholder.svg',
       imageLight: '/icons/user_placeholder-light.svg',
       name,
@@ -32,8 +33,7 @@ export async function registerUser(formData: RegisterFormValues) {
       password: hashedPassword,
       isAdmin
     });
-
-    return JSON.stringify(newUser);
+    return { newUser };
   } catch (error) {
     return { error };
   }

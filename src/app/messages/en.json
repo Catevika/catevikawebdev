@@ -269,7 +269,16 @@
     "text2": "Log in to access the New Post page",
     "link": "/login",
     "button": "Login"
-
+  },
+  "PostList": {
+    "noPost": "There is no post available yet"
+  },
+  "PostCard": {
+    "text": "Read more"
+  },
+  "PostUser": {
+    "image": "Author",
+    "text": "Anonymous"
   },
   "DashboardPage": {
     "text": "Access Restricted to Catevika:"

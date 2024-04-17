@@ -1,17 +1,13 @@
-"use client";
-
-import { useSession } from 'next-auth/react';
+import { auth } from '@/app/lib/auth';
+import { redirect } from 'next/navigation';
 import type { ReactNode } from 'react';
-import Login from '../login/page';
 
-export default function BlogLayout({ children }: { children: ReactNode; }) {
-  const { status } = useSession();
-
+export default async function BlogLayout({ children }: { children: ReactNode; }) {
+  const session = await auth();
 
   return (
     <>
-      {status === 'authenticated' ? children : <Login />}
+      {session ? children : redirect('/login')}
     </>
-
   );
 }

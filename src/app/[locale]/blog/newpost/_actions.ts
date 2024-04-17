@@ -4,7 +4,8 @@ import { auth } from '@/app/lib/auth';
 import connectDB from '@/database/connectDB';
 import Post from '@/database/models/postModel';
 import User from '@/database/models/userModel';
-import type { PostFormValues } from '@/types/types';
+import type { PostFormValues, UserType } from '@/types/types';
+import { revalidatePath } from 'next/cache';
 
 export async function checkPostExists(title: string) {
   connectDB();
@@ -29,15 +30,20 @@ export async function createNewPost(formData: PostFormValues) {
     }
 
     connectDB();
-    const author = await User.findOne({ name: user.name });
+    const author: UserType | null = await User.findOne({ name: user.name });
 
-    const newPost = await Post.create({
+    if (!author) return null;
+
+    const newPost = await new Post({
       imageurl,
       title,
       content,
-      author
+      author,
+      isNew: true
     });
-    return JSON.stringify(newPost);
+    await newPost.save();
+    revalidatePath('/blog');
+    return { newPost };
   } catch (error) {
     return { error };
   }

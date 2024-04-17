@@ -37,16 +37,16 @@ export default function NewPostForm() {
       toast.error(t('toastExists'));
       reset();
       return null;
-    } else {
-      const post = await createNewPost(formData);
+    }
 
-      if (post) {
-        toast.success(t('toastSuccess'));
-        router.push('/blog');
-      } else {
-        toast.error(t('toastError'));
-      }
-    };
+    const newPost = await createNewPost(formData);
+
+    if (!newPost) {
+      toast.error(t('toastError'));
+    } else {
+      toast.success(t('toastSuccess'));
+      router.push('/blog');
+    }
   };
 
   return (

@@ -45,12 +45,10 @@ export default function RegisterForm() {
       reset();
       return null;
     } else {
-      const user = await registerUser(formData);
-
-      if (user) {
-        toast.success(t('toastSuccess'));
+      try {
+        await registerUser(formData);
         router.push('/login');
-      } else {
+      } catch (error) {
         toast.error(t('toastError'));
       }
     }
