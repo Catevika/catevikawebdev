@@ -1,7 +1,10 @@
 import matter from 'gray-matter';
 import * as fs from 'node:fs';
+import { join } from 'node:path';
 
-export function getPostMetaData(basePath: string) {
+const basePath = join(process.cwd(), "_posts");
+
+export function getPostMetaData() {
   const folder = basePath + '/';
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith('.md'));
@@ -23,7 +26,7 @@ export function getPostMetaData(basePath: string) {
 }
 
 export function getPostContent(slug: string) {
-  const folder = 'src/postsMDfiles/';
+  const folder = basePath + '/';
   const file = `${folder}${slug}.md`;
   const fileContents = fs.readFileSync(file, 'utf8');
   const matterResult = matter(fileContents);
