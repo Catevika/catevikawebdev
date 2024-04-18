@@ -5,7 +5,7 @@ import { getPostContent, getPostMetaData } from '@/utils/postUtils';
 import Markdown from 'markdown-to-jsx';
 
 export const generateStaticParams = async () => {
-  const posts = getPostMetaData('src/postsExamples');
+  const posts = getPostMetaData('src/postsMDfiles');
   return posts.map((post: PostMetadataType) => ({
     slug: post.slug
   }));
