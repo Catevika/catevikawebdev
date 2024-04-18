@@ -22,11 +22,19 @@ export default function PostPage({ params }: { params: { slug: string; }; }) {
   const { slug } = params;
   const post = getPostContent(slug);
 
+  const { title, subtitle, author, date, credits } = post.data;
+
   return (
     <section className={styles.post__container}>
       <div className={styles.post__backbutton__container}>
         <BackButton />
       </div>
+      <h3>{title}</h3>
+      <p>{subtitle}</p>
+      <p>Author: <span>{author}</span></p>
+      <p>Published: <span>{date}</span></p>
+      {credits?.length !== 0 ? <p>Credits: <span>{credits}</span></p> : null}
+      <hr />
       <article className={styles.post__article}>
         <Markdown>{post.content}</Markdown>
       </article>

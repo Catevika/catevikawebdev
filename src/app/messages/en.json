@@ -3,7 +3,7 @@
   "description": "Your custom website quote in just a few clicks! Catevika, a web developer based in Paris, France, takes care of everything, from design to launch. Everything's under control, and the world is yours, with no limits!",
   "NotFoundPage": {
     "text": "Ooops! It seems that you've stumbled upon a page that doesn't exist.",
-    "link": "Go back to previous page"
+    "link": "Back"
   },
   "NavItems": {
     "id-1": {

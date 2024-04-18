@@ -3,7 +3,7 @@
   "description": "Votre devis de site web personnalisé en quelques clics ! Catevika, développeur web basé à Paris, France, s'occupe de tout, de la conception au lancement. Tout est sous contrôle, et le monde est à vous, sans limite !",
   "NotFoundPage": {
     "text": "Oups ! Il semble que vous soyez tombé sur une page qui n'existe pas.",
-    "link": "Retour à la page précédente"
+    "link": "Retour"
   },
   "NavItems": {
     "id-1": {

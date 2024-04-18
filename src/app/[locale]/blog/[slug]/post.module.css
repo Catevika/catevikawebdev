@@ -3,6 +3,23 @@
   width: 90%;
 }
 
+.post__container p:not(.post__article p):first-of-type,
+.post__container p:not(.post__article p):nth-of-type(2),
+.post__container p:not(.post__article p):nth-of-type(3) {
+  font-weight: 700;
+}
+
+.post__container span {
+  font-weight: 400;
+}
+
+.post__container hr {
+  margin: 2rem;
+  padding: 1px;
+  background-color: var(--color-gold);
+  border: none;
+}
+
 .post__backbutton__container {
   margin-bottom: 2rem;
 }
