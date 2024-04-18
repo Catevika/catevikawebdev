@@ -4,7 +4,7 @@ import type { PostMetadataType } from '@/types/types';
 import { getPostMetaData } from '@/utils/postUtils';
 
 export default function BlogPage() {
-  const postsMetadata: PostMetadataType[] = getPostMetaData('/postsMDfiles');
+  const postsMetadata: PostMetadataType[] = getPostMetaData('https://www.catevikawebdev.com/postsMDfiles');
 
   return (
     <section className={styles.blog__container}>
