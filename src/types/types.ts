@@ -86,19 +86,12 @@ export type ServiceReason = {
   text: string;
 };
 
-export type PostFormValues = {
-  id: string;
+export type PostMetadataType = {
+  slug: string;
   imageurl: string;
   title: string;
-  content: string;
-};
-
-export type PostType = {
-  _id: ObjectId;
-  imageurl: string;
-  title: string;
-  content: string;
-  author: UserType;
-  createdAt: Date;
-  updatedAt: Date;
+  subtitle: string;
+  author: string;
+  credits: string;
+  date: string;
 };

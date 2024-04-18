@@ -1,0 +1,34 @@
+.post__container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.post__backbutton__container {
+  margin-bottom: 2rem;
+}
+
+.post__backbutton__container button {
+  margin-top: 0;
+}
+
+.post__article h2 {
+  margin: 2rem 0;
+}
+
+.post__article h3 {
+  margin: 1rem 0;
+}
+
+.post__article img {
+  margin: 2rem auto;
+}
+
+.post__article a {
+  color: var(--color-gold);
+}
+
+@media(max-width: 930px) {
+  .post__container {
+    width: 100%;
+  }
+}

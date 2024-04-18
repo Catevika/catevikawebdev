@@ -4,7 +4,7 @@ import { checkUserExists, registerUser } from '@/app/[locale]/register/_actions'
 import styles from '@/app/[locale]/register/register.module.css';
 import SendButton from '@/components/Buttons/SendButton';
 import PasswordEye from '@/components/Forms/PasswordEye/PasswordEye';
-import { type RegisterFormValues } from '@/types/types';
+import type { RegisterFormValues } from '@/types/types';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';

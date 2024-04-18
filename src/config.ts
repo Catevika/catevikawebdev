@@ -16,13 +16,9 @@ export const pathnames = {
     en: '/blog',
     fr: '/blog'
   },
-  '/blog/newpost': {
-    en: '/blog/newpost',
-    fr: '/blog/nouveaupost'
-  },
-  '/blog/post/[postId]': {
-    en: '/blog/post/[postId]',
-    fr: '/blog/post/[postId]'
+  '/blog/[slug]': {
+    en: '/blog/[slug]',
+    fr: '/blog/[slug]'
   },
   '/about': {
     en: '/about',

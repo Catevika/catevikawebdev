@@ -1,17 +1,17 @@
 import styles from '@/app/[locale]/blog/blog.module.css';
-import NewPostButton from '@/components/Buttons/NewPostButton';
-import PostList from '@/components/PostList/PostList';
+import PostCard from '@/components/PostCard/PostCard';
+import type { PostMetadataType } from '@/types/types';
+import { getPostMetaData } from '@/utils/postUtils';
 
-export default function Blog() {
+export default function BlogPage() {
+  const postsMetadata: PostMetadataType[] = getPostMetaData('src/postsExamples');
 
   return (
-    <>
-      <section className={styles.blog__container}>
-        <NewPostButton />
-        <div className={styles.blog__posts__container}>
-          <PostList />
-        </div>
-      </section>
-    </>
+    <section className={styles.blog__container}>
+      <h3>What are you interested in today?</h3>
+      {postsMetadata.map((post, postIndex) => (
+        <PostCard key={postIndex} post={post} />
+      ))}
+    </section>
   );
-};
+}

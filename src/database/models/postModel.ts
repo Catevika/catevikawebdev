@@ -1,5 +1,5 @@
 import User from '@/database/models/userModel';
-import type { PostType } from '@/types/types';
+import type { PostMetadataType } from '@/types/types';
 import mongoose from 'mongoose';
 
 const PostSchema = new mongoose.Schema({
@@ -21,7 +21,7 @@ const PostSchema = new mongoose.Schema({
   timestamps: true
 });
 
-const Post = mongoose.models?.Post || mongoose.model<PostType>('Post', PostSchema);
+const Post = mongoose.models?.Post || mongoose.model<PostMetadataType>('Post', PostSchema);
 
 export default Post;
 

@@ -30,9 +30,9 @@ export default function LoginForm() {
     }
   });
 
-  const login = (credentials: LoginFormValues) => {
+  const login = async (credentials: LoginFormValues) => {
     try {
-      handleCredentialsLogin(credentials);
+      await handleCredentialsLogin(credentials);
     } catch (error) {
       toast.error(t('toastError'));
     };

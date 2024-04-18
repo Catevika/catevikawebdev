@@ -3,12 +3,12 @@
 import { sendEmail } from '@/app/[locale]/contact/_actions';
 import styles from '@/app/[locale]/contact/contact.module.css';
 import SendButton from '@/components/Buttons/SendButton';
-import type { ContactFormValues } from '@/types/types';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useState } from 'react';
 import { useForm, type SubmitHandler } from 'react-hook-form';
 import toast from 'react-hot-toast';
+import type { ContactFormValues } from '../../types';
 
 export default function ContactForm() {
   const t = useTranslations('Contact');
