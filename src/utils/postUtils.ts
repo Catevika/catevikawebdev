@@ -23,7 +23,7 @@ export function getPostMetaData(basePath: string) {
 }
 
 export function getPostContent(slug: string) {
-  const folder = 'src/postsMDfiles/';
+  const folder = '/postsMDfiles/';
   const file = `${folder}${slug}.md`;
   const fileContents = fs.readFileSync(file, 'utf8');
   const matterResult = matter(fileContents);
