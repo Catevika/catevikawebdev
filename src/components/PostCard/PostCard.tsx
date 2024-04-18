@@ -1,4 +1,4 @@
-import styles from '@/components/PostCard/postcard.module.css';
+import styles from '@/components/PostCard/PostCard.module.css';
 import type { PostMetadataType } from '@/types/types';
 import Image from 'next/image';
 import Link from 'next/link';
