@@ -1,5 +1,8 @@
-.home__background {
+.home__container {
   position: relative;
+}
+
+.home__background {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -29,7 +32,7 @@
 
 .home__content {
   position: absolute;
-  top: 12rem;
+  top: 2rem;
 }
 
 .home__content h2 {
@@ -80,8 +83,8 @@
 
   .home__background__image2dark,
   .home__background__image2light {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 30%;
+    max-height: 30%;
   }
 
   .home__bottom {
@@ -112,7 +115,25 @@
   }
 }
 
+
+
+@media(max-width: 800px) {
+
+  .home__background__image2dark,
+  .home__background__image2light {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
 @media(max-width: 580px) {
+
+  .home__background__image2dark,
+  .home__background__image2light {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
   .home__link {
     font-size: 1.3rem;
   }

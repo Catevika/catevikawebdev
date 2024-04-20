@@ -1,4 +1,6 @@
+import createMDX from '@next/mdx';
 import createNextIntlPlugin from 'next-intl/plugin';
+import remarkGfm from 'remark-gfm';
 
 const withNextIntl = createNextIntlPlugin();
 
@@ -11,10 +13,18 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'images.pexels.com',
         pathname: '/photos/**',
-      },
-    ],
-  },
+      }
+    ]
+  }
 };
 
+const withMDX = createMDX({
+  // Add markdown plugins here, as desired
+  options: {
+    remarkPlugins: [remarkGfm],
+    // rehypePlugins: [],
+  },
+});
 
-export default withNextIntl(nextConfig);
+
+export default withNextIntl(withMDX(nextConfig));

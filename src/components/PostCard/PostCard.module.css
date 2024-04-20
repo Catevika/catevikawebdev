@@ -24,8 +24,16 @@
   flex: 2 1;
 }
 
+.postcard__content p:nth-of-type(2),
+.postcard__content p:nth-of-type(3),
+.postcard__content p:nth-of-type(4) {
+  color: var(--color-turquoise);
+}
+
 .postcard__content span {
   font-weight: 400;
+  font-style: italic;
+  color: var(--color-white);
 }
 
 @media(max-width: 930px) {

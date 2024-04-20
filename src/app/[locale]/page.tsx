@@ -9,7 +9,7 @@ export default function Home() {
   const t = useTranslations('HomePage');
 
   return (
-    <>
+    <section className={styles.home__container}>
       <div className={styles.home__background}>
         <Image className={styles.home__background__image1} src={'/icons/bubbles.svg'} alt='' width={0}
           height={0} sizes="50vw" priority />
@@ -26,6 +26,6 @@ export default function Home() {
         <h1>Catevika Web&nbsp;Dev</h1>
         <Link className={styles.home__link} href={'/contact'}>catevikawebdev@outlook.fr</Link>
       </div>
-    </>
+    </section>
   );
 }
