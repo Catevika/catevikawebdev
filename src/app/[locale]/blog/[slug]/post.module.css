@@ -38,10 +38,15 @@
   color: var(--color-turquoise);
 }
 
+.post__container p:not(.post__article p):nth-of-type(2) span,
+.post__container p:not(.post__article p):nth-of-type(3) span,
+.post__container p:not(.post__article p):nth-of-type(4) span {
+  color: var(--color-white);
+}
+
 .post__container span {
   font-weight: 400;
   font-style: italic;
-  color: var(--color-white);
 }
 
 .post__container hr {
@@ -64,7 +69,7 @@
 }
 
 .post__article h3 {
-  margin: 1rem 0;
+  margin: 2rem 0 1rem 0;
 }
 
 .post__article img {

@@ -1,6 +1,7 @@
 import styles from '@/app/[locale]/blog/[slug]/post.module.css';
-import BackButton from '@/components/Buttons/BackButton';
+import BackToBlogButton from '@/components/Buttons/BackToBlogButton';
 import { getPosts, getPostsBySlug } from '@/utils/postUtils';
+import 'highlight.js/styles/night-owl.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -22,13 +23,12 @@ export default async function PostPage({ params }: { params: { slug: string; }; 
   const { slug } = params;
   const post = await getPostsBySlug(slug);
 
-  const { imageurl, title, subtitle, author, date, credits } = post.frontmatter;
-  const { likes } = post.likes;
+  const { imageurl, title, subtitle, author, publishedAt, credits } = post.frontmatter;
 
   return (
     <section id='top' className={styles.post__container}>
       <div className={styles.post__backbutton__container}>
-        <BackButton />
+        <BackToBlogButton />
       </div>
       <div className={styles.post__top}>
         <div className={styles.post__image__container}>
@@ -38,7 +38,7 @@ export default async function PostPage({ params }: { params: { slug: string; }; 
           <h3>{title}</h3>
           <p>{subtitle}</p>
           <p>Author: <span>{author}</span></p>
-          <p>Published: <span>{date}</span></p>
+          <p>Published: <span>{publishedAt}</span></p>
           {credits?.length !== 0 ? <p>Credits: <span>{credits}</span></p> : null}
         </div>
       </div>
@@ -46,7 +46,7 @@ export default async function PostPage({ params }: { params: { slug: string; }; 
       <article className={styles.post__article}>
         {post.content}
       </article>
-      <Link className="top-link hide" href="#top">&uarr;</Link>
+      <p><Link className="top-link hide" href="#top">&uarr;</Link></p>
     </section>
   );
 }

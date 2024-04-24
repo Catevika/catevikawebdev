@@ -2,7 +2,11 @@ import { compileMDX } from 'next-mdx-remote/rsc';
 import { notFound } from 'next/navigation';
 import * as fs from 'node:fs';
 import path, { join } from 'node:path';
-
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypeHighlight from 'rehype-highlight';
+import rehypeSlug from 'rehype-slug';
+import remarkGfm from 'remark-gfm';
+import remarkToc from 'remark-toc';
 
 const basePath = join(process.cwd(), "_posts");
 
@@ -17,18 +21,33 @@ export async function getPostsBySlug(slug: string) {
       title: string;
       subtitle: string;
       author: string;
-      date: string;
+      publishedAt: string;
       credits: string;
     }>({
       source: fileContent,
-      options: { parseFrontmatter: true }
+      options: {
+        parseFrontmatter: true,
+        mdxOptions: {
+          remarkPlugins: [
+            remarkToc,
+            remarkGfm
+          ],
+          rehypePlugins: [
+            rehypeSlug,
+            rehypeAutolinkHeadings,
+            rehypeHighlight
+          ]
+        }
+      },
+      components: {}
     });
+
     return {
       frontmatter,
       content,
       slug: path.parse(filename).name,
-      likes: { likes: 0 }
     };
+
   } catch (error) {
     notFound();
   }
@@ -57,6 +76,5 @@ export function getAllBlogSlug() {
   } catch (error) {
     notFound();
   }
-
 }
 

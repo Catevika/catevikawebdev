@@ -3,15 +3,29 @@ imageurl: 'https://upload.wikimedia.org/wikipedia/commons/5/5c/AWS_Simple_Icons_
 title: 'Getting Started with AWS'
 subtitle: 'Create an AWS account and set up CLI/SDK access.'
 author: 'Pixegami - Github'
-date: 'April 17, 2024'
+publishedAt: 'April 17, 2024'
 credits: 'Photo by Wikipedia/commons'
 ---
+
+## Table of Contents
 
 "Cloud computing" plays a vital role in the creation of software products and services. It's also one of the most highly sought-after skills in the tech industry.
 
 In fact, most of the projects on this site will require cloud interaction of some sort—particularly with AWS's serverless products.
 
-### Getting Started
+## Getting Started
+
+```javascript
+// test for rehype-highlight during development
+
+// Using require
+const hljs = require('highlight.js');
+
+// Using ES6 import syntax
+import hljs from 'highlight.js';
+
+// test for rehype-highlight
+```
 
 > To use AWS in these projects, we'll need to set up an account, the CLI, and the SDK.
 
@@ -50,7 +64,7 @@ Once the user is created, you'll need to generate access keys (passwords, essent
 
 Your access keys should look something like this:
 
-```txt
+```plaintext
 Access key ID: AKIAIOSFODNN7EXAMPLE
 Secret access key: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ```
@@ -69,7 +83,7 @@ Additionally, you'll also be asked for a [default region](https://docs.aws.amazo
 
 You may leave them empty—but generally I like to use:
 
-```txt
+```plaintext
 Default region name [None]: us-east-1
 Default output format [None]: json
 ```
@@ -78,7 +92,7 @@ Default output format [None]: json
 
 Once configured, the AWS CLI [saves the credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) and region/format profiles to your computer. They are typically in these locations:
 
-```txt
+```plaintext
 ~/.aws/credentials
 ~/.aws/config
 ```

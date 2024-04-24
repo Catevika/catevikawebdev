@@ -123,6 +123,11 @@ h3 {
   color: var(--color-turquoise);
 }
 
+h2,
+h3 {
+  scroll-margin-top: 80px;
+}
+
 h4 {
   font-size: 1.75rem;
   font-weight: 700;
@@ -138,12 +143,13 @@ a,
 
 code {
   font-size: inherit;
+  border-radius: 1rem;
 }
 
+pre,
 p,
 li,
-q,
-pre {
+q {
   font-size: 1.2rem;
   line-height: 2rem;
 }
@@ -163,9 +169,8 @@ li {
 
 pre {
   margin: 2rem auto;
-  padding: 2rem;
+  padding: 0.5rem;
   border-radius: 1rem;
-  background-color: var(--color-dark);
   border: 1px solid var(--color-blue-30);
   overflow-x: scroll;
   box-shadow: -5px 0 5px var(--color-blue-30) inset;
@@ -174,6 +179,23 @@ pre {
 q {
   color: var(--color-turquoise);
   font-weight: 700;
+}
+
+table {
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  border: 1px solid var(--color-blue-30);
+}
+
+thead th {
+  color: var(--color-turquoise);
+}
+
+thead th,
+tbody tr td {
+  padding: 1rem;
+  border: 1px solid var(--color-blue-30);
 }
 
 .container {
@@ -319,7 +341,7 @@ label span,
 }
 
 .top-link {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   display: inline-flex;
@@ -328,7 +350,7 @@ label span,
   width: 2rem;
   height: 2rem;
   padding-bottom: 5px;
-  margin: 0 2em 2em 0;
+  margin: 0 2rem 2rem 0;
   color: var(--color-dark);
   cursor: pointer;
   border-radius: 50%;
@@ -455,6 +477,10 @@ label span,
 
   .form {
     width: 100%;
+  }
+
+  .top-link {
+    margin: 0 2rem 6rem 0;
   }
 }
 
