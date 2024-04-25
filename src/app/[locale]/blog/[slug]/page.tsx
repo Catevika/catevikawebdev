@@ -1,7 +1,7 @@
+import '@/app/[locale]/blog/[slug]/codeHighlight.css';
 import styles from '@/app/[locale]/blog/[slug]/post.module.css';
 import BackToBlogButton from '@/components/Buttons/BackToBlogButton';
 import { getPosts, getPostsBySlug } from '@/utils/postUtils';
-import 'highlight.js/styles/night-owl.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
