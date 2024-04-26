@@ -81,6 +81,16 @@
   line-height: 1.2rem;
 }
 
+.post__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.post__tags a {
+  color: var(--color-gold);
+}
+
 @media(max-width: 930px) {
   .post__container {
     width: 100%;

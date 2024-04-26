@@ -1,0 +1,20 @@
+.tags__title {
+  margin: 2rem 0 1rem 0;
+}
+
+.tags__title span {
+  color: var(--color-white);
+}
+
+
+.tags__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tags__container div a {
+  color: var(--color-gold);
+}

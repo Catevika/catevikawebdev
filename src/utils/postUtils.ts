@@ -23,6 +23,7 @@ export async function getPostsBySlug(slug: string) {
       author: string;
       publishedAt: string;
       credits: string;
+      tags: string[];
     }>({
       source: fileContent,
       options: {
@@ -53,6 +54,13 @@ export async function getPostsBySlug(slug: string) {
   }
 }
 
+export async function getPostMetadata(slug: string) {
+  const post = await getPostsBySlug(slug);
+
+  const { frontmatter } = post;
+  return frontmatter;
+}
+
 export async function getPosts() {
   try {
     const folder = basePath + '/';
@@ -62,6 +70,22 @@ export async function getPosts() {
     );
 
     return posts;
+  } catch (error) {
+    notFound();
+  }
+}
+
+export async function getPostsMetadata() {
+  try {
+    const folder = basePath + '/';
+    const files = fs.readdirSync(folder);
+    const posts = await Promise.all(
+      files.map(async (file) => await getPostsBySlug(path.parse(file).name))
+    );
+
+    const postMetadata = posts.map((post) => post.frontmatter);
+
+    return postMetadata;
   } catch (error) {
     notFound();
   }
