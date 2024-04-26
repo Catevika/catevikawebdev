@@ -1,10 +1,16 @@
 import styles from '@/app/[locale]/about/about.module.css';
 import SeahorseDetailList from '@/components/SeahorseDetailList/SeahorseDetailList';
+import { locales } from '@/config';
+import type { Props } from '@/types/types';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
-export async function generateMetadata({ params }: { params: { locale: string; }; }) {
-  const title = params.locale === 'en' ? 'About' : 'A propos';
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({ params: { locale } }: Props) {
+  const title = locale === 'en' ? 'About' : 'A propos';
 
   return {
     title: title
