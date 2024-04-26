@@ -23,25 +23,31 @@ export function generateMetadata({ params }: { params: { tag: string; }; }) {
 
 export default async function TagPostList({ params }: { params: { tag: string; }; }) {
   const posts = await getPosts();
-  if (!posts) return <p>No posts available with the tag {params.tag}</p>;
 
   const tagPosts = posts.filter((post) => post.frontmatter.tags.includes(params.tag));
-  if (!tagPosts) return (
-    <div>
-      <p>No posts available with the tag {params.tag}</p>
-      <BacktoBlogButton />
-    </div>);
 
   return (
     <section className='container'>
-      <h3 className={styles.tags__title}>Posts available for <span>#{params.tag}</span> tag:</h3>
-      <div className={styles.tags__container}>
-        {tagPosts.map((post) => (
-          <div key={post.frontmatter.title}>
-            <Link href={`/blog/${post.slug}`}>{post.frontmatter.title}</Link>
+      {posts.length ?
+        tagPosts.length ?
+          <>
+            <h3 className={styles.tags__title}>Posts available for <span>#{params.tag}</span> tag:</h3>
+            <div className={styles.tags__container}>
+              {tagPosts.map((post) => (
+                <div key={post.frontmatter.title}>
+                  <Link href={`/blog/${post.slug}`}>{post.frontmatter.title}</Link>
+                </div>
+              ))}
+            </div>
+          </>
+          : <div>
+            <p>No posts available with the #{params.tag} tag.</p>
+            <BacktoBlogButton />
           </div>
-        ))}
-      </div>
+        : <div>
+          <p>No posts available with the #{params.tag} tag.</p>
+          <BacktoBlogButton />
+        </div>}
     </section>
   );
 }
