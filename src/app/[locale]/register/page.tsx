@@ -1,10 +1,13 @@
-"use client";
-
 import styles from '@/app/[locale]/register/register.module.css';
 import RegisterForm from '@/components/Forms/RegisterForm';
+import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Register'
+};
 
 export default function Register() {
   const t = useTranslations('RegisterPage');

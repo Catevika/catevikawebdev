@@ -20,6 +20,10 @@ export const pathnames = {
     en: '/blog/[slug]',
     fr: '/blog/[slug]'
   },
+  '/blog/tags/[tag]': {
+    en: '/blog/tags/[tag]',
+    fr: '/blog/tags/[tag]'
+  },
   '/about': {
     en: '/about',
     fr: '/apropos'

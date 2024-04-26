@@ -17,7 +17,7 @@ export async function generateStaticParams() {
 
 export function generateMetadata({ params }: { params: { tag: string; }; }) {
   return {
-    title: `Catevika Web Dev | Posts about ${params.tag}`
+    title: `Posts about ${params.tag} | Catevika Web Dev `
   };
 }
 

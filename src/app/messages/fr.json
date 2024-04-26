@@ -1,6 +1,6 @@
 {
   "title": "Catevika Web Dev",
-  "description": "Votre devis de site web personnalisé en quelques clics ! Catevika, développeur web basé à Paris, France, s'occupe de tout, de la conception au lancement. Tout est sous contrôle, et le monde est à vous, sans limite !",
+  "description": "En tant que développeur web expérimenté - MERN stack, Nextjs, etc. - j'offre une large gamme de services pour aider votre entreprise à prospérer en ligne, y compris la création de sites vitrines et de sites de services, la refonte de sites, des solutions évolutives et un soutien à long terme pour stimuler votre efficacité et votre productivité. Travaillons ensemble pour que votre présence en ligne atteigne de nouveaux sommets grâce à mes solutions web sur mesure.",
   "NotFoundPage": {
     "text": "Oups ! Il semble que vous soyez tombé sur une page qui n'existe pas.",
     "link": "Retour"
@@ -92,6 +92,7 @@
     "link": "Plus d'informations"
   },
   "AboutPage": {
+    "title": "A propos",
     "alt1": "Image de profil",
     "welcome": "Bienvenue!",
     "aboutMe": "Je m'appelle <span>Dominique Bello</span> et je suis <span>française</span>. Je vis et travaille à <span>Paris</span>. Depuis mon mariage, l' <span>Italie</span> est mon pays d'adoption.",

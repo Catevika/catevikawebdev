@@ -1,6 +1,6 @@
 {
   "title": "Catevika Web Dev",
-  "description": "Your custom website quote in just a few clicks! Catevika, a web developer based in Paris, France, takes care of everything, from design to launch. Everything's under control, and the world is yours, with no limits!",
+  "description": "As an experienced web developer - MERN stack, Nextjs, etc. - I offer a wide range of services to help your business thrive online, including creating showcase and service sites, providing site makeovers, scalable solutions, and long-term support to boost your efficiency and productivity. Let's work together to take your online presence to new heights with my custom-tailored web solutions.",
   "NotFoundPage": {
     "text": "Ooops! It seems that you've stumbled upon a page that doesn't exist.",
     "link": "Back"
@@ -92,6 +92,7 @@
     "link": "Learn more"
   },
   "AboutPage": {
+    "title": "About",
     "alt1": "Profile image",
     "welcome": "Welcome!",
     "aboutMe": "My name is <span>Dominique Bello</span> and I'm <span>French</span>. I live and work in <span>Paris</span>. Since I got married <span>Italy</span> has been my adopted country.",

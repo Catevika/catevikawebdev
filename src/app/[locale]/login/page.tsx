@@ -1,7 +1,11 @@
 import styles from '@/app/[locale]/register/register.module.css';
 import LoginForm from '@/components/Forms/LoginForm';
+import type { Metadata } from 'next';
 import Image from 'next/image';
 
+export const metadata: Metadata = {
+  title: 'Login',
+};
 
 export default function Login() {
 

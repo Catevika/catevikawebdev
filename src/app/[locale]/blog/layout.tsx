@@ -4,8 +4,7 @@ import { redirect } from 'next/navigation';
 import type { ReactNode } from 'react';
 
 export const metadata: Metadata = {
-  'title': 'Catevika Web Dev | Blog',
-  'description': "Fabulous posts you don't want to miss!"
+  title: 'Blog',
 };
 
 export default async function BlogLayout({ children }: { children: ReactNode; }) {

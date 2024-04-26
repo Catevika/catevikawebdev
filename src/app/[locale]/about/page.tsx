@@ -1,9 +1,15 @@
-"use client";
-
 import styles from '@/app/[locale]/about/about.module.css';
 import SeahorseDetailList from '@/components/SeahorseDetailList/SeahorseDetailList';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+
+export async function generateMetadata({ params }: { params: { locale: string; }; }) {
+  const title = params.locale === 'en' ? 'About' : 'A propos';
+
+  return {
+    title: title
+  };
+}
 
 export default function About() {
   const t = useTranslations('AboutPage');

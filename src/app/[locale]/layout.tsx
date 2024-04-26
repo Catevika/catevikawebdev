@@ -20,7 +20,10 @@ export async function generateMetadata({ params: { locale } }: Props) {
   const t = await getTranslations({ locale });
 
   return {
-    title: t('title'),
+    title: {
+      template: '%s | Catevika Web Dev',
+      default: 'Catevika Web Dev',
+    },
     description: t('description')
   };
 }

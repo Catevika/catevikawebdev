@@ -1,15 +1,17 @@
-"use client";
-
 import styles from '@/app/[locale]/services/services.module.css';
 import ServiceBanner from '@/components/ServiceBanner/ServiceBanner';
 import ServiceList from '@/components/ServiceList/ServiceList';
 import ServiceReasonList from '@/components/ServiceReasonList/ServiceReasonList';
+import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Services() {
+export const metadata: Metadata = {
+  title: 'Services',
+};
 
+export default function Services() {
   const t = useTranslations('Services');
 
   return (

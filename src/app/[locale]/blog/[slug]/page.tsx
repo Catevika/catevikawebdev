@@ -14,9 +14,9 @@ export const generateStaticParams = async () => {
 };
 
 export async function generateMetadata({ params }: { params: { slug: string; }; }) {
-  const id = params?.slug ? '| ' + params?.slug : '';
+  const id = params?.slug ? params?.slug : '';
   return {
-    title: `Catevika Web Dev ${id.replaceAll('_', ' ')}`
+    title: `${id.replaceAll('_', ' ')} | Catevika Web Dev`
   };
 }
 
