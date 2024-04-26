@@ -1,7 +1,9 @@
 import styles from '@/app/[locale]/register/register.module.css';
 import RegisterForm from '@/components/Forms/RegisterForm';
+import type { Props } from '@/types/types';
 import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -9,7 +11,8 @@ export const metadata: Metadata = {
   title: 'Register'
 };
 
-export default function Register() {
+export default function Register({ params: { locale } }: Props) {
+  unstable_setRequestLocale(locale);
   const t = useTranslations('RegisterPage');
 
   return (

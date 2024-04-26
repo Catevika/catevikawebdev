@@ -3,6 +3,7 @@ import SeahorseDetailList from '@/components/SeahorseDetailList/SeahorseDetailLi
 import { locales } from '@/config';
 import type { Props } from '@/types/types';
 import { useTranslations } from 'next-intl';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 
 export function generateStaticParams() {
@@ -17,7 +18,9 @@ export async function generateMetadata({ params: { locale } }: Props) {
   };
 }
 
-export default function About() {
+export default function About({ params: { locale } }: Props) {
+  unstable_setRequestLocale(locale);
+
   const t = useTranslations('AboutPage');
 
   return (
