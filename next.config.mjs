@@ -15,8 +15,13 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'images.unsplash.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'images.pexels.com',
-        pathname: '/photos/**',
+        pathname: '/**',
       }
     ]
   }
@@ -25,7 +30,7 @@ const nextConfig = {
 const withMDX = createMDX({
   options: {
     remarkPlugins: [
-      remarkToc,
+      [remarkToc, { ordered: true, maxDepth: 6 }],
       remarkGfm
     ],
     rehypePlugins: [

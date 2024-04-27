@@ -1,3 +1,5 @@
+import PostImage from '@/components/PostImage/PostImage';
+import PostVideo from '@/components/PostVideo/PostVideo';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import { notFound } from 'next/navigation';
 import * as fs from 'node:fs';
@@ -40,7 +42,10 @@ export async function getPostsBySlug(slug: string) {
           ]
         }
       },
-      components: {}
+      components: {
+        PostVideo,
+        PostImage
+      }
     });
 
     return {

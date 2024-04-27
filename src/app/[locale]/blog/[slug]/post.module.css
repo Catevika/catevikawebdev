@@ -81,6 +81,15 @@
   line-height: 1.2rem;
 }
 
+.post__article ul:first-of-type li {
+  list-style: numeric;
+  color: var(--color-gold);
+}
+
+.post__article ul:not(:first-of-type) li {
+  list-style: disc;
+}
+
 .post__tags {
   display: flex;
   flex-wrap: wrap;
