@@ -40,6 +40,7 @@
     "alt": "Error icon"
   },
   "RegisterPage": {
+    "message": "The 'Blog | Catevika Web Dev' page is still under construction. Please do not enter your real name or email address as this site is not GDPR compliant. These registration / login steps are just a way to protect the blog page before its official launch. The available posts are just test samples yet.",
     "title": "Register now!",
     "label1": "Name",
     "placeholder1": "Jane Smith",
@@ -60,6 +61,7 @@
     "link": "Login"
   },
   "LoginPage": {
+    "message": "The 'Blog | Catevika Web Dev' page is still under construction. Please do not enter your real name or email address as this site is not GDPR compliant. These registration / login steps are just a way to protect the blog page before its official launch. The available posts are just test samples yet.",
     "title": "Login",
     "label1": "Name",
     "placeholder1": "Jane Smith",

@@ -30,6 +30,7 @@
     "alt2": "Icône Lune"
   },
   "RegisterPage": {
+    "message": "La page 'Blog | Catevika Web Dev' est encore en construction. Veuillez ne pas entrer votre vrai nom ou votre adresse e-mail car ce site n'est pas conforme au GDPR. Ces étapes d'inscription / connexion sont juste un moyen de protéger la page du blog avant son lancement officiel. Les articles disponibles ne sont encore que des versions de test.",
     "title": "Inscrivez-vous !",
     "label1": "Nom",
     "placeholder1": "Marie Durand",
@@ -50,6 +51,7 @@
     "link": "Connexion"
   },
   "LoginPage": {
+    "message": "La page 'Blog | Catevika Web Dev' est encore en construction. Veuillez ne pas entrer votre vrai nom ou votre adresse e-mail car ce site n'est pas conforme au GDPR. Ces étapes d'inscription / connexion sont juste un moyen de protéger la page du blog avant son lancement officiel. Les articles disponibles ne sont encore que des versions de test.",
     "title": "Connexion",
     "label1": "Nom",
     "placeholder1": "Marie Durand",

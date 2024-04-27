@@ -16,19 +16,26 @@ export default function Register({ params: { locale } }: Props) {
   const t = useTranslations('RegisterPage');
 
   return (
-    <section className={styles.register__container}>
-      <div className={styles.register__left} >
-        <Image data-hide-on-theme="light" className={styles.home__background__image2dark} src={'/images/Catevika.png'} alt='' width={0}
-          height={0} sizes="50vw" priority />
-        <Image data-hide-on-theme="dark" className={styles.home__background__image2light} src={'/images/Catevika2.png'} alt='' width={0}
-          height={0} sizes="50vw" priority />
+    <section>
+      <div className={styles.register__message}>
+        <p>
+          {t('message')}
+        </p>
       </div>
-      <div className={styles.register__right}>
-        <div className={styles.register__title}>
-          <h3>{t('title')}</h3>
-          <p>{t('text')} <Link href="/login">{t('link')}</Link></p>
+      <div className={styles.register__container}>
+        <div className={styles.register__left} >
+          <Image data-hide-on-theme="light" className={styles.home__background__image2dark} src={'/images/Catevika.png'} alt='' width={0}
+            height={0} sizes="50vw" priority />
+          <Image data-hide-on-theme="dark" className={styles.home__background__image2light} src={'/images/Catevika2.png'} alt='' width={0}
+            height={0} sizes="50vw" priority />
         </div>
-        <RegisterForm />
+        <div className={styles.register__right}>
+          <div className={styles.register__title}>
+            <h3>{t('title')}</h3>
+            <p>{t('text')} <Link href="/login">{t('link')}</Link></p>
+          </div>
+          <RegisterForm />
+        </div>
       </div>
     </section>
   );
