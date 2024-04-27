@@ -1,7 +1,8 @@
 import styles from '@/app/[locale]/blog/tags/[tag]/tags.module.css';
+import BackButton from '@/components/Buttons/BackButton';
 import BacktoBlogButton from '@/components/Buttons/BackToBlogButton';
+import PostCard from '@/components/PostCard/PostCard';
 import { getPosts, getPostsMetadata } from '@/utils/postUtils';
-import Link from 'next/link';
 
 export async function generateStaticParams() {
   const posts = await getPostsMetadata();
@@ -27,15 +28,16 @@ export default async function TagPostList({ params }: { params: { tag: string; }
   const tagPosts = posts.filter((post) => post.frontmatter.tags.includes(params.tag));
 
   return (
-    <section className='container'>
+    <section className={styles.tags__container}>
+      <p><BackButton /></p>
       {posts.length ?
         tagPosts.length ?
           <>
             <h3 className={styles.tags__title}>Posts available for <span>#{params.tag}</span> tag:</h3>
-            <div className={styles.tags__container}>
+            <div className={styles.tags__content}>
               {tagPosts.map((post) => (
                 <div key={post.frontmatter.title}>
-                  <Link href={`/blog/${post.slug}`}>{post.frontmatter.title}</Link>
+                  <PostCard key={post.slug} post={post} />
                 </div>
               ))}
             </div>

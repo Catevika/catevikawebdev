@@ -61,6 +61,18 @@ export async function getPostMetadata(slug: string) {
   return frontmatter;
 }
 
+export async function getTags() {
+  const posts = await getPosts();
+  if (!posts) return [];
+
+  // new Set removes the dyplicates and flat() flattens the array of arrays
+  const AlltagsWithDuplicates = new Set(posts.map((post) => post.frontmatter.tags).flat());
+
+  const Alltags = Array.from(AlltagsWithDuplicates);
+
+  return Alltags;
+}
+
 export async function getPosts() {
   try {
     const folder = basePath + '/';
