@@ -110,14 +110,3 @@ export async function getPostsMetadata() {
   }
 }
 
-export function getAllBlogSlug() {
-  try {
-    const folder = basePath + '/';
-    const files = fs.readdirSync(folder);
-    const slugs = files.map((file) => ({ slug: path.parse(file).name }));
-    return slugs;
-  } catch (error) {
-    notFound();
-  }
-}
-
