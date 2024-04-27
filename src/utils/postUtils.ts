@@ -71,11 +71,13 @@ export async function getTags() {
   if (!posts) return [];
 
   // new Set removes the dyplicates and flat() flattens the array of arrays
-  const AlltagsWithDuplicates = new Set(posts.map((post) => post.frontmatter.tags).flat());
+  const alltagsWithDuplicates = new Set(posts.map((post) => post.frontmatter.tags).flat());
 
-  const Alltags = Array.from(AlltagsWithDuplicates);
+  const alltags = Array.from(alltagsWithDuplicates);
 
-  return Alltags;
+  const orderedTags = alltags.sort();
+
+  return orderedTags;
 }
 
 export async function getPosts() {
