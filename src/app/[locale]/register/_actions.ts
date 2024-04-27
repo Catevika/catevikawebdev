@@ -26,8 +26,6 @@ export async function registerUser(formData: RegisterFormValues) {
 
   try {
     const newUser = new User({
-      image: '/icons/user_placeholder.svg',
-      imageLight: '/icons/user_placeholder-light.svg',
       name,
       email,
       password: hashedPassword,

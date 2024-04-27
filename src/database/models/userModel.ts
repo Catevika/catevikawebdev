@@ -2,20 +2,6 @@ import type { UserType } from '@/types/types';
 import mongoose from 'mongoose';
 
 const Userschema = new mongoose.Schema({
-  'image': {
-    type: String,
-    required: true,
-    default: "/icons/user_placeholder.svg"
-  },
-  'imageLight': {
-    type: String,
-    required: true,
-    default: "/icons/user_placeholder-light.svg"
-  },
-  'isAdmin': {
-    type: Boolean,
-    default: false
-  },
   'name': {
     type: String,
     required: true,
@@ -28,6 +14,10 @@ const Userschema = new mongoose.Schema({
   'password': {
     type: String,
     required: false
+  },
+  'isAdmin': {
+    type: Boolean,
+    default: false
   }
 }, {
   timestamps: true

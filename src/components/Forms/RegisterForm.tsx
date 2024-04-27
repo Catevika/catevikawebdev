@@ -26,8 +26,6 @@ export default function RegisterForm() {
     reValidateMode: 'onChange',
     mode: 'onBlur',
     defaultValues: {
-      image: '',
-      imageLight: '',
       name: '',
       email: '',
       password: '',

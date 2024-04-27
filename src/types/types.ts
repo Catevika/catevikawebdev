@@ -24,8 +24,6 @@ export type PasswordEyeProps = {
 };
 
 export type RegisterFormValues = {
-  image: string;
-  imageLight: string;
   name: string;
   email: string;
   password: string;
@@ -34,8 +32,6 @@ export type RegisterFormValues = {
 
 export type UserType = {
   _id: ObjectId;
-  image: string;
-  imageLight: string;
   name: string;
   email: string;
   password: string;
