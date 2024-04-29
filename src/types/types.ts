@@ -81,13 +81,3 @@ export type ServiceReason = {
   title: string;
   text: string;
 };
-
-export type PostMetadataType = {
-  slug: string;
-  imageurl: string;
-  title: string;
-  subtitle: string;
-  author: string;
-  credits: string;
-  date: string;
-};

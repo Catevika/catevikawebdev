@@ -3,17 +3,6 @@
   width: 90%;
 }
 
-.post__top {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  width: 100%;
-  padding: 1rem;
-  border-radius: 1rem;
-  border: 1px solid var(--color-blue-30);
-  background-color: var(--color-dark);
-}
-
 .post__image__container {
   position: relative;
   width: 400px;

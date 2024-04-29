@@ -3,6 +3,7 @@ import BackButton from '@/components/Buttons/BackButton';
 import BacktoBlogButton from '@/components/Buttons/BackToBlogButton';
 import PostCard from '@/components/PostCard/PostCard';
 import { getPosts, getPostsMetadata } from '@/utils/postUtils';
+import Link from 'next/link';
 
 export async function generateStaticParams() {
   const posts = await getPostsMetadata();
@@ -36,8 +37,10 @@ export default async function TagPostList({ params }: { params: { tag: string; }
             <h3 className={styles.tags__title}>Posts available for <span>#{params.tag}</span> tag:</h3>
             <div className={styles.tags__content}>
               {tagPosts.map((post) => (
-                <div key={post.frontmatter.title}>
-                  <PostCard key={post.slug} post={post} />
+                <div key={post.slug}>
+                  <Link href={`/blog/${post.slug}`}>
+                    <PostCard post={post} />
+                  </Link >
                 </div>
               ))}
             </div>

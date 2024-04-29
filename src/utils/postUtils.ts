@@ -59,13 +59,6 @@ export async function getPostsBySlug(slug: string) {
   }
 }
 
-export async function getPostMetadata(slug: string) {
-  const post = await getPostsBySlug(slug);
-
-  const { frontmatter } = post;
-  return frontmatter;
-}
-
 export async function getTags() {
   const posts = await getPosts();
   if (!posts) return [];

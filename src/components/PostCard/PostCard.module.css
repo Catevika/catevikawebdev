@@ -27,7 +27,8 @@
 
 .postcard__content p:nth-of-type(2),
 .postcard__content p:nth-of-type(3),
-.postcard__content p:nth-of-type(4) {
+.postcard__content p:nth-of-type(4),
+.postcard__content p:nth-of-type(5) {
   color: var(--color-turquoise);
 }
 

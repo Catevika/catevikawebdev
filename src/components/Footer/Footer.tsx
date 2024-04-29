@@ -36,7 +36,7 @@ export default function Footer() {
           })}</span>
         </q>
         <p>{t('text1')}</p>
-        <p>© Catevika Web Dev 2024</p>
+        <p>© Catevika Web Dev 2024 - {t('text2')}</p>
       </div>
     </div>
   );

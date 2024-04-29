@@ -1,9 +1,9 @@
 import '@/app/[locale]/blog/[slug]/codeHighlight.css';
 import styles from '@/app/[locale]/blog/[slug]/post.module.css';
 import BackToBlogButton from '@/components/Buttons/BackToBlogButton';
+import PostCard from '@/components/PostCard/PostCard';
 import TagsList from '@/components/TagsList/TagsList';
 import { getPosts, getPostsBySlug } from '@/utils/postUtils';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export const generateStaticParams = async () => {
@@ -24,25 +24,14 @@ export default async function PostPage({ params }: { params: { slug: string; }; 
   const { slug } = params;
   const post = await getPostsBySlug(slug);
 
-  const { imageurl, title, subtitle, author, publishedAt, credits, tags } = post.frontmatter;
+  const { tags } = post.frontmatter;
 
   return (
     <section id='top' className={styles.post__container}>
       <div className={styles.post__backbutton__container}>
         <BackToBlogButton />
       </div>
-      <div className={styles.post__top}>
-        <div className={styles.post__image__container}>
-          <Image src={imageurl} alt='' sizes="400x200" fill priority />
-        </div>
-        <div className={styles.post__metadata}>
-          <h3>{title}</h3>
-          <p>{subtitle}</p>
-          <p>Author: <span>{author}</span></p>
-          <p>Published: <span>{publishedAt}</span></p>
-          {credits?.length !== 0 ? <p>Credits: <span>{credits}</span></p> : null}
-        </div>
-      </div>
+      <PostCard key={post.slug} post={post} />
       <hr />
       <article className={styles.post__article}>
         {post.content}

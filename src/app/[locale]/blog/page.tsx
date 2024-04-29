@@ -29,8 +29,10 @@ export default async function BlogPage() {
       </aside>
       <div>
         <h3>What are you interested in today?</h3>
-        {posts.map((post, postIndex) => (
-          <PostCard key={postIndex} post={post} />
+        {posts.map((post) => (
+          <Link key={post.slug} href={`/blog/${post.slug}`}>
+            <PostCard post={post} />
+          </Link >
         ))}
       </div>
     </section>
