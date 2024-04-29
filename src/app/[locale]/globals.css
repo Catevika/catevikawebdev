@@ -371,7 +371,7 @@ label span,
   --color-blue-30: hsla(195, 84%, 32%, 0.1);
 
   --color-dark-turquoise: hsl(310, 65%, 25%);
-  --color-turquoise: rgb(139, 29, 121);
+  --color-turquoise: hsl(310, 65%, 33%);
   --color-turquoise-30: hsla(195, 84%, 32%, 0.3);
   --color-turquoise-80: hsla(310, 65%, 33%, 0.8);
   --color-turquoise-90: hsla(310, 65%, 33%, 0.9);

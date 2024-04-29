@@ -1,11 +1,16 @@
-import Image from 'next/image';
+"use client";
+
+import lottieLoading from "@/app/[locale]/lottieLoading.json";
+import lottieLoadingLight from "@/app/[locale]/lottieLoadingLight.json";
+import Lottie from "lottie-react";
+
 
 export default function Loading() {
-
   return (
     <>
       <div className='loading'>
-        <Image src='/Loading.gif' alt='Loading icon' sizes='128x128' width={128} height={128} unoptimized priority />
+        <Lottie data-hide-on-theme='light' animationData={lottieLoading} loop={true} />
+        <Lottie data-hide-on-theme='dark' animationData={lottieLoadingLight} loop={true} />
       </div>
     </>
   );
