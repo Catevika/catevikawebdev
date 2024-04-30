@@ -1,27 +1,41 @@
-import User from '@/database/models/userModel';
-import type { PostMetadataType } from '@/types/types';
+import type { PostType } from '@/types/types';
 import mongoose from 'mongoose';
 
 const PostSchema = new mongoose.Schema({
+  '_id': {
+    type: String,
+    required: true
+  },
   'imageurl': String,
   'title': {
     type: String,
     required: true
   },
-  'content': {
+  'subtitle': {
     type: String,
     required: true
   },
   'author': {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: User,  // Reference to the User model
+    type: String,
+    required: true
+  },
+  'credits': {
+    type: String,
+    required: true
+  },
+  'tags': {
+    type: [String],
+    required: true
+  },
+  'content': {
+    type: String,
     required: true
   }
 }, {
   timestamps: true
 });
 
-const Post = mongoose.models?.Post || mongoose.model<PostMetadataType>('Post', PostSchema);
+const Post = mongoose.models?.Post || mongoose.model<PostType>('Post', PostSchema);
 
 export default Post;
 

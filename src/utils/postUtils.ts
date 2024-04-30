@@ -23,7 +23,7 @@ export async function getPostsBySlug(slug: string) {
       title: string;
       subtitle: string;
       author: string;
-      publishedAt: string;
+      createdAt: string;
       credits: string;
       tags: string[];
     }>({

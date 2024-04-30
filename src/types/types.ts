@@ -81,3 +81,15 @@ export type ServiceReason = {
   title: string;
   text: string;
 };
+
+export type PostType = {
+  imageurl: string;
+  title: string;
+  subtitle: string;
+  author: string;
+  credits: string;
+  tags: string[];
+  content: string;
+  createdAt: Date;
+  updatedAt: Date;
+};
