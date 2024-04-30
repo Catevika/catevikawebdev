@@ -1,5 +1,6 @@
 import styles from '@/app/[locale]/blog/blog.module.css';
-import PostCard from '@/components/PostCard/PostCard';
+import PostCard from '@/components/Blog/PostCard/PostCard';
+import TagMenu from '@/components/Blog/TagMenu/TagMenu';
 import { getPosts, getPostsMetadata, getTags } from '@/utils/postUtils';
 import Link from 'next/link';
 
@@ -21,14 +22,9 @@ export default async function BlogPage() {
 
   return (
     <section className={styles.blog__container}>
-      <h3>Tags</h3>
-      <aside>
-        {tagsFromPosts.map((tagsFromPost, postIndex) => (
-          <Link key={postIndex} href={`/blog/tags/${tagsFromPost}`}>{tagsFromPost}</Link>
-        ))}
-      </aside>
       <div>
         <h3>What are you interested in today?</h3>
+        <TagMenu tagsFromPosts={tagsFromPosts} />
         {posts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`}>
             <PostCard post={post} />

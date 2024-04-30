@@ -1,5 +1,5 @@
 import styles from '@/app/[locale]/about/about.module.css';
-import SeahorseDetailList from '@/components/SeahorseDetailList/SeahorseDetailList';
+import SeahorseDetailList from '@/components/About/SeahorseDetailList/SeahorseDetailList';
 import { locales } from '@/config';
 import type { Props } from '@/types/types';
 import { useTranslations } from 'next-intl';

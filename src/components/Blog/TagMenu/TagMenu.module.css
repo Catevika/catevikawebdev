@@ -1,0 +1,44 @@
+.tagMenu__container {
+  position: relative;
+}
+
+.tagMenu__container ul {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 33%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-medium-dark);
+  border: 1px solid var(--color-gold);
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+}
+
+.tagMenu__container h3 {
+  color: var(--color-gold);
+  display: inline-block;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.tagMenu__container h3:hover ul {
+  opacity: 1;
+}
+
+.tagMenu__container h3:hover li:hover a,
+.tagMenu__container h3:hover li:focus-within a {
+  color: var(--color-gold);
+}
+
+@media (max-width: 930px) {
+  .tagMenu__container ul {
+    width: 50%;
+  }
+}

@@ -1,7 +1,7 @@
 import styles from '@/app/[locale]/blog/tags/[tag]/tags.module.css';
+import PostCard from '@/components/Blog/PostCard/PostCard';
 import BackButton from '@/components/Buttons/BackButton';
 import BacktoBlogButton from '@/components/Buttons/BackToBlogButton';
-import PostCard from '@/components/PostCard/PostCard';
 import { getPosts, getPostsMetadata } from '@/utils/postUtils';
 import Link from 'next/link';
 

@@ -1,4 +1,4 @@
-import styles from '@/components/PostImage/postImage.module.css';
+import styles from '@/components/Blog/PostImage/postImage.module.css';
 import Image from 'next/image';
 
 export default function PostImage({ src, alt, priority }: { src: string, alt: string, priority?: boolean; }) {

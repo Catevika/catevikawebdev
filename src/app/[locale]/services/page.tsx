@@ -1,7 +1,7 @@
 import styles from '@/app/[locale]/services/services.module.css';
-import ServiceBanner from '@/components/ServiceBanner/ServiceBanner';
-import ServiceList from '@/components/ServiceList/ServiceList';
-import ServiceReasonList from '@/components/ServiceReasonList/ServiceReasonList';
+import ServiceBanner from '@/components/Services/ServiceBanner/ServiceBanner';
+import ServiceList from '@/components/Services/ServiceList/ServiceList';
+import ServiceReasonList from '@/components/Services/ServiceReasonList/ServiceReasonList';
 import type { Props } from '@/types/types';
 import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';

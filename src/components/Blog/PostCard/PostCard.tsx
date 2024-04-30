@@ -1,7 +1,7 @@
 "use client";
 
 import { useReadingTime } from '@/app/hooks/useReadingTime';
-import styles from '@/components/PostCard/PostCard.module.css';
+import styles from '@/components/Blog/PostCard/PostCard.module.css';
 import Image from 'next/image';
 import type { JSXElementConstructor, ReactElement } from 'react';
 

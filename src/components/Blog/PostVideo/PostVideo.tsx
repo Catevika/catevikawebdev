@@ -1,4 +1,4 @@
-import styles from '@/components/PostVideo/postVideo.module.css';
+import styles from '@/components/Blog/PostVideo/postVideo.module.css';
 
 export default function PostVideo({ id }: { id: string; }) {
 

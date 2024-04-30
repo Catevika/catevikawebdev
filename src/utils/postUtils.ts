@@ -1,5 +1,5 @@
-import PostImage from '@/components/PostImage/PostImage';
-import PostVideo from '@/components/PostVideo/PostVideo';
+import PostImage from '@/components/Blog/PostImage/PostImage';
+import PostVideo from '@/components/Blog/PostVideo/PostVideo';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import { notFound } from 'next/navigation';
 import * as fs from 'node:fs';

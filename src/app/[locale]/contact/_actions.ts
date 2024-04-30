@@ -1,6 +1,6 @@
 'use server';
 
-import { EmailTemplate } from '@/components/EmailTemplate/EmailTemplate';
+import { EmailTemplate } from '@/components/Contact/EmailTemplate/EmailTemplate';
 import type { ContactFormValues } from '@/types/types';
 import { Resend } from 'resend';
 

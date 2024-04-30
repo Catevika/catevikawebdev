@@ -1,8 +1,8 @@
 import '@/app/[locale]/blog/[slug]/codeHighlight.css';
 import styles from '@/app/[locale]/blog/[slug]/post.module.css';
+import PostCard from '@/components/Blog/PostCard/PostCard';
+import TagsList from '@/components/Blog/TagsList/TagsList';
 import BackToBlogButton from '@/components/Buttons/BackToBlogButton';
-import PostCard from '@/components/PostCard/PostCard';
-import TagsList from '@/components/TagsList/TagsList';
 import { getPosts, getPostsBySlug } from '@/utils/postUtils';
 import Link from 'next/link';
 
