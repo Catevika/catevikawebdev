@@ -32,7 +32,7 @@ export function useReadingTime({ content }: { content: ReactElement<any, string 
     };
 
     calculateReadingTime();
-  }, [content]);
+  }, [contentStrings]);
 
   return { readingTime };
 };
