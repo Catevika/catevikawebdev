@@ -399,10 +399,6 @@ label span,
   border: 1px solid var(--color-gold);
 }
 
-[data-theme='light'] button:disabled {
-  background-color: var(--color-dark-gold);
-}
-
 [data-theme='light'] .container {
   background-color: var(--color-medium-dark);
 }
