@@ -93,16 +93,16 @@ button {
   transition: all 0.2s ease-in-out;
 }
 
+button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 button:hover,
 button:focus-within {
   color: var(--color-gold);
   background-color: var(--color-dark);
   border: 1px solid var(--color-gold);
-}
-
-button:disabled {
-  background-color: var(--color-dark-gold);
-  cursor: not-allowed;
 }
 
 h1 {

@@ -23,7 +23,8 @@
 
 .tagMenu__container h3 {
   color: var(--color-gold);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   margin-bottom: 2rem;
   cursor: pointer;
 }
@@ -35,6 +36,11 @@
 .tagMenu__container h3:hover li:hover a,
 .tagMenu__container h3:hover li:focus-within a {
   color: var(--color-gold);
+}
+
+.tagMenu__container h3 img {
+  width: 32px;
+  height: 32px;
 }
 
 @media (max-width: 930px) {

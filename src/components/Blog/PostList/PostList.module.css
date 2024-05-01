@@ -1,0 +1,6 @@
+.postList__pagination__buttons__container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: 2rem 0;
+}

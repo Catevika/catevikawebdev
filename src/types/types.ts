@@ -90,6 +90,13 @@ export type PostType = {
   credits: string;
   tags: string[];
   content: string;
-  createdAt: Date;
+  publishedAt: Date;
   updatedAt: Date;
+};
+
+export type PaginationControlsProps = {
+  totalPages: number;
+  perPage: string;
+  hasNextPage: boolean;
+  hasPrevPage: boolean;
 };

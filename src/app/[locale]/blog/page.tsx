@@ -1,8 +1,7 @@
 import styles from '@/app/[locale]/blog/blog.module.css';
-import PostCard from '@/components/Blog/PostCard/PostCard';
+import PostList from '@/components/Blog/PostList/PostList';
 import TagMenu from '@/components/Blog/TagMenu/TagMenu';
 import { getPosts, getPostsMetadata, getTags } from '@/utils/postUtils';
-import Link from 'next/link';
 
 export async function generateStaticParams() {
   const posts = await getPostsMetadata();
@@ -25,11 +24,12 @@ export default async function BlogPage() {
       <div>
         <h3>What are you interested in today?</h3>
         <TagMenu tagsFromPosts={tagsFromPosts} />
-        {posts.map((post) => (
+        {/* {posts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`}>
             <PostCard post={post} />
           </Link >
-        ))}
+        ))} */}
+        <PostList posts={posts} />
       </div>
     </section>
   );
