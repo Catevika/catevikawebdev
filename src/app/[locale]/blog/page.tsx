@@ -24,11 +24,6 @@ export default async function BlogPage() {
       <div>
         <h3>What are you interested in today?</h3>
         <TagMenu tagsFromPosts={tagsFromPosts} />
-        {/* {posts.map((post) => (
-          <Link key={post.slug} href={`/blog/${post.slug}`}>
-            <PostCard post={post} />
-          </Link >
-        ))} */}
         <PostList posts={posts} />
       </div>
     </section>

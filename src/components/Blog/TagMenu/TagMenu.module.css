@@ -1,8 +1,8 @@
-.tagMenu__container {
+.tagMenu__container button {
   position: relative;
 }
 
-.tagMenu__container ul {
+.tagMenu__container button ul {
   position: absolute;
   top: 2rem;
   left: 0;
@@ -11,14 +11,11 @@
   align-content: flex-start;
   flex-wrap: wrap;
   gap: 1rem;
-  width: 33%;
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: var(--color-medium-dark);
   border: 1px solid var(--color-gold);
   z-index: 10;
-  opacity: 0;
-  transition: opacity 200ms ease-in;
 }
 
 .tagMenu__container h3 {
@@ -29,18 +26,9 @@
   cursor: pointer;
 }
 
-.tagMenu__container h3:hover ul {
-  opacity: 1;
-}
-
-.tagMenu__container h3:hover li:hover a,
-.tagMenu__container h3:hover li:focus-within a {
+.tagMenu__container ul li:hover a,
+.tagMenu__container ul li:focus-within a {
   color: var(--color-gold);
-}
-
-.tagMenu__container h3 img {
-  width: 32px;
-  height: 32px;
 }
 
 @media (max-width: 930px) {
