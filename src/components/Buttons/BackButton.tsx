@@ -15,6 +15,6 @@ export default function BackButton() {
   };
 
   return (
-    <button className={styles.not__found__link} onClick={handleClick}>&larr; {t('link')}</button>
+    <button type='button' className={styles.not__found__link} onClick={handleClick}>&larr; {t('link')}</button>
   );
 }

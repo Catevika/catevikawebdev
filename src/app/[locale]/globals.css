@@ -23,10 +23,11 @@
 
   --color-error: hsl(337, 63%, 54%);
 
+  --font-family: 'Oxygen', 'Arial', 'sans-serif';
+
   /* Hide the scrollbars */
   -ms-overflow-style: none;
-  /* for Internet Explorer, Edge */
-  scrollbar-width: none;
+
   /* for Firefox */
   overflow-y: scroll;
   overflow-x: hidden;
@@ -46,6 +47,7 @@ body {
   color: var(--color-white);
   font-size: 16px;
   font-weight: 400;
+  font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   min-width: var(--min-width);
   max-width: var(--max-width);

@@ -18,8 +18,8 @@
 }
 
 .postcard__image__container img {
-  -o-object-fit: contain;
-  object-fit: contain;
+  width: auto;
+  height: auto;
 }
 
 .postcard__content {

@@ -16,14 +16,6 @@ export default function Footer() {
         </div>
         <div className={styles.footer__content__right}>
           <Link className={styles.footer__link} href={'/contact'}>
-            <Image data-hide-on-theme='light' className={styles.footer__icon__email__dark} src={'/icons/email.svg'} alt='Email icon' sizes='4vw' width={0} height={0} />
-            <Image data-hide-on-theme='dark' className={styles.footer__icon__email__light} src={'/icons/email-light.svg'} alt='Email icon' sizes='4vw' width={0} height={0} />
-          </Link>
-          <Link className={styles.footer__link} href={'/contact'}>
-            <Image data-hide-on-theme='light' className={styles.footer__icon__facebook__dark} src={'/icons/facebook.svg'} alt='Facebook icon' sizes='4vw' width={0} height={0} />
-            <Image data-hide-on-theme='dark' className={styles.footer__icon__facebook__light} src={'/icons/facebook-light.svg'} alt='Facebook icon' sizes='4vw' width={0} height={0} />
-          </Link>
-          <Link className={styles.footer__link} href={'/contact'}>
             <Image data-hide-on-theme='light' className={styles.footer__icon__x__dark} src={'/icons/social-x.svg'} alt='X ex-twitter icon' sizes='2vw' width={0} height={0} />
             <Image data-hide-on-theme='dark' className={styles.footer__icon__x__light} src={'/icons/social-x-light.svg'} alt='X ex-twitter icon' sizes='2vw' width={0} height={0} />
           </Link>

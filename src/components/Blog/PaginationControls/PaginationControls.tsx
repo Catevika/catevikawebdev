@@ -17,6 +17,7 @@ export default function PaginationControls({ totalPages, perPage, hasNextPage, h
   return (
     <div className={styles.pagination__buttons__container}>
       <button
+        type='button'
         disabled={!hasPrevPage}
         onClick={() => {
           router.push(`blog/?page=${Number(page) - 1}&per_page=${per_page}`);
@@ -25,7 +26,7 @@ export default function PaginationControls({ totalPages, perPage, hasNextPage, h
       </button>
 
       {Array.from({ length: totalPages / Number(perPage) }, (_, i) => i + 1).map((pageNumber) => (
-        <button key={Number(pageNumber)} onClick={() => {
+        <button type='button' key={Number(pageNumber)} onClick={() => {
           router.push(`blog/?page=${Number(pageNumber)}&per_page=${per_page}`);
         }} disabled={Number(page) === pageNumber}>{pageNumber}</button>
       ))}
