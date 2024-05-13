@@ -251,5 +251,8 @@
   "SendButton": {
     "Sending": "Envoi...",
     "Send": "Envoyer"
+  },
+  "BackButton": {
+    "link": "Retour"
   }
 }

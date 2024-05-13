@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 
 
 export default function BacktoBlogButton() {
-  const t = useTranslations('NotFoundPage');
+  const t = useTranslations('BackButton');
 
   const router = useRouter();
 
@@ -15,6 +15,6 @@ export default function BacktoBlogButton() {
   };
 
   return (
-    <button type='button' className={styles.not__found__link} onClick={handleClick}>&larr; {t('text')}</button>
+    <button type='button' className={styles.not__found__link} onClick={handleClick}>&larr; {t('link')}</button>
   );
 }
