@@ -2,8 +2,7 @@
   "title": "Catevika Web Dev",
   "description": "As an experienced web developer - MERN stack, Nextjs, etc. - I offer a wide range of services to help your business thrive online, including creating showcase and service sites, providing site makeovers, scalable solutions, and long-term support to boost your efficiency and productivity. Let's work together to take your online presence to new heights with my custom-tailored web solutions.",
   "NotFoundPage": {
-    "text": "Ooops! It seems that you've stumbled upon a page that doesn't exist.",
-    "link": "Back"
+    "text": "Ooops! It seems that you've stumbled upon a page that doesn't exist."
   },
   "NavItems": {
     "id-1": {
@@ -49,6 +48,7 @@
     "label2": "Email",
     "placeholder2": "jane.smith@gmail.com",
     "error2": "Enter a valid email, e.g.: jane.smith@gmail.com",
+    "infotool2": "Enter a valid email, e.g.: jane.smith@gmail.com",
     "label3": "Password",
     "placeholder3": "Password",
     "error3": "Password must contain at least 6 characters",
@@ -95,9 +95,7 @@
     "link": "Learn more"
   },
   "AboutPage": {
-    "title": "About",
     "alt1": "Profile image",
-    "welcome": "Welcome!",
     "aboutMe": "My name is <span>Dominique Bello</span> and I'm <span>French</span>. I live and work in <span>Paris</span>. Since I got married <span>Italy</span> has been my adopted country.",
     "aboutMe2": "I've been a dedicated <span>frontend web developer</span> for <span>4 years</span>. I make <span>websites</span> to reflect the <span>unique personality</span> of my <span>customers' brands</span>.",
     "aboutMe3": "As a <span>project manager</span> in <span>FMCG marketing</span>, I've always enjoyed <span>continuous learning</span> and <span>problem-solving</span>. For over 15 years, I worked with <span>international teams of developers</span> to launch <span>online surveys</span>, whether <span>BtoB</span> or <span>BtoC</span>. About 4 years ago, I decided to broaden my horizons and <span>trained as a self-taught web developer</span>.",
@@ -235,54 +233,17 @@
     "label1": "Name",
     "placeholder1": "Jane Smith",
     "error1": "Enter your name",
+    "infotool1": "Your username cannot start with a $ or have more than 50 characters",
     "label2": "Email",
     "placeholder2": "jane.smith@gmail.com",
+    "infotool2": "Enter a valid email, e.g.: jane.smith@gmail.com",
     "error2": "Enter a valid email address",
     "label3": "Message",
     "placeholder3": "Hello, here is my project:...",
+    "infotool3": "Enter a message",
     "error3": "Enter a message",
     "toastSuccess": "Email sent successfully",
     "toastError": "Email not sent. Please retry"
-  },
-  "BlogPage": {
-    "text": "Log in to access the Blog page",
-    "link1": "/blog/newpost",
-    "button": "New Post",
-    "link2": "/login",
-    "button2": "login"
-  },
-  "NewPostPage": {
-    "title": "New Post",
-    "text": "Cancel and go back to blog page",
-    "linkback": "Back to Blog",
-    "backlink": "/blog",
-    "toastExists": "Title already in use. Enter a customized title or modify the existing post",
-    "toastSuccess": "Post sent successfully",
-    "toastError": "Post not sent. Please retry",
-    "label1": "PEXELS Image external url",
-    "placeholder1": "https://...",
-    "infotool1": "With an image free for commercial use it's better, if none let this field empty",
-    "error1": "This url cannot start with a $ or have more than 200 characters",
-    "label2": "Title",
-    "placeholder2": "An amazing new post",
-    "infotool2": "Your title cannot start with a $ or have more than 100 characters",
-    "error2": "Enter a title",
-    "label3": "Content",
-    "placeholder3": "A post you don't want miss",
-    "error3": "Enter a content",
-    "text2": "Log in to access the New Post page",
-    "link": "/login",
-    "button": "Login"
-  },
-  "PostList": {
-    "noPost": "There is no post available yet"
-  },
-  "PostCard": {
-    "text": "Read more"
-  },
-  "PostUser": {
-    "image": "Author",
-    "text": "Anonymous"
   },
   "DashboardPage": {
     "text": "Access Restricted to Catevika:"
@@ -290,8 +251,5 @@
   "SendButton": {
     "Sending": "Sending...",
     "Send": "Send"
-  },
-  "Error": {
-    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
   }
 }

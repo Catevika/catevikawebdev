@@ -2,8 +2,7 @@
   "title": "Catevika Web Dev",
   "description": "En tant que développeur web expérimenté - MERN stack, Nextjs, etc. - j'offre une large gamme de services pour aider votre entreprise à prospérer en ligne, y compris la création de sites vitrines et de sites de services, la refonte de sites, des solutions évolutives et un soutien à long terme pour stimuler votre efficacité et votre productivité. Travaillons ensemble pour que votre présence en ligne atteigne de nouveaux sommets grâce à mes solutions web sur mesure.",
   "NotFoundPage": {
-    "text": "Oups ! Il semble que vous soyez tombé sur une page qui n'existe pas.",
-    "link": "Retour"
+    "text": "Oups ! Il semble que vous soyez tombé sur une page qui n'existe pas."
   },
   "NavItems": {
     "id-1": {
@@ -29,6 +28,16 @@
     "alt1": "Icône Soleil",
     "alt2": "Icône Lune"
   },
+  "Language": {
+    "label": "Alterner entre le français et l'anglais",
+    "alt": "Icône Langues"
+  },
+  "SuccessIcon": {
+    "alt": "Icone succès"
+  },
+  "ErrorIcon": {
+    "alt": "Error icon"
+  },
   "RegisterPage": {
     "message": "La page 'Blog | Catevika Web Dev' est encore en construction. Veuillez ne pas entrer votre vrai nom ou votre adresse e-mail car ce site n'est pas conforme au GDPR. Ces étapes d'inscription / connexion sont juste un moyen de protéger la page du blog avant son lancement officiel. Les articles disponibles ne sont encore que des versions de test.",
     "title": "Inscrivez-vous !",
@@ -39,6 +48,7 @@
     "label2": "Email",
     "placeholder2": "marie.durand@gmail.com",
     "error2": "Saisissez un email valide, ex.: marie.durand@gmail.com",
+    "infotool2": "Saisissez un email valide, ex.: marie.durand@gmail.com",
     "label3": "Mot de passe",
     "infotool3": "Votre mot de passe doit contenir 6 caractères minimum",
     "placeholder3": "...",
@@ -69,16 +79,6 @@
     "text": "Pas encore inscrit ?",
     "link": "Inscription"
   },
-  "Language": {
-    "label": "Alterner entre le français et l'anglais",
-    "alt": "Icône Langues"
-  },
-  "SuccessIcon": {
-    "alt": "Icone succès"
-  },
-  "ErrorIcon": {
-    "alt": "Error icon"
-  },
   "Log": {
     "LoginButton": "Connexion à Github",
     "LogoutButton": "Déconnexion",
@@ -95,9 +95,7 @@
     "link": "Plus d'informations"
   },
   "AboutPage": {
-    "title": "A propos",
     "alt1": "Image de profil",
-    "welcome": "Bienvenue!",
     "aboutMe": "Je m'appelle <span>Dominique Bello</span> et je suis <span>française</span>. Je vis et travaille à <span>Paris</span>. Depuis mon mariage, l' <span>Italie</span> est mon pays d'adoption.",
     "aboutMe2": "Je suis <span>développeuse web frontend</span> depuis <span>4 ans</span>. Je crée des <span>sites web</span> qui reflètent la <span>personnalité unique des marques</span> de <span>mes clients</span>.",
     "aboutMe3": "En tant que <span>chef de projet</span> dans le domaine du <span>marketing des produits de grande consommation</span>, j'ai toujours aimé <span>apprendre en continu</span> et <span>résoudre des problèmes</span>. Pendant plus de 15 ans, j'ai travaillé avec des <span>équipes internationales de développeurs</span> pour lancer des <span>enquêtes en ligne</span>, qu'elles soient de type <span>BtoB</span> ou <span>BtoC</span>. Il y a environ 4 ans, j'ai décidé d'élargir mon horizon et je me suis <span>formée en autodidacte au développement web</span>.",
@@ -235,54 +233,17 @@
     "label1": "Nom",
     "placeholder1": "Marie Durand",
     "error1": "Saisissez votre nom",
+    "infotool1": "Votre nom ne peut pas commencer par un $ ou avoir plus de 50 caractères",
     "label2": "Email",
     "placeholder2": "marie.durand@gmail.com",
     "error2": "Saisissez un email valide",
+    "infotool2": "Saisissez un email valide, ex.: marie.durand@gmail.com",
     "label3": "Message",
-    "placeholder3": "Bonjour, voici mon projet en quelques mots:...",
+    "placeholder3": "Bonjour, voici mon projet:...",
     "error3": "Saisissez votre message",
+    "infotool3": "Saisissez votre message",
     "toastSuccess": "Email envoyé avec succès",
     "toastError": "Email non envoyé. Veuillez réessayer"
-  },
-  "BlogPage": {
-    "text": "Connectez-vous pour accéder à la page Blog",
-    "link1": "/blog/nouveaupost",
-    "button": "Nouveau Post",
-    "link2": "/connexion",
-    "button2": "connexion"
-  },
-  "NewPostPage": {
-    "title": "Nouveau Post",
-    "text": "Annule et retourne à la page Blog",
-    "linkback": "Retour à la page Blog",
-    "backlink": "/blog",
-    "toastExists": "Ce titre est déjà utilisé. Saisissez un autre titre ou modifiez le post existant",
-    "toastSuccess": "Post envoyé avec succès",
-    "toastError": "Post non envoyé. Veuillez réessayer",
-    "label1": "Lien image externe PEXELS",
-    "placeholder1": "https://...",
-    "infotool1": "Avec une image libre de droits pour usage commercial c'est mieux, sinon laisser ce champs vide",
-    "error1": "Ce lien ne peut pas commencer par un $ ou contenir plus de 200 caractères",
-    "label2": "Titre",
-    "placeholder2": "Un nouveau post fantastique",
-    "infotool2": "Votre titre ne peut pas commencer avec un $ ou contenir plus de 100 caractères",
-    "error2": "Saisissez un titre",
-    "label3": "Contenu",
-    "placeholder3": "Un post à ne pas manquer",
-    "error3": "Saisissez un contenu",
-    "text2": "Connectez-vous pour accéder à la page Nouveau Post",
-    "link": "/connexion",
-    "button": "Connexion"
-  },
-  "PostList": {
-    "noPost": "Aucun article disponible pour le moment"
-  },
-  "PostCard": {
-    "text": "En savoir plus"
-  },
-  "PostUser": {
-    "image": "Auteur",
-    "text": "Anonyme"
   },
   "DashboardPage": {
     "text": "Accès restreint à Catevika:"
@@ -290,8 +251,5 @@
   "SendButton": {
     "Sending": "Envoi...",
     "Send": "Envoyer"
-  },
-  "Error": {
-    "description": "<p>Nous avons malheureusement rencontré une erreur.</p><p>Vous pouvez essayer de <retry>recharger la page</retry> que vous visitiez.</p>"
   }
 }

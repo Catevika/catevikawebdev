@@ -61,7 +61,7 @@ export default function RegisterForm() {
         </div>
         <div className='form__group'>
           <label className='form__label' htmlFor="email">{t('label2')} {errors.email ? <span role="alert">{t('error2')}</span> : null}</label>
-          <input aria-invalid={errors.email ? "true" : "false"} className='form__input' type="text" id="email" placeholder={t('placeholder2')} autoComplete='email' {...register('email', { required: t('error2'), pattern: { value: /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)$/i, message: t('error2') } })} />
+          <input aria-invalid={errors.email ? "true" : "false"} className='form__input' type="text" id="email" placeholder={t('placeholder2')} autoComplete='email' {...register('email', { required: t('error2'), pattern: { value: /^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)$/i, message: t('error2') } })} title={t('infotool2')} />
         </div>
         <div className='form__group'>
           <label className='form__label' htmlFor="password">{t('label3')} {errors.password ? <span role="alert">{t('error3')}</span> : null}</label>

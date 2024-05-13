@@ -58,15 +58,15 @@ export default function ContactForm() {
         <div className='form__visible'>
           <div className='form__group'>
             <label className='form__label' htmlFor="name">{t('label1')} {errors.name ? <span role="alert">{errors.name.message}</span> : null}</label>
-            <input aria-invalid={errors.name ? "true" : "false"} className='form__input' type="text" id="name" placeholder={t('placeholder1')} autoComplete='name' {...register('name', { required: t('error1') })} />
+            <input aria-invalid={errors.name ? "true" : "false"} className='form__input' type="text" id="name" placeholder={t('placeholder1')} autoComplete='name' {...register('name', { required: t('error1') })} title={t('infotool1')} />
           </div>
           <div className='form__group'>
             <label className='form__label' htmlFor="email">{t('label2')} {errors.email ? <span role="alert">{errors.email.message}</span> : null}</label>
-            <input aria-invalid={errors.email ? "true" : "false"} className='form__input' type="text" id="email" placeholder={t('placeholder2')} autoComplete='email' {...register('email', { required: t('error2'), pattern: { value: /^\S+@\S+$/i, message: t('error2') } })} />
+            <input aria-invalid={errors.email ? "true" : "false"} className='form__input' type="text" id="email" placeholder={t('placeholder2')} autoComplete='email' {...register('email', { required: t('error2'), pattern: { value: /^\S+@\S+$/i, message: t('error2') } })} title={t('infotool2')} />
           </div>
           <div className='form__group'>
             <label className='form__label' htmlFor="message">{t('label3')} {errors.message ? <span role="alert">{errors.message.message}</span> : null}</label>
-            <textarea aria-invalid={errors.message ? "true" : "false"} className='form__textarea' id="message" placeholder={t('placeholder3')} rows={5} {...register('message', { required: t('error3') })} />
+            <textarea aria-invalid={errors.message ? "true" : "false"} className='form__textarea' id="message" placeholder={t('placeholder3')} rows={5} {...register('message', { required: t('error3') })} title={t('infotool3')} />
           </div>
           <SendButton disabled={isSubmitting} />
         </div>
