@@ -19,7 +19,7 @@
 
 .postcard__image__container img {
   width: auto;
-  height: auto;
+  height: 200px;
 }
 
 .postcard__content {
