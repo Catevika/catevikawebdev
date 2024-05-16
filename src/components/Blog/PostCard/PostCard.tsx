@@ -15,7 +15,7 @@ export default function PostCard({ post }: { post: { frontmatter: { imageurl: st
     <>
       <div className={styles.postcard__container}>
         <div className={styles.postcard__image__container}>
-          <Image src={imageurl} alt='' width={355.55} height={200} priority />
+          <Image src={imageurl} alt='' sizes='200x400' width={0} height={0} priority />
         </div>
         <div className={styles.postcard__content}>
           <h3>{title}</h3>

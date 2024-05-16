@@ -18,6 +18,7 @@
 }
 
 .postcard__image__container img {
+  aspect-ratio: 16/9;
   width: auto;
   height: 200px;
 }
