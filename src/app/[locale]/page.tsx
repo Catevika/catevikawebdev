@@ -19,12 +19,11 @@ export default function Home() {
           height={0} sizes="50vw" priority />
       </div>
       <div className={styles.home__content}>
-        <h2>{t('title')}</h2>
-        <Link className={styles.home__link} href={'./services'}>{t('link')}</Link>
+        <Link className={styles.home__link__top} href={'./services'}><h2>{t('title')}</h2></Link>
       </div>
       <div className={styles.home__bottom}>
         <h1>Catevika Web&nbsp;Dev</h1>
-        <Link className={styles.home__link} href={'/contact'}>catevikawebdev@outlook.fr</Link>
+        <Link className={styles.home__link__bottom} href={'/contact'}>catevikawebdev@outlook.fr</Link>
       </div>
     </section>
   );

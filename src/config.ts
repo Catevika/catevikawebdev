@@ -28,14 +28,6 @@ export const pathnames = {
     en: '/about',
     fr: '/apropos'
   },
-  '/login': {
-    en: '/login',
-    fr: '/connexion'
-  },
-  '/register': {
-    en: '/register',
-    fr: '/inscription'
-  },
   '/dashboard': {
     en: '/dashboard',
     fr: '/tableaudebord'

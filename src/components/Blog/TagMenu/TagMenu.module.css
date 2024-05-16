@@ -1,5 +1,6 @@
 .tagMenu__container button {
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .tagMenu__container button ul {

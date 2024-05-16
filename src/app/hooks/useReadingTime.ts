@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useState, type JSXElementConstructor, type ReactElement } from 'react';
 
 export function extractStrings(children: React.ReactNode): string[] {
