@@ -12,8 +12,6 @@ export default function PaginationControls({ totalPages, perPage, hasNextPage, h
   const page = searchParams.get('page') ?? '1';
   const per_page = searchParams.get('per_page') ?? perPage;
 
-  console.log(page);
-
   return (
     <div className={styles.pagination__buttons__container}>
       {hasNextPage || hasPrevPage ? <>
