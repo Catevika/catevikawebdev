@@ -1,13 +1,18 @@
 "use client";
 
 import styles from '@/app/[locale]/services/services.module.css';
+import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 
 function ServiceBanner() {
   const t = useTranslations('ServiceBanner');
 
   return (
-    <div className={styles.banner}>
+    <motion.div className={styles.banner}
+      initial={{ x: '-100vw' }}
+      animate={{ x: 0 }}
+      transition={{ ease: "easeInOut", duration: 1.5 }}
+    >
       <div className={styles.line}>
         <span>{t('text1')}</span>
       </div>
@@ -17,7 +22,7 @@ function ServiceBanner() {
       <div className={styles.line}>
         <span>{t('text3')}</span>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

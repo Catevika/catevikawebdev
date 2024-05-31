@@ -1,6 +1,9 @@
 .services__link {
   font-size: 1.7rem;
   color: var(--color-gold);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 1rem;
   border-radius: 0.5rem;
   border: 1px solid transparent;
@@ -109,7 +112,7 @@
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-  max-width: 50%;
+  width: 50%;
   margin: 2rem;
   border-radius: 0.5rem;
 }
@@ -143,6 +146,12 @@
   border-top-right-radius: 0;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+
+.services__card[open] p {
+  opacity: 1;
 }
 
 .services__icon__dark,
@@ -171,8 +180,7 @@
 }
 
 .services__image {
-  max-width: 45%;
-  width: 45%;
+  width: 80%;
   height: auto;
   mix-blend-mode: screen;
 }
@@ -197,9 +205,6 @@
   }
 
   .services__image {
-    max-width: 90%;
-    width: 90%;
-    height: auto;
     margin: 0 auto;
     order: -1;
   }

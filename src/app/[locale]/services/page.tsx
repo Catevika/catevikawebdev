@@ -1,13 +1,13 @@
 import styles from '@/app/[locale]/services/services.module.css';
 import ServiceBanner from '@/components/Services/ServiceBanner/ServiceBanner';
+import ServiceImage from '@/components/Services/ServiceImage/ServiceImage';
 import ServiceList from '@/components/Services/ServiceList/ServiceList';
 import ServiceReasonList from '@/components/Services/ServiceReasonList/ServiceReasonList';
+import ServiceScrollLink from '@/components/Services/ServiceScrollLink/ServiceScrollLink';
 import type { Props } from '@/types/types';
 import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
-import Image from 'next/image';
-import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Services',
@@ -22,7 +22,7 @@ export default function Services({ params: { locale } }: Props) {
     <>
       <section className={styles.services__container}>
         <h3>{t('title1')}</h3>
-        <Link className={styles.services__link} href={'/contact'}>{t('link')}</Link>
+        <ServiceScrollLink />
         <div className={styles.services__content__top}>
           <div className={styles.services__banner}>
             <ServiceBanner />
@@ -38,7 +38,7 @@ export default function Services({ params: { locale } }: Props) {
           <div className={styles.services__content}>
             <ServiceReasonList />
           </div>
-          <Image className={styles.services__image} src={'/images/Website_Mockup.png'} alt={t('alt')} width={0} height={0} sizes="50vw" priority />
+          <ServiceImage />
         </div>
       </section>
     </>

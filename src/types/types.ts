@@ -1,4 +1,3 @@
-import type { ObjectId } from 'mongoose';
 import type React from 'react';
 import type { MouseEventHandler } from 'react';
 
@@ -24,14 +23,6 @@ export type PasswordEyeProps = {
 };
 
 export type RegisterFormValues = {
-  name: string;
-  email: string;
-  password: string;
-  isAdmin: boolean;
-};
-
-export type UserType = {
-  _id: ObjectId;
   name: string;
   email: string;
   password: string;

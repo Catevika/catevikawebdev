@@ -67,6 +67,7 @@
 }
 
 .about__details {
+    display: inline;
   font-size: 1.2rem;
   margin: 0 0 1rem 14rem;
   cursor: pointer

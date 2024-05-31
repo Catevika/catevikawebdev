@@ -4,11 +4,13 @@ import { sendEmail } from '@/app/[locale]/contact/_actions';
 import styles from '@/app/[locale]/contact/contact.module.css';
 import SendButton from '@/components/Buttons/SendButton';
 import type { ContactFormValues } from '@/types/types';
+import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useState } from 'react';
 import { useForm, type SubmitHandler } from 'react-hook-form';
 import toast from 'react-hot-toast';
+import emailImg from '/public/images/email.png';
 
 export default function ContactForm() {
   const t = useTranslations('Contact');
@@ -45,12 +47,22 @@ export default function ContactForm() {
     <>
       <div className={styles.contact__content__left}>
         <h3>{t('title')}</h3>
-        <div className='image__container'>
-          <Image className='image' src={'/images/email.png'} alt='' width={0}
-            height={0} sizes='50vw' priority />
-        </div>
+        <motion.div
+          initial={{ x: '-100vw' }}
+          animate={{ x: 0 }}
+          transition={{ ease: "easeInOut", duration: 1.5 }}
+        >
+          <div className='image__container'>
+            <Image className='image' src={emailImg} alt='' width={0}
+              height={0} sizes='50vw' placeholder='blur' priority />
+          </div>
+        </motion.div>
       </div>
-      <form noValidate className='form' onSubmit={handleSubmit(processForm)}>
+      <motion.form
+        initial={{ x: '100vw' }}
+        animate={{ x: 0 }}
+        transition={{ ease: "easeInOut", duration: 1.5 }}
+        noValidate className='form' onSubmit={handleSubmit(processForm)}>
         <label aria-hidden="true" htmlFor="name__verify" className='form__label__hide'>
           Humans will not fill out this field
           <input type="text" id="name__verify" name='name__verify' aria-hidden="true" autoComplete='off' onChange={(e) => setHoneypot(e.target.value)} value={honeypot} />
@@ -70,7 +82,7 @@ export default function ContactForm() {
           </div>
           <SendButton disabled={isSubmitting} />
         </div>
-      </form>
+      </motion.form>
     </>
   );
 }

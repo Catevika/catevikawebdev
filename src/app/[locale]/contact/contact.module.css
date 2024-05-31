@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-basis: 100%;
   gap: 2rem;
 }
 
@@ -23,7 +24,6 @@
 @media(max-width: 930px) {
   .contact__content {
     flex-direction: column;
-    width: 80%;
   }
 
   .contact__content__left {
@@ -35,7 +35,6 @@
 @media(max-width: 715px) {
   .contact__content {
     gap: 1rem;
-    width: 100%;
   }
 
   .contact__content__left {
