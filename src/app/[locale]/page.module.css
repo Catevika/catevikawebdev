@@ -36,6 +36,8 @@
 }
 
 .home__content h2 {
+  scale: 1;
+  transition: scale 0.3s ease-in;
   color: var(--color-turquoise);
   width: 57%;
 }
@@ -65,14 +67,9 @@
   width: 37%;
 }
 
-.home__content h2 {
-  scale: 1;
-  transition: scale 0.3s ease-in;
-}
-
 .home__content h2:hover,
 .home__content h2:focus-within {
-  scale: 1.1;
+  scale: 1.05;
   box-shadow: 0 0 8px var(--color-turquoise);
   border: 1px solid var(--color-turquoise);
 }
