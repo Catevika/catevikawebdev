@@ -42,3 +42,9 @@ INFOS.txt
 
 # vscode
 .vscode/*
+
+# sitemap
+sitemap.xml
+
+# robot
+robots.txt

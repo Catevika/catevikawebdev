@@ -73,25 +73,25 @@
     "note": "* Un style de design qui combine des éléments historiques avec des caractéristiques technologiques anachroniques inspirées de la science-fiction. Je suis une fan invétérée de ce style détonnant !"
   },
   "SeahorseDetailList": {
-    "LearnMore": "Plus d'informations",
+    "LearnMore": "En savoir plus",
     "id-1": {
-      "summary": "Loyauté",
+      "summary": "La loyauté",
       "text": "Les hippocampes sont connus pour leurs habitudes d'accouplement monogame et les liens qui les unissent, ce qui en a fait un symbole de loyauté et d'engagement."
     },
     "id-2": {
-      "summary": "Patience",
+      "summary": "La patience",
       "text": "Les hippocampes sont des créatures qui se déplacent lentement et qui prennent leur temps pour arriver à destination. Cela en a fait un symbole de patience et de persévérance."
     },
     "id-3": {
-      "summary": "Force",
+      "summary": "La force",
       "text": "Les hippocampes ont une capacité étonnante à naviguer dans les courants marins et à survivre dans des conditions difficiles. Ils sont ainsi devenus un symbole de force et de résilience."
     },
     "id-4": {
-      "summary": "Créativité",
+      "summary": "La créativité",
       "text": "Les hippocampes ont une forme unique qui les rend très reconnaissables. Cela en a fait un symbole de créativité et d'unicité."
     },
     "id-5": {
-      "summary": "Equilibre",
+      "summary": "L'équilibre",
       "text": "Les hippocampes ont un long museau et un corps courbé qui leur confère un équilibre inhabituel. Cela en fait un symbole d'équilibre et d'harmonie."
     }
   },
@@ -212,5 +212,11 @@
   },
   "BackButton": {
     "link": "Retour"
+  },
+  "ClipboardIcon": {
+    "alt": "Copier dans le presse-papier"
+  },
+  "CheckIcon": {
+    "alt": "Copié à l'instant dans le presse-papier"
   }
 }

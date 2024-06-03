@@ -67,9 +67,8 @@
 }
 
 .about__details {
-    display: inline;
   font-size: 1.2rem;
-  margin: 0 0 1rem 14rem;
+  margin: 0 0 1rem 2rem;
   cursor: pointer
 }
 
@@ -136,6 +135,8 @@
   }
 
   .about__details {
+    display: flex;
+    width: 100%;
     margin: 0 0 1.5rem 0;
   }
 }

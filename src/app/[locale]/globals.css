@@ -190,6 +190,7 @@ q {
 }
 
 table {
+  font-size: 1.2rem;
   width: 100%;
   margin: 1rem 0;
   border-radius: 1rem;
@@ -197,7 +198,8 @@ table {
 }
 
 thead th {
-  color: var(--color-turquoise);
+  text-align: left;
+  background-color: var(--color-dark);
 }
 
 thead th,
@@ -298,7 +300,6 @@ tbody tr td {
   margin-bottom: 0;
 }
 
-
 .form__text {
   font-weight: 700;
   text-align: center;
@@ -364,6 +365,14 @@ label span,
   border-radius: 50%;
   background-color: var(--color-turquoise);
   transition: all 2s ease-in-out;
+}
+
+.mdx-green {
+  color: var(--color-turquoise);
+}
+
+.mdx-red {
+  color: var(--color-error);
 }
 
 [data-theme='light'] {

@@ -1,9 +1,12 @@
 import PostImage from '@/components/Blog/PostImage/PostImage';
 import PostVideo from '@/components/Blog/PostVideo/PostVideo';
+import { postProcess, preProcess } from '@/components/Blog/rehype-pre-raw';
+import { Pre } from '@/components/Buttons/Pre';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import { notFound } from 'next/navigation';
 import * as fs from 'node:fs';
 import path, { join } from 'node:path';
+import type { ComponentType, HTMLAttributes } from 'react';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeSlug from 'rehype-slug';
@@ -18,6 +21,7 @@ export async function getPostsBySlug(slug: string) {
     const filename = `${folder}${slug}.mdx`;
 
     const fileContent = fs.readFileSync(filename, 'utf8');
+
     const { frontmatter, content } = await compileMDX<{
       imageurl: string;
       title: string;
@@ -31,29 +35,28 @@ export async function getPostsBySlug(slug: string) {
       options: {
         parseFrontmatter: true,
         mdxOptions: {
-          remarkPlugins: [
-            remarkToc,
-            remarkGfm
-          ],
+          remarkPlugins: [remarkToc, remarkGfm],
           rehypePlugins: [
+            preProcess,
             rehypeSlug,
             rehypeAutolinkHeadings,
-            rehypeHighlight
+            rehypeHighlight,
+            postProcess
           ]
         }
       },
       components: {
         PostVideo,
-        PostImage
+        PostImage,
+        pre: Pre as unknown as ComponentType<HTMLAttributes<HTMLPreElement>>
       }
     });
 
     return {
       frontmatter,
       content,
-      slug: path.parse(filename).name,
+      slug: path.parse(filename).name
     };
-
   } catch (error) {
     notFound();
   }

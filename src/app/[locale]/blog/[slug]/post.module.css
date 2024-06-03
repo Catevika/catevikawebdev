@@ -53,6 +53,28 @@
   margin-top: 0;
 }
 
+.post__article button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-top: -0.2rem;
+  background-color: var(--color-dark);
+}
+
+.post__article button:hover,
+.post__article button:focus-visible {
+  border: 1px solid transparent;
+}
+
+.post__article button img {
+  margin: -1rem;
+}
+
+.post__article code {
+  margin-top: -1rem;
+}
+
 .post__article h2 {
   margin: 2rem 0;
 }

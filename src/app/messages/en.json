@@ -212,5 +212,11 @@
   },
   "BackButton": {
     "link": "Back"
+  },
+  "ClipboardIcon": {
+    "alt": "Copy to Clipboard Icon"
+  },
+  "CheckIcon": {
+    "alt": "Copied to Clipboard Icon"
   }
 }
