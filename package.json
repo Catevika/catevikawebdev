@@ -14,7 +14,7 @@
     "@mdx-js/loader": "^3.0.1",
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^14.2.3",
-    "@react-email/components": "^0.0.19",
+    "@react-email/components": "^0.0.42",
     "aws4": "^1.13.0",
     "framer-motion": "^11.2.10",
     "highlight.js": "^11.9.0",
