@@ -20,7 +20,7 @@
     "highlight.js": "^11.9.0",
     "lottie-react": "^2.4.0",
     "next": "^14.2.32",
-    "next-auth": "^5.0.0-beta.23",
+    "next-auth": "^5.0.0-beta.30",
     "next-intl": "^3.14.1",
     "next-mdx-remote": "^5.0.0",
     "next-sitemap": "^4.2.3",
