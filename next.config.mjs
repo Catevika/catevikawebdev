@@ -1,52 +1,50 @@
 import createMDX from '@next/mdx';
 import createNextIntlPlugin from 'next-intl/plugin';
-import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-import rehypeHighlight from 'rehype-highlight';
-import rehypeSlug from 'rehype-slug';
-import remarkGfm from 'remark-gfm';
-import remarkToc from 'remark-toc';
 
 const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'images.pexels.com',
-        pathname: '/**',
-      }
-    ]
-  }
+	pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+	images: {
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'images.unsplash.com',
+				pathname: '/**',
+			},
+			{
+				protocol: 'https',
+				hostname: 'images.pexels.com',
+				pathname: '/**',
+			},
+		],
+	},
 };
 
 const withMDX = createMDX({
-  options: {
-    remarkPlugins: [
-      [remarkToc, { ordered: true, maxDepth: 6 }],
-      remarkGfm
-    ],
-    rehypePlugins: [
-      rehypeSlug,
-      rehypeAutolinkHeadings, {
-        properties: {
-          behavior: "append",
-          ariaHidden: true,
-          tabIndex: -1,
-          className: 'hash-link'
-        }
-      },
-      rehypeHighlight
-    ]
-  }
+	options: {
+		remarkPlugins: [
+			['remark-toc', {ordered: true, maxDepth: 6}], // plugin name as string, simple options
+			'remark-gfm',
+		],
+		rehypePlugins: [
+			'rehype-slug',
+			'rehype-autolink-headings',
+			[
+				'rehype-autolink-headings',
+				{
+					behavior: 'append',
+					properties: {
+						ariaHidden: true,
+						tabIndex: -1,
+						className: 'hash-link',
+					},
+				},
+			],
+			'rehype-highlight',
+		],
+	},
 });
-
 
 export default withNextIntl(withMDX(nextConfig));

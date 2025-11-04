@@ -48,3 +48,7 @@ sitemap.xml
 
 # robot
 robots.txt
+
+# Spell checker
+cspell.json
+
