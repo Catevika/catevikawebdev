@@ -5,7 +5,6 @@ import ErrorIcon from '@/components/Icons/ErrorIcon';
 import SuccessIcon from '@/components/Icons/SuccessIcon';
 import Navbar from '@/components/Navbar/Navbar';
 import {Providers} from '@/theme/ThemeProvider';
-import type {LayoutProps} from '@/types/types';
 import {SessionProvider} from 'next-auth/react';
 import {NextIntlClientProvider} from 'next-intl';
 import {getTranslations, setRequestLocale} from 'next-intl/server';
@@ -16,7 +15,7 @@ export function generateStaticParams() {
 	return locales.map((locale) => ({locale}));
 }
 
-export async function generateMetadata(params: Promise<{locale: string}>) {
+export async function generateMetadata(params: Promise<{locale: 'en' | 'fr'}>) {
 	const {locale} = await params;
 	setRequestLocale(locale);
 
@@ -34,9 +33,11 @@ export async function generateMetadata(params: Promise<{locale: string}>) {
 export default async function LocaleLayout({
 	children,
 	params,
-}: Readonly<LayoutProps>) {
+}: {
+	children: React.ReactNode;
+	params: Promise<{locale: string}>;
+}) {
 	const {locale} = await params;
-	// Enable static rendering
 	setRequestLocale(locale);
 
 	return (

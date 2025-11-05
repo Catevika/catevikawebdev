@@ -1,6 +1,6 @@
 import AboutList from '@/components/About/Aboutlist/AboutList';
 
-export async function generateMetadata(params: Promise<{locale: string}>) {
+export async function generateMetadata(params: Promise<{locale: 'en' | 'fr'}>) {
 	const {locale} = await params;
 	const title = locale === 'en' ? 'About' : 'A propos';
 

@@ -1,4 +1,3 @@
-import type React from 'react';
 import type {MouseEventHandler} from 'react';
 
 export const locales = ['en', 'fr'] as const;
@@ -8,13 +7,6 @@ export type Props = {
 	params: {
 		locale: 'en' | 'fr';
 	};
-};
-
-export type LayoutProps = {
-	children: React.ReactNode;
-	params: Promise<{
-		locale: 'en' | 'fr';
-	}>;
 };
 
 export type PasswordEyeProps = {
