@@ -10,29 +10,31 @@ import {
 } from "@react-email/components";
 
 export const EmailTemplate = (data: ContactFormValues) => (
-  <Html style={main}>
-    <Head>
-      <title style={text}>CLIENT MAIL!</title>
-    </Head>
-    <Body style={container}>
-      <Section style={logocontainer}>
-        <Link style={logo} href='https://www.catevikawebdev.com/' >
-          Catevika&nbsp;Web&nbsp;Dev
-        </Link>
-      </Section>
-      <Hr style={hrstyle} />
-      <Section>
-        <Text style={text}>Name: <span style={bold}>{data.name}</span></Text>
-        <Text style={text}>Sender Email: <span style={bold}>{data.email}</span></Text>
-      </Section>
-      <Hr style={hrstyle} />
-      <Section style={sectionstyle}>
-        <Text style={textwhite}>{data.message}</Text>
-      </Section>
-      <Hr style={hrstyle} />
-      <Text style={footer}>Catevika Web Dev - 128 Rue de la Boétie - 75008 Paris - FRANCE - © Catevika Web Dev 2024</Text>
-    </Body>
-  </Html>
+	<Html style={main}>
+		<Head>
+			<title style={text}>CLIENT MAIL!</title>
+		</Head>
+		<Body style={container}>
+			<Section style={logocontainer}>
+				<Link style={logo} href="https://www.catevikawebdev.com/">
+					Catevika&nbsp;Web&nbsp;Dev
+				</Link>
+			</Section>
+			<Hr style={hrstyle} />
+			<Section>
+				<Text style={text}>
+					Name: <span style={bold}>{data.name}</span>
+				</Text>
+				<Text style={text}>
+					Sender Email: <span style={bold}>{data.email}</span>
+				</Text>
+			</Section>
+			<Hr style={hrstyle} />
+			<Section style={sectionstyle}>
+				<Text style={textwhite}>{data.message}</Text>
+			</Section>
+		</Body>
+	</Html>
 );
 
 const main = {

@@ -10,11 +10,11 @@ export async function generateStaticParams() {
 
 	if (!posts) return [];
 
-	// new Set removes the dyplicates and flat() flattens the array of arrays
+	// new Set removes the duplicates and flat() flattens the array of arrays
 	const tags = new Set(posts.map((post) => post.tags).flat());
 
 	// Array.from() converts the Set to an array
-	return Array.from(tags).map((tag) => ({tag}));
+	return Array.from(tags).map((tag) => ({ tag }));
 }
 
 export async function generateMetadata(params: Promise<{tag: string}>) {

@@ -339,13 +339,3 @@ SOFTWARE.
 [data-theme='light'] .hljs-strong {
   font-weight: bold
 }
-
-[data-theme='light'] .hljs-formula,
-[data-theme='light'] .hljs-operator,
-[data-theme='light'] .hljs-params,
-[data-theme='light'] .hljs-property,
-[data-theme='light'] .hljs-punctuation,
-[data-theme='light'] .hljs-tag {
-  /* purposely ignored */
-
-}

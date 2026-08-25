@@ -3,10 +3,10 @@
   width: 90%;
 }
 
-.blog__container p:not(.postard__content p):first-of-type,
-.blog__container p:not(.postard__content p):nth-of-type(2),
-.blog__container p:not(.postard__content p):nth-of-type(3),
-.blog__container p:not(.postard__content p):nth-of-type(4) {
+.blog__container p:not(.postcard__content p):first-of-type,
+.blog__container p:not(.postcard__content p):nth-of-type(2),
+.blog__container p:not(.postcard__content p):nth-of-type(3),
+.blog__container p:not(.postcard__content p):nth-of-type(4) {
   font-weight: 700;
 }
 
