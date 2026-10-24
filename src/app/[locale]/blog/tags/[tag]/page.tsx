@@ -17,14 +17,22 @@ export async function generateStaticParams() {
 	return Array.from(tags).map((tag) => ({ tag }));
 }
 
-export async function generateMetadata(params: Promise<{tag: string}>) {
+export async function generateMetadata({
+	params,
+}: {
+	params: Promise<{tag: string}>;
+}) {
 	const {tag} = await params;
 	return {
 		title: `Posts about ${tag} | Catevika Web Dev `,
 	};
 }
 
-export default async function TagPostList(params: Promise<{tag: string}>) {
+export default async function TagPostList({
+	params,
+}: {
+	params: Promise<{tag: string}>;
+}) {
 	const {tag} = await params;
 	const posts = await getPosts();
 

@@ -13,7 +13,11 @@ export const generateStaticParams = async () => {
 	}));
 };
 
-export async function generateMetadata(params: Promise<{slug: string}>) {
+export async function generateMetadata({
+	params,
+}: {
+	params: Promise<{slug: string}>;
+}) {
 	const {slug} = await params;
 	const id = slug ? slug : '';
 	return {

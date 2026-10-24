@@ -22,7 +22,9 @@ export default async function BlogPage() {
 	return (
 		<section className={styles.blog__container}>
 			<div>
-				<h3>What are you interested in today?</h3>
+				<h3>
+					What are you interested in today <em>- English only</em>?
+				</h3>
 				<TagMenu tagsFromPosts={tagsFromPosts} />
 				<PostList posts={posts} />
 			</div>

@@ -1,30 +1,47 @@
 "use client";
 
 import styles from "@/components/Navbar/Navbar.module.css";
-import type { Locale } from "@/types/types";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
+import type {Locale} from '@/types/types';
+import {useTranslations} from 'next-intl';
+import Image from 'next/image';
+import {usePathname, useRouter} from '@/i18n/navigation';
+import {useParams} from 'next/navigation';
 
 function LanguageToggle() {
 	const t = useTranslations("Language");
 
 	const router = useRouter();
 	const currentPathname = usePathname();
+	const params = useParams();
 
 	function handleClick(newLocale: Locale): void {
-		document.cookie = `NEXT_LOCALE=${newLocale.toString().toLowerCase()}; path=/; max-age=31536000; samesite=Lax; secure`;
-		// Remove current locale from pathname
-
-		if (currentPathname === "/fr" || currentPathname === "/en") {
-			const pathWithoutLocale = newLocale;
-			// Remove locale from pathname
-			router.push(pathWithoutLocale);
-		} else {
-			const pathWithoutLocale = currentPathname.replace(/^\/[a-z]{2}\//, "/");
-
-			// Push to same path with new locale
-			router.push(`/${newLocale}/${pathWithoutLocale}`);
+		switch (currentPathname) {
+			case '/blog/[slug]':
+				if (typeof params.slug !== 'string') {
+					throw new Error('Missing blog slug while switching locale.');
+				}
+				router.replace(
+					{pathname: currentPathname, params: {slug: params.slug}},
+					{locale: newLocale},
+				);
+				break;
+			case '/blog/tags/[tag]':
+				if (typeof params.tag !== 'string') {
+					throw new Error('Missing blog tag while switching locale.');
+				}
+				router.replace(
+					{pathname: currentPathname, params: {tag: params.tag}},
+					{locale: newLocale},
+				);
+				break;
+			case '/':
+			case '/services':
+			case '/contact':
+			case '/blog':
+			case '/about':
+			case '/dashboard':
+				router.replace(currentPathname, {locale: newLocale});
+				break;
 		}
 	}
 

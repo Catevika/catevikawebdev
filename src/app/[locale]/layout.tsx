@@ -15,7 +15,11 @@ export function generateStaticParams() {
 	return locales.map((locale) => ({locale}));
 }
 
-export async function generateMetadata(params: Promise<{locale: 'en' | 'fr'}>) {
+export async function generateMetadata({
+	params,
+}: {
+	params: Promise<{locale: 'en' | 'fr'}>;
+}) {
 	const {locale} = await params;
 	setRequestLocale(locale);
 

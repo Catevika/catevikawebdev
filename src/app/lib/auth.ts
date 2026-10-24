@@ -6,6 +6,7 @@ import github from 'next-auth/providers/github';
 // }
 
 export const {handlers, auth, signIn, signOut} = NextAuth({
+	trustHost: true,
 	providers: [
 		github({
 			clientId: process.env.GITHUB_CLIENT_ID,

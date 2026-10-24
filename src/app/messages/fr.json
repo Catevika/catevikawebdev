@@ -6,20 +6,16 @@
   },
   "NavItems": {
     "id-1": {
-      "title": "Services",
-      "path": "/services"
+      "title": "Services"
     },
     "id-2": {
-      "title": "Contact",
-      "path": "/contact"
+      "title": "Contact"
     },
     "id-3": {
-      "title": "A propos",
-      "path": "/apropos"
+      "title": "A propos"
     },
     "id-4": {
-      "title": "Blog",
-      "path": "/blog"
+      "title": "Blog"
     }
   },
   "Theme": {
