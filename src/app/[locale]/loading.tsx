@@ -2,7 +2,9 @@
 
 import dynamic from 'next/dynamic';
 
-const Lottie = dynamic(() => import('lottie-react'), {ssr: false});
+import { Lottie } from 'lottie-react';
+
+const LottieComponent = dynamic(() => import('lottie-react').then((mod) => mod.Lottie), {ssr: false});
 
 import lottieLoading from '@/app/[locale]/lottieLoading.json';
 import lottieLoadingLight from '@/app/[locale]/lottieLoadingLight.json';
@@ -10,15 +12,17 @@ import lottieLoadingLight from '@/app/[locale]/lottieLoadingLight.json';
 export default function Loading() {
 	return (
 		<div className='loading'>
-			<Lottie
-				data-hide-on-theme='light'
-				animationData={lottieLoading}
-				loop={true}
+			<LottieComponent
+			src={lottieLoading}
+			data-hide-on-theme='light'
+			autoplay
+			loop
 			/>
-			<Lottie
+			<LottieComponent
+				src={lottieLoadingLight}
 				data-hide-on-theme='dark'
-				animationData={lottieLoadingLight}
-				loop={true}
+				autoplay
+				loop
 			/>
 		</div>
 	);
